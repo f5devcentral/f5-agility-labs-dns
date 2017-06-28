@@ -32,7 +32,7 @@ Create a new DNS profile as shown in the following table.
 
 TMSH command for both gtm1.site1 and gtm1.site2:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create ltm profile dns example.com_dns_profile use-local-bind no unhandled-query-action drop log-profile example_dns_logging_profile enable-logging yes avr-dnsstat-sample-rate 1
 

@@ -28,13 +28,13 @@ Create a TCP listener.
 
 gtm1.site1 TMSH command:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
     tmsh create gtm listener isp1_site1_ns1.example.com_tcp_53_virtual address 203.0.113.8 ip-protocol tcp mask 255.255.255.255 port 53 profiles add { example.com_dns_profile example.com_tcp-dns_profile }
 
 gtm1.site2 TMSH command:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create gtm listener isp1_site2_ns2.example.com_tcp_53_virtual address 198.51.100.40 ip-protocol tcp mask 255.255.255.255 port 53 profiles add { example.com_dns_profile example.com_tcp-dns_profile }
 
