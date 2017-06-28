@@ -7,7 +7,7 @@ https://gtm1.site1.example.com/tmui/Control/jspmap/xsl/gtm_dc/list
 
 .. note::   The tasks in this section are to be only completed on gtm1.site1
 
-Create two darta centers according to the table below:
+Create two data centers according to the table below:
 
 .. csv-table::
    :header: "Setting", "Value"
