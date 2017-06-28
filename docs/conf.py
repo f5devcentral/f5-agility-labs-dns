@@ -5,7 +5,7 @@
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "BIG-IP DNS Labs"
+classname = "DNS"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
 github_repo = "https://github.com/0xHiteshPatel/agility_dns_docs_17"

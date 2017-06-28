@@ -12,6 +12,8 @@ Ravello Cloud
 
 The lab environment is hosted in cloud environments managed by Ravello Systems. Login to the Ravello training portal using a browser.
 
+Current Ravello Blueprint Version is: AGILITY_DNS_201706281515
+
 **Ask an instructor for the login information**
 
 **- TODO insert updated Ravello screenshots**
