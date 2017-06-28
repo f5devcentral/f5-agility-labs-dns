@@ -103,7 +103,7 @@ elements to consider:
 * View the details of the zone in the GUI
 * Issue the following command from the ssh console:
 
-.. code-block:: console
+.. admonition:: TMSH
 
    tmsh show ltm dns zone student1.com | more
 

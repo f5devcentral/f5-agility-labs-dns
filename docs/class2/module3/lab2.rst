@@ -27,7 +27,7 @@ Add Forwarder to Existing Cache
 
 * In the SSH shell, type the following tmsh command:
 
-.. code-block:: console
+.. admonition:: TMSH
 
    tmsh show ltm dns cache validating-resolver | more
 

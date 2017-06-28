@@ -1,6 +1,6 @@
 Slave from Off-box BIND
 -----------------------
-
+ 
 *  **Objective:** In this use-case, you will configure GTM as the
    authoritative slave using an off-box BIND server as the hidden
    master. This is a very common architecture to serve either external
@@ -163,7 +163,7 @@ configuration elements to consider:
   desktop. Use username: **root** password: **default** and issue the
   following TMSH command once logged in.
 
-.. code-block:: console
+.. admonition:: TMSH
 
     tmsh modify sys db log.zxfrd.level value "debug"
 
@@ -195,7 +195,7 @@ You can break out of the tail process with *<Ctrl-C>*.
 * Issue the following command from SSH console to see specifics of the
   status and statistics related to the zone.
 
-.. code-block:: console
+.. admonition:: TMSH
 
    tmsh show ltm dns zone dnsx.com | more
 

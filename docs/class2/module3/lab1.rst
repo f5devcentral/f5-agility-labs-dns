@@ -117,7 +117,7 @@ We will now apply the new profile to the existing DNS Listener.
 
 * In the SSH shell, type the following:
 
-.. code-block:: console
+.. admonition:: TMSH
 
    tmsh show ltm dns cache validating-resolver | more
 
@@ -133,7 +133,7 @@ Validation and DNSSEC Key stats are of particular interest in this use-case.
 * Note the size of the cache for just this single RR query. You can
   view what’s in the cache from the CLI with:
 
-.. code-block:: console
+.. admonition:: TMSH
 
    tmsh show ltm dns cache records rrset cache validating-resolver | more
 

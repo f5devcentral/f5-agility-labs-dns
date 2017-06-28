@@ -81,7 +81,7 @@ We will now apply the new profile to the existing DNS Listener.
 
 * In the SSH shell, type the following command:
 
-.. code-block:: console
+.. admonition:: TMSH
 
    tmsh show ltm dns cache resolver resolver-cache | more
 

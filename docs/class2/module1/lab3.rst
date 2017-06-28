@@ -130,7 +130,7 @@ Add Student2.com zone to DNS Express on BIGIP1
   status and statistics related to the zone.
   *Take note of the “Notifies Received” counter.*
 
-.. code-block:: console
+.. admonition:: TMSH
 
    tmsh show ltm dns zone student2.com | more
 
@@ -138,7 +138,7 @@ Add Student2.com zone to DNS Express on BIGIP1
   status and statistics related to the zone.
   *Take note of the “Notifies To Client” counter.*
 
-.. code-block:: console
+.. admonition:: TMSH
 
    tmsh show ltm dns zone student2.com | more
 

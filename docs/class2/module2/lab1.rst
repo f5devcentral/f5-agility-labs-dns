@@ -22,7 +22,7 @@ https://router.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/list.jsp
 
 TMSH command for router01.branch01:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create ltm dns cache transparent transparent_cache
 
@@ -54,7 +54,7 @@ Create a DNS logging profile as shown in the table below.
 
 TMSH command for router01.branch01:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create ltm profile dns-logging  example_dns_logging_profile enable-response-logging yes include-query-id yes log-publisher local-db-publisher
 
@@ -88,7 +88,7 @@ Create a DNS profile as shown in the table below.
 
 TMSH commands for router01.branch01:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create ltm profile dns example.com_dns_profile use-local-bind no unhandled-query-action drop log-profile example_dns_logging_profile enable-logging yes avr-dnsstat-sample-rate 1
 
@@ -114,7 +114,7 @@ Create a UDP profile as shown in the following table.
 .. image:: /_static/class2/router01_create_udp_profile_properties.png
    :width: 800
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create ltm profile udp example.com_udp-dns_profile defaults-from udp_gtm_dns
 
@@ -147,7 +147,7 @@ Create a UDP listener.
 
 TMSH commands for router01.branch01:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create ltm virtual branch01_udp_53_virtual destination 10.1.70.200:domain ip-protocol udp mask 255.255.255.255 profiles add { example.com_dns_profile { } example.com_udp-dns_profile { } } translate-address disabled vlans add { branch01_vlan } vlans-enabled
 
@@ -180,7 +180,7 @@ Create a TCP listener.
 
 TMSH commands for router01.branch01:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create ltm virtual branch01_tcp_53_virtual destination 10.1.70.200:domain ip-protocol tcp mask 255.255.255.255 profiles add { example.com_dns_profile { } example.com_tcp-dns_profile { } } translate-address disabled vlans add { branch01_vlan } vlans-enabled
 
@@ -224,7 +224,7 @@ https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_d
 .. image:: /_static/class2/router01_cache_view_details.png
    :width: 800
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh show ltm dns cache records rrset cache transparent_cache
 
@@ -232,7 +232,7 @@ https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_d
    :width: 800
 
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh show ltm dns cache transparent
 
@@ -254,7 +254,7 @@ https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_d
 
 * In the SSH shell, type:
 
-.. code-block:: console
+.. admonition:: TMSH
 
    tmsh show ltm dns cache transparent transparent-cache
 
