@@ -1,0 +1,21 @@
+;put this file in /var/named/dnsx.zone
+$TTL    100 ; 24 hours could have been written as 24h or 1d
+; $TTL used for all RRs without explicit TTL value
+$ORIGIN dnsx.com.
+@  1D  IN  SOA ns1.dnsx.com. hostmaster.dnsx.com. (
+                              2017062201 ; serial
+                              60 ; refresh
+                              15 ; retry
+                              1w ; expire
+                              3h ; nxdomain ttl
+                             )
+       IN  NS     ns1.dnsx.com. ; in the domain
+       IN  NS     ns2.dnsx.com. ; external to domain
+       IN  MX  10 mail.dnsx.com. ; external mail provider
+ns1    IN  A      203.0.113.8  ;name server definition
+ns2     IN A      198.51.100.8
+www1    IN  A     203.0.113.101 ;web server definition
+www2    IN  A     203.0.113.102 ;web server definition
+www3    IN  A     203.0.113.103 ;web server definition
+bigip1    IN  A     203.0.113.104 ;web server definition
+bigip2    IN  A     203.0.113.105 ;web server definition
