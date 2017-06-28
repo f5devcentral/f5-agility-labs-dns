@@ -24,6 +24,6 @@ Create a GTM pool of LTM Virtuals according to the following table:
 
 TMSH command to run on only gtm1.site1:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create gtm pool a www.example.com_pool { members add { site1_ha-pair:/Common/isp1_site1_www.example.com_tcp_https_virtual { member-order 0 } site2_ha-pair:/Common/isp2_site2_www.example.com_tcp_https_virtual { member-order 1 } } }

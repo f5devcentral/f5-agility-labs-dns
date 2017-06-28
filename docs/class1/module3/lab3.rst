@@ -5,7 +5,7 @@ Launch Putty and log in to gtm1.site2
 
 Run the following command:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    gtm_add 203.0.113.7
 

@@ -29,7 +29,7 @@ https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/links.js
 
 https://gtm1.site1.example.com/tmui/Control/jspmap/xsl/gtm_server/virtual_servers?&leaf_name=site2_ha-pair&name=%2FCommon%2Fsite2_ha-pair
 
-.. code-block:: cli
+.. admonition:: TMSH
 
     tmsh modify gtm server site1_ha-pair link-discovery disabled virtual-server-discovery disabled
     tmsh modify gtm server site2_ha-pair link-discovery disabled virtual-server-discovery disabled

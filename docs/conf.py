@@ -8,7 +8,7 @@
 classname = "DNS"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/0xHiteshPatel/agility_dns_docs_17"
+github_repo = "https://github.com/0xHiteshPatel/f5-agility-labs-dns"
 
 #
 # END CONFIG

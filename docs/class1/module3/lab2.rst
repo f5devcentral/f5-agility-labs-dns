@@ -7,7 +7,7 @@ Lanch Putty and login to gtm1.site1.example.com
 
 Run the following command:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    bigip_add
 

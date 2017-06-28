@@ -25,6 +25,6 @@ Create an F5 "wide IP"
 
 TMSH command to run on only gtm1.site1:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create gtm wideip a www.example.com { pools add { www.example.com_pool { order 0 } } }

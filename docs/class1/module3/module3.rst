@@ -21,7 +21,7 @@ Create two data centers according to the table below:
 
 TMSH command for only site1.gtm1:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create gtm datacenter site1_datacenter
    tmsh create gtm datacenter site2_datacenter

@@ -1,7 +1,7 @@
 Servers
 ==============================
 
-Navigate to: **DNS  ››  GSLB : Servers : Server List**  
+Navigate to: **DNS  ››  GSLB : Servers : Server List**
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp
 
 .. figure:: /_static/class1/gslb_servers_flyout.png
@@ -10,7 +10,7 @@ https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp
 gtm1.site1
 ###############################################
 
-Navigate to: **DNS  ››  GSLB : Servers : Server List**  
+Navigate to: **DNS  ››  GSLB : Servers : Server List**
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp
 
 Create a Server Object as defined in the table below:
@@ -30,14 +30,14 @@ Create a Server Object as defined in the table below:
 
 TMSH command for only site1.gtm1:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create gtm server gtm1.site1_server  datacenter site1_datacenter devices add { gtm1.site1.example.com { addresses add { 203.0.113.7 } } } monitor bigip product bigip
 
 gtm1.site2
 ###############################################
 
-Navigate to: **DNS  ››  GSLB : Servers : Server List**  
+Navigate to: **DNS  ››  GSLB : Servers : Server List**
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp
 
 Create a Server Object as defined in the table below:
@@ -85,7 +85,7 @@ site1_ha-pair
 
 TMSH command for only gtm1.site1:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
     tmsh create gtm server site1_ha-pair datacenter site1_datacenter devices add { bigip1.site1.example.com { addresses add { 203.0.113.5 { } } } bigip2.site1.example.com { addresses add { 203.0.113.6 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled
 
@@ -114,6 +114,6 @@ site2_ha-pair
 
 TMSH command for only gtm1.site1:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create gtm server site2_ha-pair datacenter site2_datacenter devices add { bigip1.site2.example.com { addresses add { 198.51.100.37 { } } } bigip2.site2.example.com { addresses add { 198.51.100.38 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled

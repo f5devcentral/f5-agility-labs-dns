@@ -25,7 +25,7 @@ Create a new TCP profile as shown in the following table.
 
 TMSH Command for both gtm1.site and gtm1.site2:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create ltm profile tcp example.com_tcp-dns_profile defaults-from tcp-wan-optimized
 
