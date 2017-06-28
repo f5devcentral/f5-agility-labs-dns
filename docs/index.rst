@@ -11,11 +11,11 @@ https://github.com/0xHiteshPatel/f5-agility-lab-template
 
 This readthedocs article:
 
-http://agility-dns-docs-17-f5.readthedocs.io/en/latest/
+http://f5-agility-labs-dns.readthedocs.io/en/latest/
 
 Github repository:
 
-https://github.com/0xHiteshPatel/agility_dns_docs_17
+https://github.com/0xHiteshPatel/f5-agility-labs-dns
 
 Other Groups Classes:
 
