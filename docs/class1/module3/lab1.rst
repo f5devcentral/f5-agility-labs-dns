@@ -38,7 +38,7 @@ gtm1.site2
 ###############################################
 
 Navigate to: **DNS  ››  GSLB : Servers : Server List**  
-https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp
 
 Create a Server Object as defined in the table below:
 
@@ -112,7 +112,7 @@ site2_ha-pair
 .. image:: /_static/class1/site2_ha-pair.png
    :width: 800
 
-TMSH command for only gtm1.site2:
+TMSH command for only gtm1.site1:
 
 .. code-block:: cli
 
