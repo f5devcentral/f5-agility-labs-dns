@@ -30,7 +30,7 @@ Create a new DNS logging profile as shown in the table below.
 
 TMSH command for both gtm1.site1 and gtm1.site2:
 
-.. code-block:: cli
+.. admonition:: TMSH
 
    tmsh create ltm profile dns-logging example_dns_logging_profile enable-response-logging yes include-query-id yes log-publisher local-db-publisher
 
