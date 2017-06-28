@@ -11,6 +11,8 @@ Run the following command:
 
    bigip_add
 
+When prompted for a password use "default"
+
 .. image:: /_static/class1/putty_gtm1.site1.png
    :width: 800
 

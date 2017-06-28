@@ -16,3 +16,6 @@ Create a new CNAME record
 
 .. image:: /_static/class1/dc01_new_delegation_create_cname_results.png
    :width: 800
+
+.. image:: /_static/class1/dc01_new_delegation_ns1ns2_create_results.png
+   :width: 800
