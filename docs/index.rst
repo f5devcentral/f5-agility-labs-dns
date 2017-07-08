@@ -15,7 +15,7 @@ http://f5-agility-labs-dns.readthedocs.io/en/latest/
 
 Github repository:
 
-https://github.com/0xHiteshPatel/f5-agility-labs-dns
+https://github.com/f5devcentral/f5-agility-labs-dns
 
 Other Groups Classes:
 
