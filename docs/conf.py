@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# 
+#
 # BEGIN CONFIG
 # ------------
 #
@@ -18,13 +18,18 @@ import os
 import sys
 import time
 import re
+import pkgutil
+import string
 sys.path.insert(0, os.path.abspath('.'))
 import f5_sphinx_theme
+
+year = time.strftime("%Y")
+eventname = "Agility %s Hands-on Lab Guide" % (year)
 
 rst_prolog = """
 .. |classname| replace:: %s
 .. |classbold| replace:: **%s**
-.. |classitalic| replace:: *%s* 
+.. |classitalic| replace:: *%s*
 .. |ltm| replace:: Local Traffic Manager
 .. |adc| replace:: Application Delivery Controller
 .. |gtm| replace:: Global Traffic Manager
@@ -32,23 +37,28 @@ rst_prolog = """
 .. |asm| replace:: Application Security Manager
 .. |afm| replace:: Advanced Firewall Manager
 .. |apm| replace:: Access Policy Manager
+.. |pem| replace:: Policy Enforcement Manager
 .. |ipi| replace:: IP Intelligence
 .. |iwf| replace:: iWorkflow
 .. |biq| replace:: BIG-IQ
 .. |bip| replace:: BIG-IP
+.. |aiq| replace:: APP-IQ
+.. |ve|  replace:: Virtual Edition
+.. |icr| replace:: iControl REST API
+.. |ics| replace:: iControl SOAP API
 .. |f5|  replace:: F5 Networks
 .. |f5i| replace:: F5 Networks, Inc.
 .. |year| replace:: %s
 """ % (classname,
        classname,
        classname,
-       time.strftime("%Y"))
+       year)
 
 if 'github_repo' in locals() and len(github_repo) > 0:
     rst_prolog += """
-.. |repoinfo| replace:: The content contained here leverages a full DevOps CI/CD 
-              pipieline and is sourced from the GitHub repository at %s.  
-              Bugs and Requests for enhancements can be made using by 
+.. |repoinfo| replace:: The content contained here leverages a full DevOps CI/CD
+              pipeline and is sourced from the GitHub repository at %s.
+              Bugs and Requests for enhancements can be made using by
               opening an Issue within the repository.
 """ % (github_repo)
 else:
@@ -69,8 +79,30 @@ print "on_snops = %s" % on_snops
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
-extensions += ['sphinxjp.themes.basicstrap']
+extensions = [
+  'sphinxjp.themes.basicstrap',
+  'sphinx.ext.todo',
+  'sphinx.ext.autosectionlabel'
+]
+
+if 'googleanalytics_id' in locals() and len(googleanalytics_id) > 0:
+  extensions += ['sphinxcontrib.googleanalytics']
+  googleanalytics_enabled = True
+
+eggs_loader = pkgutil.find_loader('sphinxcontrib.spelling')
+found = eggs_loader is not None
+
+if found:
+  extensions += ['sphinxcontrib.spelling']
+  spelling_lang='en_US'
+  spelling_word_list_filename='../wordlist'
+  spelling_show_suggestions=True
+  spelling_ignore_pypi_package_names=False
+  spelling_ignore_wiki_words=True
+  spelling_ignore_acronyms=True
+  spelling_ignore_python_builtins=True
+  spelling_ignore_importable_modules=True
+  spelling_filters=[]
 
 source_parsers = {
    '.md': 'recommonmark.parser.CommonMarkParser',
@@ -117,8 +149,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = False
-
+todo_emit_warnings = True
+todo_include_todos = True
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -160,22 +192,37 @@ htmlhelp_basename =  cleanname + 'doc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
+front_cover_image = 'front_cover'
+back_cover_image = 'back_cover'
+
+front_cover_image_path = os.path.join('_static', front_cover_image + '.png')
+back_cover_image_path = os.path.join('_static', back_cover_image + '.png')
+
+latex_additional_files = [front_cover_image_path, back_cover_image_path]
+
+template = string.Template(open('preamble.tex').read())
+
+latex_contents = r"""
+\frontcoverpage
+\contentspage
+"""
+
+backcover_latex_contents = r"""
+\backcoverpage
+"""
+
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
+    'papersize': 'letterpaper',
+    'pointsize': '10pt',
+    'fncychap': r'\usepackage[Bjornstrup]{fncychap}',
+    'preamble': template.substitute(eventname=eventname,
+                                    project=project,
+                                    author=author,
+                                    frontcoverimage=front_cover_image,
+                                    backcoverimage=back_cover_image),
 
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
+    'tableofcontents': latex_contents,
+    'printindex': backcover_latex_contents
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -183,9 +230,8 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, '%s.tex' % cleanname, u'%s Documentation' % classname,
-     u'F5 Networks, Inc.', 'manual'),
+     u'F5 Networks, Inc.', 'manual', True),
 ]
-
 
 # -- Options for manual page output ---------------------------------------
 
