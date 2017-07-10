@@ -56,7 +56,8 @@ Create a Server Object as defined in the table below:
    :width: 800
 
 TMSH command for only gtm1.site1:
-.. code-block:: cli
+
+.. admonition:: TMSH 
 
    tmsh create gtm server gtm1.site2_server datacenter site2_datacenter devices add { gtm1.site2.example.com { addresses add { 198.51.100.39 } } } monitor bigip product bigip
 
