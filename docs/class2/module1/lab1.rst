@@ -16,7 +16,7 @@ Slave from Off-box BIND
 Configuring DNS Logging
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* You are going to configure DNS query and response logging. To do
+* We are going to configure DNS query and response logging. To do
   this, you must tell GTM where to send logs to (a log publisher) and
   what specifically to log (DNS logging profile).
 * For lab purposes, we are going to use local-syslog as our logging
