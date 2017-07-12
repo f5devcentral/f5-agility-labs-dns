@@ -1,11 +1,10 @@
-RPZ
--------------------
+DNSSEC
+===================
 
-TODO: create the RPZ lab
+TODO: Include description of what this module accomplishes
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    lab*

@@ -1,82 +1,83 @@
-Results
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNSSEC
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-From the jumpbox open a command prompt, perform several recursive queries to your new listener to test.
+We will now sign the dnsx.com zone. In this example, we are configuring
+GTM to sign the zone on the fly rather than signing the actual static
+zone information (which can be done starting in v11.5 but is outside the
+scope of this lab).
 
-Repeat some of the same queries multiple times
+* In the GUI, navigate to: **DNS > Delivery > Keys > DNSSEC Key List: Create**
+* Create two keys as defined in the tables below.
+
+*Keep the defaults if not noted in the table.*
+
++----------------------+--------------------+
+| **Name**             | dnsx.com\_zsk      |
++======================+====================+
+| **Type**             | Zone Signing Key   |
++----------------------+--------------------+
+| **Key Management**   | Manual             |
++----------------------+--------------------+
+| **Certificate**      | default.crt        |
++----------------------+--------------------+
+| **Private Key**      | default.key        |
++----------------------+--------------------+
+
++----------------------+-------------------+
+| **Name**             | dnsx.com\_ksk     |
++======================+===================+
+| **Type**             | Key Signing Key   |
++----------------------+-------------------+
+| **Key Management**   | Manual            |
++----------------------+-------------------+
+| **Certificate**      | default.crt       |
++----------------------+-------------------+
+| **Private Key**      | default.key       |
++----------------------+-------------------+
+
+* Click **Finished** to create each key.
+* In the GUI, navigate to: **DNS > Zones > DNSSEC Zones > DNSSEC Zone List: Create**
+* Configure the dnsx.com zone for DNSSEC using the previously created
+  keys as shown below.
+
+|image3|
+
+* Test that the zone is successfully signed by issuing a DNSSEC query
+  to the external listener. For example:
 
 .. code-block:: console
 
-   dig www.f5.com
-   dig www.wikipedia.org
-   dig www.ncsu.edu
-   dig www.example.com
+   dig @203.0.113.8 +dnssec www1.dnsx.com
 
-Viewing Cache Entries
+You should see RRSIG records indicating that the zone is signed. You
+will also note signing in the query logs (``/var/log/ltm``)
 
-Navigate to: **DNS  ››  Caches : Cache List  ››  Properties : transparent_cache** 
+* Finally, view some other DNS statistics related to queries, DNSSEC, zone transfers, notifies, etc.
+* In the GUI, navigate to: **DNS > Zone > Zones > Zone List.**
+* Click on the “dnsx.com” zone and then select “Statistics” from the top menu bar.
+* Select the “View” Details as shown in the diagram below:
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/properties.jsp?name=%2FCommon%2Ftransparent_cache
+|image4|
 
-.. image:: /_static/class2/router01_cache_select_statistics.png
+* View the types of statistics available for the zone such as serial number, number of records, etc.
+* In the GUI, navigate to: **Statistics > Module Statistics > DNS > Zones**.
+* Set “Statistics Type” to **“DNSSEC Zones”.**
+* View details as performed above. Note the various DNSSEC statistics available.
+* If the graphs from task 5 weren’t available earlier, revisit
+  **Statistics > Analytics > DNS** now and explore.
 
-Navigate to: **Statistics  ››  Module Statistics : DNS : Caches  ››  Caches**
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats.jsp?name=%2FCommon%2Ftransparent_cache&tab=dns_cache_transparent_config
-
-.. image:: /_static/class2/router01_cache_click_view.png
-
-Navigate to: **Statistics  ››  Module Statistics : DNS : Caches  ››  Caches : transparent_cache**
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_detail.jsp?name=/Common/transparent_cache
-
-.. image:: /_static/class2/router01_cache_view_details.png
-
-.. admonition:: TMSH
-
-   tmsh show ltm dns cache records rrset cache transparent_cache
-
-.. image:: /_static/class2/tmsh_show_ltm_dns_cache_records.png
-
-.. admonition:: TMSH
-
-   tmsh show ltm dns cache transparent
-
-.. image:: /_static/class2/tmsh_show_ltm_dns_cache_transparent.png
-
-View cache entries for a particular domain / owner:
-
-.. admonition:: TMSH
-
-   tmsh show ltm dns cache records rrset cache transparent-cache owner f5.com
-
-View cache entries of a particular RR type:
-
-.. admonition:: TMSH
-
-   tmsh show ltm dns cache records rrset cache transparent-cache type NS
-
-Viewing Cache Statistics:
-
-.. admonition:: TMSH
-
-   tmsh show ltm dns cache transparent transparent-cache
-
-**Deleting Cache Entries**
-
-* Specific cache entries can be deleted via the TMSH console. Entries
-  to be deleted can be filtered by several aspects.
-* In the TMSH shell, go to the DNS prompt and type
-
-.. admonition:: TMSH
-
-   tmsh delete ltm dns cache records rrset cache transparent_cache ?
-
-**Clearing Entire Cache**
-
-Navigate to **Statistics > Module Statistics > DNS > Caches**
-
-Set “Statistics Type” to “Caches”.
-
-Select the cache and click “Clear Cache” to empty the cache.
-
+.. |image0| image:: /_static/class2/image2.png
+   :width: 5.30972in
+   :height: 2.02776in
+.. |image1| image:: /_static/class2/image4.png
+   :width: 3.93000in
+   :height: 3.05000in
+.. |image2| image:: /_static/class2/image5.png
+   :width: 2.66667in
+   :height: 1.41319in
+.. |image3| image:: /_static/class2/image6.png
+   :width: 3.23729in
+   :height: 2.35556in
+.. |image4| image:: /_static/class2/image7.png
+   :width: 3.96000in
+   :height: 1.71000in

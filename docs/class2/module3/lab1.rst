@@ -1,29 +1,50 @@
-Log Profile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Logging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Configure DNS query and response logging.
+Log in to https://router01.branch01.example.com/xui/
 
-Navigate to **Local Traffic  ››  Profiles : Other : DNS Logging**
+Navigate to: **System > Logs > Configuration > Log Publishers: Create**
+Create a new DNS Log Publisher as shown in the table below.
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/list.jsp
+*Keep the defaults if not noted in the table.*
 
-Create a DNS logging profile as shown in the table below.
++--------------------+----------------------------------------+
+| **Name**           | dns-local-syslog                       |
++====================+========================================+
+| **Destinations**   | Move local-syslog to Selected column   |
++--------------------+----------------------------------------+
 
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
+* Click **Finished** to create.
+* In the GUI, navigate to: **DNS > Delivery > Profiles > Other > DNS Logging: Create**
+* Create a new DNS logging profile as shown in the table below.
 
-   "Name", "example_dns_logging_profile"
-   "Log Publisher", "sys-db-access-publisher"
-   "Log Responses", "enabled"
-   "Include Query ID", "enabled"
+*Keep the defaults if not noted in the table.*
 
-.. image:: /_static/class2/dns_cache_transparent_flyout_router01.png
++------------------------+---------------------------+
+| **Name**               | dns-logging               |
++========================+===========================+
+| **Log Publisher**      | Select dns-local-syslog   |
++------------------------+---------------------------+
+| **Log Responses**      | Enabled                   |
++------------------------+---------------------------+
+| **Include Query ID**   | Enabled                   |
++------------------------+---------------------------+
 
-.. image:: /_static/class2/dns_cache_transparent_create_router01.png
+* Click **Finished** to create.
+* Your new dns-logging profile should now have all options enabled.
 
-TMSH command for router01.branch01:
-
-.. admonition:: TMSH
-
-   tmsh create ltm profile dns-logging example_dns_logging_profile enable-response-logging yes include-query-id yes log-publisher local-db-publisher
+.. |image0| image:: /_static/class2/image2.png
+   :width: 5.30972in
+   :height: 2.02776in
+.. |image1| image:: /_static/class2/image4.png
+   :width: 3.93000in
+   :height: 3.05000in
+.. |image2| image:: /_static/class2/image5.png
+   :width: 2.66667in
+   :height: 1.41319in
+.. |image3| image:: /_static/class2/image6.png
+   :width: 3.23729in
+   :height: 2.35556in
+.. |image4| image:: /_static/class2/image7.png
+   :width: 3.96000in
+   :height: 1.71000in

@@ -1,32 +1,34 @@
-UDP Virtual
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hidden Master
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Navigate to: **Local Traffic  ››  Virtual Servers : Virtual Server List**
+We next need to tell GTM about our Hidden Master that DNS Express will
+slave from.
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/virtual_server/list.jsp?Filter=*
+* In the GUI, navigate to: **DNS > Delivery > Nameservers > Nameserver List: Create**
+* Create offbox-BIND as a Nameserver as shown in the table below.
 
-Create a UDP listener.
+*Keep the defaults if not noted in the table.*
 
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
++---------------+-----------------+
+| **Name**      | Offbox-BIND     |
++===============+=================+
+| **Address**   | 203.0.113.15    |
++---------------+-----------------+
 
-   "Name", "branch01_udp_53_virtual"
-   "Destination", "10.1.70.200:53"
-   "Protocol", "UDP"
-   "Protocol Profile (Client)", "example.com_udp-dns_profile"
-   "DNS Profile", "example.com_dns_profile"
-   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
-   "Address Translation", "unchecked"
+* Click **Finished** to create.
 
-.. image:: /_static/class2/router01_create_virtual_flyout.png
-   :width: 800
-
-.. image:: /_static/class2/router01_create_virtual_udp_properties.png
-   :width: 800
-
-TMSH commands for router01.branch01:
-
-.. admonition:: TMSH
-
-   tmsh create ltm virtual branch01_udp_53_virtual destination 10.1.70.200:domain ip-protocol udp mask 255.255.255.255 profiles add { example.com_dns_profile { } example.com_udp-dns_profile { } } translate-address disabled vlans add { branch01_vlan } vlans-enabled
+.. |image0| image:: /_static/class2/image2.png
+   :width: 5.30972in
+   :height: 2.02776in
+.. |image1| image:: /_static/class2/image4.png
+   :width: 3.93000in
+   :height: 3.05000in
+.. |image2| image:: /_static/class2/image5.png
+   :width: 2.66667in
+   :height: 1.41319in
+.. |image3| image:: /_static/class2/image6.png
+   :width: 3.23729in
+   :height: 2.35556in
+.. |image4| image:: /_static/class2/image7.png
+   :width: 3.96000in
+   :height: 1.71000in
