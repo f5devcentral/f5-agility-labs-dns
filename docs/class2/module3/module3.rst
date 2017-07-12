@@ -1,4 +1,4 @@
-Slave from Hidden Master
+Hidden Master
 =========================
 
 TODO: Include description of what this module accomplishes

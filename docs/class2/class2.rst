@@ -1,4 +1,4 @@
-|bip| |dns|
+Security
 =============================
 
 TODO create a nice overview page here

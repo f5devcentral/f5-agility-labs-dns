@@ -23,12 +23,13 @@ Create a DNS profile as shown in the table below.
 .. image:: /_static/class2/router01_ltm_profile_dns.png
    :width: 800
 
-.. image:: /_static/class2/dns_profile_settings_router01.png
+.. image:: /_static/class2/dns_profile_settings_cache_router01.png
    :width: 800
 
 TMSH commands for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh create ltm profile dns example.com_dns_profile use-local-bind no unhandled-query-action drop log-profile example_dns_logging_profile enable-logging yes avr-dnsstat-sample-rate 1 enable-cache yes cache resolver_cache
+   tmsh create ltm profile dns example.com_dns_profile { app-service none avr-dnsstat-sample-rate 1 cache resolver_cache defaults-from dns enable-cache yes enable-dns-express no enable-dnssec no enable-gtm no enable-logging yes log-profile example_dns_logging_profile unhandled-query-action drop use-local-bind no }
+
 
