@@ -1,49 +1,33 @@
-Forwarders
-----------
+DNS Profile
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this use-case, we will configure conditional forwarders with local
-zone information.
+Navigate to: **Local Traffic  ››  Profiles : Services : DNS**
 
-* Estimated completion time: 5 minutes
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns/list.jsp
 
-Add Forwarder to Existing Cache
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create a DNS profile as shown in the table below.
 
-* In the GUI, navigate to: **DNS > Caches > Cache List**. Click on
-  **validating-resolver** from the previous exercise. Click **Forward Zones**
-  from the top menu.
-* Click **Add** and configure as shown in the figure below and then
-  click **Finished**:
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
 
-|image24|
+   "Name", "example.com_dns_profile"
+   "DNS Cache", "Enabled"
+   "DNS Cache Name", "transparent_cache"
+   "Unhandled Query Action", "Drop"
+   "Use BIND Server on Big-IP", "Disabled"
+   "Logging", "Enabled"
+   "Logging Profile", "example_dns_logging_profile"
+   "AVR statistics Sample Rate", "Enabled, 1/1 queries sampled"
 
-* From your workstation, perform the following recursive queries to your
-  external Listener to test.
+.. image:: /_static/class2/router01_ltm_profile_dns.png
+   :width: 800
 
-.. code-block:: console
+.. image:: /_static/class2/dns_profile_settings_router01.png
+   :width: 800
 
-   dig @10.128.10.54 www.forward.com
-   dig @10.128.10.54 mail.forward.com
-
-* In the SSH shell, type the following tmsh command:
+TMSH commands for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh show ltm dns cache validating-resolver | more
-
-Your output should look similar to below with statistics. Forwarder
-Activity stats are of particular interest in this use-case.
-
-|image25|
-
-* In the GUI, you can find similar data as above by navigating
-  **Statistics > Module Statistics > DNS > Caches**.
-* Select “Statistics Type” of Caches.
-* Select “View” under the Details column for validating-resolver
-
-.. |image24| image:: /_static/class2/image27.png
-   :width: 4.31000in
-   :height: 2.82000in
-.. |image25| image:: /_static/class2/image28.png
-   :width: 5.76000in
-   :height: 3.47000in
+   tmsh create ltm profile dns example.com_dns_profile use-local-bind no unhandled-query-action drop log-profile example_dns_logging_profile enable-logging yes avr-dnsstat-sample-rate 1
