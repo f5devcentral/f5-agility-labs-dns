@@ -1,4 +1,4 @@
-Availability - Class 1
+Class 1 - Availability
 =============================================
 
 * Students will configure F5 DNS servers to support GSLB services on a single device in site1.
