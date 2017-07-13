@@ -1,5 +1,5 @@
 Hidden Master
-=========================
+########################
 
 TODO: Include description of what this module accomplishes
 

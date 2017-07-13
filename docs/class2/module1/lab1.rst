@@ -1,29 +1,25 @@
-Log Profile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Resolver
+##########################################
 
-Configure DNS query and response logging.
+Log into the gateway device router01.brancho1 in the **branch office**
 
-Navigate to **Local Traffic  ››  Profiles : Other : DNS Logging**
+Navigate to **DNS  ››  Caches : Cache List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/list.jsp
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/create.jsp
 
-Create a DNS logging profile as shown in the table below.
+Create a resolver cache
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "Name", "example_dns_logging_profile"
-   "Log Publisher", "sys-db-access-publisher"
-   "Log Responses", "enabled"
-   "Include Query ID", "enabled"
+   "Name", "resolver_cache"
+   "Resolver Type", "Resolver"
 
-.. image:: /_static/class2/dns_cache_transparent_flyout_router01.png
-
-.. image:: /_static/class2/dns_cache_transparent_create_router01.png
+.. image:: /_static/class2/cache_resolver.png
 
 TMSH command for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh create ltm profile dns-logging example_dns_logging_profile enable-response-logging yes include-query-id yes log-publisher local-db-publisher
+   tmsh create ltm dns cache resolver resolver_cache

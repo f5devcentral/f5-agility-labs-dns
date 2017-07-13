@@ -1,11 +1,11 @@
 Zone Runner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==============================
 
-You can create your own RPZ when you do not want to subscribe to an RPZ vendor.
+It is possible to create a custom RPZ zone rather than subscribing to an RPZ vendor.
 
 Navigate to **DNS  ››  Zones : ZoneRunner : Zone List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/zone/list.jsp
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/zone/create.jsp
 
 Click Create button
 
@@ -44,7 +44,7 @@ Create a resource record accoring to the following table:
 
    "View Name", "external"
    "Zone Name", "rpz.example.com"
-   "Name", "*.guns.com.rpz.example.com"
+   "Name", "\*.guns.com.rpz.example.com"
    "TTL", "300"
    "Type", "CNAME"
    "CNAME", "."

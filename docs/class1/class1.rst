@@ -11,7 +11,8 @@ At the end of the lab students will have configured F5 GSLB DNS servers to alter
 
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :numbered:
+   :maxdepth: 2
    :glob:
 
    module*/module*

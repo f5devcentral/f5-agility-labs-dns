@@ -1,50 +1,27 @@
-Logging
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Name Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Log in to https://router01.branch01.example.com/xui/
+Navigate to **DNS  ››  Delivery : Nameservers : Nameserver List**
 
-Navigate to: **System > Logs > Configuration > Log Publishers: Create**
-Create a new DNS Log Publisher as shown in the table below.
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp
 
-*Keep the defaults if not noted in the table.*
+Click Create button
 
-+--------------------+----------------------------------------+
-| **Name**           | dns-local-syslog                       |
-+====================+========================================+
-| **Destinations**   | Move local-syslog to Selected column   |
-+--------------------+----------------------------------------+
+.. image:: /_static/class2/create_nameserver_flyout.png
 
-* Click **Finished** to create.
-* In the GUI, navigate to: **DNS > Delivery > Profiles > Other > DNS Logging: Create**
-* Create a new DNS logging profile as shown in the table below.
+Create a nameserver according to the following table:
 
-*Keep the defaults if not noted in the table.*
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
 
-+------------------------+---------------------------+
-| **Name**               | dns-logging               |
-+========================+===========================+
-| **Log Publisher**      | Select dns-local-syslog   |
-+------------------------+---------------------------+
-| **Log Responses**      | Enabled                   |
-+------------------------+---------------------------+
-| **Include Query ID**   | Enabled                   |
-+------------------------+---------------------------+
+   "Name", "dc01.example.com"
+   "Address", "10.1.70.200"
 
-* Click **Finished** to create.
-* Your new dns-logging profile should now have all options enabled.
+.. image:: /_static/class2/create_nameserver_dc01.png
 
-.. |image0| image:: /_static/class2/image2.png
-   :width: 5.30972in
-   :height: 2.02776in
-.. |image1| image:: /_static/class2/image4.png
-   :width: 3.93000in
-   :height: 3.05000in
-.. |image2| image:: /_static/class2/image5.png
-   :width: 2.66667in
-   :height: 1.41319in
-.. |image3| image:: /_static/class2/image6.png
-   :width: 3.23729in
-   :height: 2.35556in
-.. |image4| image:: /_static/class2/image7.png
-   :width: 3.96000in
-   :height: 1.71000in
+TMSH commands for router01.branch01:
+
+.. admonition:: TMSH
+
+   tmsh create ltm dns nameserver dc01.example.com { address 10.1.70.200 }

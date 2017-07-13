@@ -1,82 +1,33 @@
-Results
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TCP Virtual
+####################################
 
-From the jumpbox open a command prompt, perform several recursive queries to your new listener to test.
+Navigate to: **Local Traffic  ››  Virtual Servers : Virtual Server List**
 
-Repeat some of the same queries multiple times
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/virtual_server/list.jsp?Filter=*
 
-.. code-block:: console
+Create a TCP listener.
 
-   dig www.f5.com
-   dig www.wikipedia.org
-   dig www.ncsu.edu
-   dig www.example.com
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
 
-Viewing Cache Entries
+   "Name", "branch01_tcp_53_virtual"
+   "Destination", "10.1.71.1:53"
+   "Protocol", "TCP"
+   "Protocol Profile (Client)", "example.com_tcp-dns_profile"
+   "DNS Profile", "example.com_dns_profile"
+   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
+   "Address Translation", "unchecked"
 
-Navigate to: **DNS  ››  Caches : Cache List  ››  Properties : resolver_cache** 
+.. image:: /_static/class2/router01_create_virtual_flyout.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/properties.jsp?name=%2FCommon%2Fresolver_cache
+.. image:: /_static/class2/router01_create_virtual_tcp_properties.png
 
-.. image:: /_static/class2/router01_cache_select_statistics.png
-
-Navigate to: **Statistics  ››  Module Statistics : DNS : Caches  ››  Caches**
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats.jsp?name=%2FCommon%2Fresolver_cache&tab=dns_cache_resolver_config
-
-.. image:: /_static/class2/router01_cache_click_view.png
-
-Navigate to: **Statistics  ››  Module Statistics : DNS : Caches  ››  Caches : resolver_cache**
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_detail.jsp?name=/Common/resolver_cache
-
-.. image:: /_static/class2/router01_cache_view_details.png
+TMSH commands for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh show ltm dns cache records rrset cache resolver_cache
+   tmsh create ltm virtual branch01_tcp_53_virtual destination 10.1.71.1:domain ip-protocol tcp mask 255.255.255.255 profiles add { example.com_dns_profile { } example.com_tcp-dns_profile { } } translate-address disabled vlans add { branch01_vlan } vlans-enabled
 
-.. image:: /_static/class2/tmsh_show_ltm_dns_cache_records.png
 
-.. admonition:: TMSH
-
-   tmsh show ltm dns cache resolver
-
-.. image:: /_static/class2/tmsh_show_ltm_dns_cache_resolver.png
-
-View cache entries for a particular domain / owner:
-
-.. admonition:: TMSH
-
-   tmsh show ltm dns cache records rrset cache resolver-cache owner f5.com
-
-View cache entries of a particular RR type:
-
-.. admonition:: TMSH
-
-   tmsh show ltm dns cache records rrset cache resolver-cache type NS
-
-Viewing Cache Statistics:
-
-.. admonition:: TMSH
-
-   tmsh show ltm dns cache resolver resolver-cache
-
-**Deleting Cache Entries**
-
-* Specific cache entries can be deleted via the TMSH console. Entries
-  to be deleted can be filtered by several aspects.
-* In the TMSH shell, go to the DNS prompt and type
-
-.. admonition:: TMSH
-
-   tmsh delete ltm dns cache records rrset cache resolver_cache ?
-
-**Clearing Entire Cache**
-
-Navigate to **Statistics > Module Statistics > DNS > Caches**
-
-Set “Statistics Type” to “Caches”.
-
-Select the cache and click “Clear Cache” to empty the cache.
-
+https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-dns-cache-implementations-11-3-0/2.html

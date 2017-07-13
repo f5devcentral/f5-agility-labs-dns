@@ -29,9 +29,8 @@ Other Groups Classes:
 .. toctree::
    :hidden:
    :maxdepth: 4
-   :numbered:
    :caption: Contents:
    :glob:
 
-   intro*
+   intro/intro*
    class*/class*

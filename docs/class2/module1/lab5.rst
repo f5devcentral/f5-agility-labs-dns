@@ -1,30 +1,25 @@
-UDP Virtual
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TCP Profile
+###################################
 
-Navigate to: **Local Traffic  ››  Virtual Servers : Virtual Server List**
+Navigate to: **Local Traffic  ››  Profiles : Protocol : TCP**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/virtual_server/list.jsp?Filter=*
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/tcp/list.jsp
 
-Create a UDP listener.
-
+Create a TCP profile as shown in the following table.
+ 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "Name", "branch01_udp_53_virtual"
-   "Destination", "10.1.71.1:53"
-   "Protocol", "UDP"
-   "Protocol Profile (Client)", "example.com_udp-dns_profile"
-   "DNS Profile", "example.com_dns_profile"
-   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
-   "Address Translation", "Snat Automap"
+   "Name", "example.com_tcp-dns_profile"
+   "Parent Profile", "udp_gtm_dns"
 
-.. image:: /_static/class2/router01_create_virtual_flyout.png
+.. image:: /_static/class2/router01_create_tcp_profile.png
+   :width: 800
 
-.. image:: /_static/class2/router01_create_virtual_udp_properties.png
-
-TMSH commands for router01.branch01:
+.. image:: /_static/class2/router01_create_tcp_profile_properties.png
+   :width: 800
 
 .. admonition:: TMSH
 
-   tmsh create ltm virtual branch01_udp_53_virtual destination 10.1.71.1:domain ip-protocol udp mask 255.255.255.255 profiles add { example.com_dns_profile { } example.com_udp-dns_profile { } } source 0.0.0.0/0 source-address-translation { type automap } translate-address disabled translate-port enabled vlans add { branch01_vlan } vlans-enabled
+   tmsh create ltm profile tcp example.com_tcp-dns_profile defaults-from f5-tcp-lan

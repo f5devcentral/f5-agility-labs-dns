@@ -3,7 +3,7 @@ Settings
 
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    lab*
@@ -32,4 +32,5 @@ https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/settings/gslb/proper
    tmsh modify gtm global-settings general synchronization yes synchronization-group-name EXAMPLE_group synchronize-zone-files yes
 
 https://support.f5.com/csp/article/K13734
+
 https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-implementations-12-0-0/4.html
