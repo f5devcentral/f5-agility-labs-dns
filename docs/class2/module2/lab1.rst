@@ -1,54 +1,50 @@
-Zone Runner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Logging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can create your own RPZ when you do not want to subscribe to an RPZ vendor.
+Log in to https://router01.branch01.example.com/xui/
 
-Navigate to **DNS  ››  Zones : ZoneRunner : Zone List**
+Navigate to: **System > Logs > Configuration > Log Publishers: Create**
+Create a new DNS Log Publisher as shown in the table below.
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/zone/list.jsp
+*Keep the defaults if not noted in the table.*
 
-Click Create button
++--------------------+----------------------------------------+
+| **Name**           | dns-local-syslog                       |
++====================+========================================+
+| **Destinations**   | Move local-syslog to Selected column   |
++--------------------+----------------------------------------+
 
-.. image:: /_static/class2/zonerunner_create_zone.png
+* Click **Finished** to create.
+* In the GUI, navigate to: **DNS > Delivery > Profiles > Other > DNS Logging: Create**
+* Create a new DNS logging profile as shown in the table below.
 
-Create a zone accordign to the following table:
+*Keep the defaults if not noted in the table.*
 
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
++------------------------+---------------------------+
+| **Name**               | dns-logging               |
++========================+===========================+
+| **Log Publisher**      | Select dns-local-syslog   |
++------------------------+---------------------------+
+| **Log Responses**      | Enabled                   |
++------------------------+---------------------------+
+| **Include Query ID**   | Enabled                   |
++------------------------+---------------------------+
 
-   "View Name", "external"
-   "Zone Name", "rpz.example.com"
-   "Zone Type", "Master"
-   "Zone File Name", "db.external.rpz.example.com"
-   "Options", "also-notify { ::1 port 5353; };"
-   "TTL", "300"
-   "Master Server", "router01.branch01.example.com"
-   "Email Contact", "hostmaster.example.com"
+* Click **Finished** to create.
+* Your new dns-logging profile should now have all options enabled.
 
-.. image:: /_static/class2/zonerunner_create_zone_properties.png
-
-Navigate to: **DNS  ››  Zones : ZoneRunner : Resource Record List**
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/record/create.jsp
-
-Click the Create button
-
-.. image:: /_static/class2/zonerunner_create_resource_record.png
-
-Create a resource record accoring to the following table:
-
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
-
-   "View Name", "external"
-   "Zone Name", "rpz.example.com"
-   "Name", "*.guns.com.rpz.example.com"
-   "TTL", "300"
-   "Type", "CNAME"
-   "CNAME", "."
-
-.. image:: /_static/class2/zonerunner_create_resource_record_properties.png
-
-.. image:: /_static/class2/zonerunner_list_resource_records.png
+.. |image0| image:: /_static/class2/image2.png
+   :width: 5.30972in
+   :height: 2.02776in
+.. |image1| image:: /_static/class2/image4.png
+   :width: 3.93000in
+   :height: 3.05000in
+.. |image2| image:: /_static/class2/image5.png
+   :width: 2.66667in
+   :height: 1.41319in
+.. |image3| image:: /_static/class2/image6.png
+   :width: 3.23729in
+   :height: 2.35556in
+.. |image4| image:: /_static/class2/image7.png
+   :width: 3.96000in
+   :height: 1.71000in

@@ -1,13 +1,11 @@
-RPZ
--------------------
+Hidden Master
+=========================
 
-TODO: create the RPZ lab
-
-https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0/8.html
+TODO: Include description of what this module accomplishes
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    lab*
