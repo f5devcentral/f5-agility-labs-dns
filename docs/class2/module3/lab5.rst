@@ -21,7 +21,7 @@ Create a local zone entry according to the following table:
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "Name", "example.com"
+   "Name", "sorry.example.com"
    "Type", "Static"
    "Records", "sorry.example.com. IN A 10.1.71.21"
 
@@ -31,5 +31,5 @@ TMSH commands for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh modify ltm dns cache resolver resolver_cache local-zones { { name example.com records add { "sorry.example.com. IN A 10.1.71.21" } type static } }
+   tmsh modify ltm dns cache resolver resolver_cache local-zones { { name sorry.example.com records add { "sorry.example.com. IN A 10.1.71.21" } type static } }
 

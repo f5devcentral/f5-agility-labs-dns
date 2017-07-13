@@ -23,7 +23,7 @@ Create a local zone entry according to the following table:
 
    "Zone", "rpz.example.com"
    "Action", "Walled Garden"
-   "Walled Garden", "example.com"
+   "Walled Garden", "sorry.example.com"
 
 .. image:: /_static/class2/cache_enable_rpz_details.png
 
@@ -31,5 +31,5 @@ TMSH commands for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh modify ltm dns cache resolver resolver_cache response-policy-zones add { rpz.example.com { action walled-garden walled-garden example.com } }
+   tmsh modify ltm dns cache resolver resolver_cache response-policy-zones add { rpz.example.com { action walled-garden walled-garden sorry.example.com } }
 
