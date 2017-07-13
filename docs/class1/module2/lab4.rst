@@ -9,7 +9,7 @@ https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/list.jsp
 
 https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/list.jsp
 
-.. note:: It is required to complete the following task on both gtm1.site and gtm1.site2
+.. note:: **It is required to complete the following task on both gtm1.site1 and gtm1.site2**
 
 Create a new TCP profile as shown in the following table.
 

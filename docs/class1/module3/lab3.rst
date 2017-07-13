@@ -9,9 +9,8 @@ Run the following command:
 
    gtm_add 203.0.113.7
 
-* When prompted use the password: "default"
+   When prompted use the password: "default"
 
-Select "y" to allow the bigip-ip to join the mesh.
+   Select "y" to allow the bigip-ip to join the mesh.
 
 .. image:: /_static/class1/putty_gtm1.site2.png
-   :width: 800

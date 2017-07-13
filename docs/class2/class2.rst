@@ -1,4 +1,4 @@
-Security
+Security - Class 2
 =============================
 
 TODO create a nice overview page here

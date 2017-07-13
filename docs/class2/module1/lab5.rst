@@ -17,13 +17,11 @@ Create a UDP listener.
    "Protocol Profile (Client)", "example.com_udp-dns_profile"
    "DNS Profile", "example.com_dns_profile"
    "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
-   "Address Translation", "unchecked"
+   "Address Translation", "Snat Automap"
 
 .. image:: /_static/class2/router01_create_virtual_flyout.png
-   :width: 800
 
 .. image:: /_static/class2/router01_create_virtual_udp_properties.png
-   :width: 800
 
 TMSH commands for router01.branch01:
 

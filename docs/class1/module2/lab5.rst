@@ -7,7 +7,7 @@ https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/listener/list.jsp
 
 https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/listener/list.jsp
 
-.. note:: It is required to complete the following task on both gtm1.site1 and gtm1.site2
+.. note:: **It is required to complete the following task on both gtm1.site1 and gtm1.site2**
 
 Create a UDP listener.
 
@@ -38,6 +38,5 @@ gtm1.site2 TMSH command:
 
    tmsh create gtm listener isp2_site2_ns2.example.com_udp_53_virtual address 198.51.100.40 ip-protocol udp mask 255.255.255.255 port 53 profiles add { example.com_dns_profile example.com_udp-dns_profile }
 
-.. rubric:: References
 
-.. [#f1] https://support.f5.com/csp/article/K14923
+https://support.f5.com/csp/article/K14923

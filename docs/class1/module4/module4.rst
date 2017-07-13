@@ -17,10 +17,8 @@ Create a GTM pool of LTM Virtuals according to the following table:
    "member", "isp2_site2_www.example.com_tcp_https_virtual"
 
 .. image:: /_static/class1/gtm_pool_list.png
-   :width: 800
 
 .. image:: /_static/class1/create_gtm_pool.png
-   :width: 800
 
 TMSH command to run on only gtm1.site1:
 

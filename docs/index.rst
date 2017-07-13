@@ -5,6 +5,10 @@ Welcome to the |classbold| lab at F5 Agility |year|
 
 |repoinfo|
 
+Content in this lab is explained in detail here:
+
+https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0.html
+
 This lab is based off:
 
 https://github.com/0xHiteshPatel/f5-agility-lab-template

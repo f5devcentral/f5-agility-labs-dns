@@ -31,6 +31,5 @@ https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/settings/gslb/proper
 
    tmsh modify gtm global-settings general synchronization yes synchronization-group-name EXAMPLE_group synchronize-zone-files yes
 
-.. rubric:: References
-.. [#f1] https://support.f5.com/csp/article/K13734
-.. [#f2] https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-implementations-12-0-0/4.html
+https://support.f5.com/csp/article/K13734
+https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-implementations-12-0-0/4.html
