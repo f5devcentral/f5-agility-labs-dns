@@ -1,21 +1,14 @@
 CNAME
 =================================
 
-Delete the static A record for www
+#. Make sure "Forward Lookup Zones" and "EXAMPLE.COM" is expanded. Right click on "www", and select delete.
 
-.. image:: /_static/class1/dc01_new_delegation_delete_www.png
-   :width: 800
+   .. image:: /_static/class1/dc01_new_delegation_delete_www.png
 
-Create a new CNAME record
+#. Right click on "EXAMPLE.COM", and select "New Alias (CNAME)"
 
-.. image:: /_static/class1/dc01_new_delegation_create_cname.png
-   :width: 800
+   .. image:: /_static/class1/dc01_new_delegation_create_cname.png
 
-.. image:: /_static/class1/dc01_new_delegation_create_cname_finish.png
-   :width: 800
+   Add "www - www.gslb.example.com"
 
-.. image:: /_static/class1/dc01_new_delegation_create_cname_results.png
-   :width: 800
-
-.. image:: /_static/class1/dc01_new_delegation_ns1ns2_create_results.png
-   :width: 800
+   .. image:: /_static/class1/dc01_new_delegation_create_cname_finish.png

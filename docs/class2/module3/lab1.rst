@@ -5,8 +5,6 @@ Navigate to **DNS  ››  Zones : ZoneRunner : Zone List**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/zone/create.jsp
 
-Click Create button
-
 .. image:: /_static/class2/zonerunner_create_zone.png
 
 Create a zone according to the following table:
@@ -29,8 +27,6 @@ Create a zone according to the following table:
 Navigate to: **DNS  ››  Zones : ZoneRunner : Resource Record List**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/record/create.jsp
-
-Click the Create button
 
 .. image:: /_static/class2/zonerunner_create_resource_record.png
 

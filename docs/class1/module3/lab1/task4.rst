@@ -1,11 +1,13 @@
 site2_ha-pair
 ###############################################
 
+LTM devices need to be defined. Create a server object for the bigip1.site2 and bigip2.site2 HA pair.
+
 Navigate to: **DNS > GSLB > Servers > Server List: Create**
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
 
-Create a Server Object as defined in the table and diagram below.
+Create a Server Object as defined in the table below:
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -20,7 +22,6 @@ Create a Server Object as defined in the table and diagram below.
    "Link Discovery", "Enabled"
 
 .. image:: /_static/class1/site2_ha-pair.png
-   :width: 800
 
 TMSH command for only gtm1.site1:
 

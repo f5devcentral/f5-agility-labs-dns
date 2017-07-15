@@ -1,6 +1,8 @@
 TCP IP Address
 ############################################
 
+A TCP listener will receive and process DNS queries.
+
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/listener/list.jsp

@@ -3,9 +3,9 @@ TCP Virtual
 
 Navigate to: **Local Traffic  ››  Virtual Servers : Virtual Server List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/virtual_server/list.jsp?Filter=*
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/virtual_server/create.jsp
 
-Create a TCP listener.
+Create a TCP listener according to the table below:
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -28,6 +28,5 @@ TMSH commands for router01.branch01:
 .. admonition:: TMSH
 
    tmsh create ltm virtual branch01_tcp_53_virtual destination 10.1.70.200:domain ip-protocol tcp mask 255.255.255.255 profiles add { example.com_dns_profile { } example.com_tcp-dns_profile { } } translate-address disabled vlans add { branch01_vlan } vlans-enabled
-
 
 https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-dns-cache-implementations-11-3-0/2.html

@@ -1,9 +1,11 @@
 Pools
 ===========================
 
+LTM virtual server objects are grouped together into GTM pools.
+
 Navigate to: **DNS  ››  GSLB : Pools : Pool List**
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/pool/list.jsp?
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/pool/create.jsp
 
 Create a GTM pool of LTM Virtuals according to the following table:
 

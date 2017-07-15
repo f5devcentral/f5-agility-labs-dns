@@ -1,6 +1,8 @@
 UDP IP Address
 ############################################
 
+A UDP listener will receive and proess DNS queries.
+
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/listener/list.jsp

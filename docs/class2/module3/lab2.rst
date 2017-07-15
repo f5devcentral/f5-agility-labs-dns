@@ -5,8 +5,6 @@ Navigate to **DNS  ››  Delivery : Nameservers : Nameserver List**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp
 
-Click Create button
-
 .. image:: /_static/class2/create_nameserver_flyout.png
 
 Create a nameserver according to the following table:

@@ -5,11 +5,9 @@ Navigate to: **DNS  ››  Caches : Cache List**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/list.jsp
 
-Click "resolver_cache"
-
 .. image:: /_static/class2/select_resolver_cache.png
 
-Click "Local Zones", and then click "Add"
+Select resolver_cahce, click "Local Zones", and click "Add"
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/local_zone/list.jsp?name=%2FCommon%2Fresolver_cache&tab=dns_cache_config
 

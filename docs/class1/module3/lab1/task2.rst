@@ -1,6 +1,8 @@
 gtm1.site2
 ###############################################
 
+All GTM devices need to be defined. Create a server object for gtm1.site2
+
 Navigate to: **DNS  ››  GSLB : Servers : Server List**
 
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp

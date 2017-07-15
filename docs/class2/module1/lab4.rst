@@ -3,7 +3,7 @@ UDP Profile
 
 Navigate to: **Local Traffic  ››  Profiles : Protocol : UDP**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/udp/list.jsp?
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/udp/create.jsp
 
 Create a UDP profile as shown in the following table.
  

@@ -9,7 +9,7 @@ Click "resolver_cache"
 
 .. image:: /_static/class2/select_resolver_cache.png
 
-Click "Response Policy Zones", and then click "Add"
+Select resolver_cache, click "Response Policy Zones", and then click "Add"
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/rpz/list.jsp?name=%2FCommon%2Fresolver_cache&tab=dns_cache_config
 

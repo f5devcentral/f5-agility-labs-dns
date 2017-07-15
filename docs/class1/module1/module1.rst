@@ -8,21 +8,22 @@ Settings
 
    lab*
 
-Configure the global settings for GSLB according to the following table:
 
-Log into gtm1.site1 and complete the following task in the UI or cli
+A site specific sync group name will be created, and synchronization will be enabled.
 
 Navigate to: **DNS  ››  Settings : GSLB : General**
 
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/settings/gslb/properties_general.jsp
 
-.. csv-table::
-   :header: "Setting", "Value", "Description"
-   :widths: 15, 15, 30
+Configure the global settings for GSLB according to the following table:
 
-   "Synchronize", "checked", "Not on by default"
-   "Group Name", "EXAMPLE_group", "Org specific"
-   "Synchronize DNS Zone Files", "checked", "BIND zone file updates"
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
+
+   "Synchronize", "checked"
+   "Group Name", "EXAMPLE_group"
+   "Synchronize DNS Zone Files", "checked"
 
 
 .. figure:: /_static/class1/gtm_global_settings.png

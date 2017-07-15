@@ -3,7 +3,7 @@ TCP Profile
 
 Navigate to: **Local Traffic  ››  Profiles : Protocol : TCP**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/tcp/list.jsp
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/tcp/create.jsp
 
 Create a TCP profile as shown in the following table.
  
@@ -15,10 +15,8 @@ Create a TCP profile as shown in the following table.
    "Parent Profile", "udp_gtm_dns"
 
 .. image:: /_static/class2/router01_create_tcp_profile.png
-   :width: 800
 
 .. image:: /_static/class2/router01_create_tcp_profile_properties.png
-   :width: 800
 
 .. admonition:: TMSH
 

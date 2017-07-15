@@ -16,6 +16,7 @@ Orientation
    **Start** –> **Remote Desktop Connection** –> **10.1.70.200**.
 
    .. figure:: /_static/start-rdp-dco1.png
+
    .. figure:: /_static/logon_screen.png
 
 #. Click on **Server Manager**, and in the top right corner choose **Tools** and then **DNS**.

@@ -1,11 +1,11 @@
-Log Profiles
+Log Profile
 ##################################################
 
 Configure DNS query and response logging.
 
 Navigate to **Local Traffic  ››  Profiles : Other : DNS Logging**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/list.jsp
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/create.jsp
 
 Create a DNS logging profile as shown in the table below.
 

@@ -7,7 +7,7 @@ Navigate to: **Local Traffic  ››  Profiles : Services : DNS**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns/properties.jsp?name=/Common/example.com_dns_profile
 
-Modify the example.com_dns_profile DNS profile as shown in the table below.
+Select and modify the example.com_dns_profile DNS profile as shown in the table below.
 
 .. csv-table::
    :header: "Setting", "Value"

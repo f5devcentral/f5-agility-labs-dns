@@ -3,9 +3,9 @@ UDP Virtual
 
 Navigate to: **Local Traffic  ››  Virtual Servers : Virtual Server List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/virtual_server/list.jsp?Filter=*
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/virtual_server/create.jsp
 
-Create a UDP listener.
+Create a UDP listener according to the table below:
 
 .. csv-table::
    :header: "Setting", "Value"
