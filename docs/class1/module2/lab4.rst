@@ -5,9 +5,9 @@ A TCP profile is associated with a listener.
 
 Navigate to: **DNS  ››  Delivery : Profiles : Protocol : TCP**
 
-https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/list.jsp
+https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/create.jsp
 
-https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/list.jsp
+https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/create.jsp
 
 .. note:: **It is required to complete the following task on both gtm1.site1 and gtm1.site2**
 

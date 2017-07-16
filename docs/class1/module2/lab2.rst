@@ -5,9 +5,9 @@ A DNS profile controls the way a listener processes a query.
 
 Navigate to: **DNS > Delivery > Profiles > DNS: Create**
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/list.jsp
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/create.jsp
 
-https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/list.jsp
+https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/create.jsp
 
 .. note::  **It is required to complete the following task on both gtm1.site1 and gtm1.site2**
 

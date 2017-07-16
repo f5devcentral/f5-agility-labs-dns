@@ -5,9 +5,9 @@ A TCP listener will receive and process DNS queries.
 
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/listener/list.jsp
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/listener/create.jsp
 
-https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/listener/list.jsp
+https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/listener/create.jsp
 
 .. note:: **It is required to complete the following task on both gtm1.site and gtm1.site2**
 
