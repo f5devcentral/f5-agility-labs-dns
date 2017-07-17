@@ -9,7 +9,7 @@ Results
 
    https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/stats/wideip/stats_detail.jsp?name=%2FCommon%2Fwww.gslb.example.com&type=1&identity=www.gslb.example.com+%3A+A
 
-   .. image:: /_static/class1/gtm1_site1_wideip_statistics_flyout
+   .. image:: /_static/class1/gtm1_site1_wideip_statistics_flyout.png
 
    https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/stats/wideip/stats_detail.jsp?name=%2FCommon%2Fwww.gslb.example.com&type=1&identity=www.gslb.example.com+%3A+A
 
@@ -17,7 +17,7 @@ Results
 
    .. admonition:: TMSH
 
-   tmsh show gtm wideip a www.gslb.example.com
+      tmsh show gtm wideip a www.gslb.example.com
 
 #. Observe WIDEIP statistics on gtm1.site2: **Statistics  ››  Module Statistics : DNS : GSLB  ››  Wide IPs : www.gslb.example.com : A**
 
@@ -33,7 +33,7 @@ Results
 
    .. admonition:: TMSH
    
-   tmsh modify net interface all disabled
+      tmsh modify net interface all disabled
 
 #. Refresh statistics on gtm1.site1 and make sure DNS requests are still resolving.
 
@@ -44,9 +44,9 @@ Results
 
    TMSH command to run on only gtm1.site2:
 
-.. admonition:: TMSH
+   .. admonition:: TMSH
    
-   tmsh modify net interface all enabled
+      tmsh modify net interface all enabled
 
 #. Navigate to **Statistics  ››  Module Statistics : DNS : GSLB  ››  Pools : www.example.com_pool : A**
 
