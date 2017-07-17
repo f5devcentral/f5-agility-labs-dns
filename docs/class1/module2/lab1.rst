@@ -5,9 +5,9 @@ Configure DNS query and response logging.
 
 Navigate to **DNS > Delivery > Profiles > Other > DNS Logging: Create**
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/dns_log/list.jsp
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/dns_log/create.jsp
 
-https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/dns_log/list.jsp
+https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/dns_log/create.jsp
 
 .. note::  **It is required to complete the following task on both gtm1.site and gtm1.site2**
 
