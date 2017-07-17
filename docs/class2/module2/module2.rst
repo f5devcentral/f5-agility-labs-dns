@@ -1,13 +1,13 @@
-Hidden Master
-########################
+Listeners
+############################################
 
-TODO: Include description of what this module accomplishes
+A listener object is an spcialized virtual server that is configured to respond to DNS queries.
 
-https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/dns-services-implementations-11-6-0/2.html#unique_1658664851
+We will be creating both TCP and UDP based listeners.
 
 .. toctree::
+   :maxdepth: 2
    :hidden:
-   :maxdepth: 1
    :glob:
 
    lab*

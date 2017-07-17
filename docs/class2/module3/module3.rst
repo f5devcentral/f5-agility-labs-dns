@@ -1,13 +1,13 @@
-RPZ
-######################
+Hidden Master
+########################
 
-TODO: Put some nice pictures here and some interesting jingo
+TODO: Include description of what this module accomplishes
 
-https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0/8.html
+https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/dns-services-implementations-11-6-0/2.html#unique_1658664851
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    lab*

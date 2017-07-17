@@ -1,9 +1,5 @@
-Cache
-#######################################
-
-TODO: make a nice fancy thing here
-
-https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0/7.html#guid-5c2dd76c-6e50-46e5-b131-5413f59139ea
+Validating Resolver
+##########################################
 
 .. toctree::
    :hidden:
@@ -11,3 +7,32 @@ https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-se
    :glob:
 
    lab*
+
+Configure a validating resolver cache on the BIG-IP® system to recursively query public DNS servers, validate the identity of the DNS server sending the responses, and then cache the responses.
+
+Log into the gateway device router01.brancho1 in the **branch office**
+
+Navigate to **DNS  ››  Caches : Cache List**
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/create.jsp
+
+.. image:: /_static/class2/cache_list_flyout.png
+
+Create a validating resolver cache according to the table below:
+
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
+
+   "Name", "validating-resolver_cache"
+   "Resolver Type", "Validating Resolver"
+
+.. image:: /_static/class2/cache_validating-resolver.png
+
+TMSH command for router01.branch01:
+
+.. admonition:: TMSH
+
+   tmsh create ltm dns cache validating-resolver validating-resolver_cache
+
+https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0/7.html#guid-d4548549-b4e2-4dae-9ada-3ea00eb84c1f
