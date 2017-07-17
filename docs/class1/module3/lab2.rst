@@ -7,11 +7,12 @@ Lanch Putty and login to gtm1.site1.example.com
 
 Run the following command:
 
+When prompted for a password use "default". You will be prompted to enter the password "default" 5 times.
+
 .. admonition:: TMSH
 
    bigip_add
 
-When prompted for a password use "default"
 
 .. image:: /_static/class1/putty_gtm1.site1.png
 

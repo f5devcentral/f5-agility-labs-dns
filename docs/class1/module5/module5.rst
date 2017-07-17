@@ -27,4 +27,4 @@ TMSH command to run on only gtm1.site1:
 
 .. admonition:: TMSH
 
-   tmsh create gtm wideip a www.example.com { pools add { www.example.com_pool { order 0 } } }
+   tmsh create gtm wideip a www.gslb.example.com { pools add { www.example.com_pool { order 0 } } }

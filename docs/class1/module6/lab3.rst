@@ -9,6 +9,6 @@ CNAME
 
    .. image:: /_static/class1/dc01_new_delegation_create_cname.png
 
-   Add "www - www.gslb.example.com"
+#. Add "www - www.gslb.example.com"
 
    .. image:: /_static/class1/dc01_new_delegation_create_cname_finish.png

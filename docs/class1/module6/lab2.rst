@@ -5,11 +5,13 @@ Sub Domain
 
    .. image:: /_static/class1/dc01_new_delegation.png
 
+#. Create the "gslb" subdomain.
+
+   .. image:: /_static/class1/dc01_new_delegation_create_gslb.png
+
 #. Step through the Delegation Wizard. Add "ns1.example.com - 203.0.113.8"
 
    .. image:: /_static/class1/dc01_new_delegation_ns1ns2.png
-
-#. **TODO - Mising a screenshot here regarding the dns subdomain**
 
 #. Also add "ns2.example.com - 198.51.100.40"
 
@@ -19,3 +21,6 @@ Sub Domain
 
    .. image:: /_static/class1/dc01_new_delegation_ns1ns2_create_finish.png
 
+#. Click "Finish"
+
+   .. image:: /_static/class1/dc01_new_delegation_create_gslb_finish.png
