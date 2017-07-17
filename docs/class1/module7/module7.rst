@@ -11,8 +11,6 @@ Results
 
    .. image:: /_static/class1/gtm1_site1_wideip_statistics_flyout.png
 
-   https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/stats/wideip/stats_detail.jsp?name=%2FCommon%2Fwww.gslb.example.com&type=1&identity=www.gslb.example.com+%3A+A
-
    .. image:: /_static/class1/gtm1_site1_wideip_statistics_detail.png
 
    .. admonition:: TMSH
@@ -48,9 +46,19 @@ Results
    
       tmsh modify net interface all enabled
 
-#. Navigate to **Statistics  ››  Module Statistics : DNS : GSLB  ››  Pools : www.example.com_pool : A**
+#. Observe pool statistics on gtm1.site1: **Statistics  ››  Module Statistics : DNS : GSLB  ››  Pools : www.example.com_pool : A**
 
    https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/stats/pool/stats_detail.jsp?name=%2FCommon%2Fwww.example.com_pool&pool_type=1&identity=www.example.com_pool+%3A+A
 
+   .. image:: /_static/class1/results_pool_statistics.png
 
-TODO: add more results
+   .. admonition:: TMSH
+
+      show gtm pool a www.example.com_pool
+
+#. Using Putty, ssh into gtm1.site1 and run the following command to watch logs:
+
+   .. admonition:: TMSH
+
+      tail -f /var/log/ltm 
+
