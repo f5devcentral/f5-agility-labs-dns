@@ -1,5 +1,8 @@
-DNSSEC
-##########################
+Results
+=================================
 
-https://devcentral.f5.com/articles/v101-configuring-gtms-dns-security-extensions
+#. From the Windows command prompt type "dig www.example.com"
 
+   .. image:: /_static/class1/dc01_new_delegation_create_cname_results.png
+
+TODO: add more results
