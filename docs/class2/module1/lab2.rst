@@ -28,4 +28,4 @@ Create a pool according to the following table:
 
 .. admonition:: TMSH
 
-   tmsh create ltm pool branch01_dns_pool members add { dc01.branch01.example.com_node:53 { address 10.1.70.200 }  dc02.branch01.example.com_node:53 { address 10.1.70.210 } }
+   tmsh create ltm pool branch01_dns_pool members add { dc01.branch01.example.com_node:53 { address 10.1.70.200 }  dc02.branch01.example.com_node:53 { address 10.1.70.210 } } monitor example.com_dns_monitor
