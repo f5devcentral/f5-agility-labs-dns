@@ -1,4 +1,4 @@
-DNSSEC keys configuration
+DNSSEC keys
 #####################################
 
 Navigate to: **DNS  ››  Delivery : Keys : DNSSEC Key List**
