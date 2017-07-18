@@ -1,13 +1,23 @@
-Results
-#####################################
+TCP Profile
+###################################
 
-From the Windows CMD prompt run: "dig www.example.com"
+Navigate to: **Local Traffic  ››  Profiles : Protocol : TCP**
 
-.. image:: /_static/class2/cmd_dig_www.png
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/tcp/create.jsp
 
-From the CLI on the router01.branch01 BIGIP run
+Create a TCP profile as shown in the following table.
+ 
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
 
-dnsxdump
+   "Name", "example.com_tcp-dns_profile"
+   "Parent Profile", "udp_gtm_dns"
 
-TODO: add more results
+.. image:: /_static/class2/router01_create_tcp_profile.png
 
+.. image:: /_static/class2/router01_create_tcp_profile_properties.png
+
+.. admonition:: TMSH
+
+   tmsh create ltm profile tcp example.com_tcp-dns_profile defaults-from f5-tcp-lan

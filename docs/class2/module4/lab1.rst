@@ -1,48 +1,25 @@
-Zone Runner
-==============================
+Name Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Navigate to **DNS  ››  Zones : ZoneRunner : Zone List**
+Navigate to **DNS  ››  Delivery : Nameservers : Nameserver List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/zone/create.jsp
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp
 
-.. image:: /_static/class2/zonerunner_create_zone.png
+.. image:: /_static/class2/create_nameserver_flyout.png
 
-Create a zone according to the following table:
-
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
-
-   "View Name", "external"
-   "Zone Name", "rpz.example.com"
-   "Zone Type", "Master"
-   "Zone File Name", "db.external.rpz.example.com"
-   "Options", "also-notify { ::1 port 5353; };"
-   "TTL", "300"
-   "Master Server", "router01.branch01.example.com"
-   "Email Contact", "hostmaster.example.com"
-
-.. image:: /_static/class2/zonerunner_create_zone_properties.png
-
-Navigate to: **DNS  ››  Zones : ZoneRunner : Resource Record List**
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/record/create.jsp
-
-.. image:: /_static/class2/zonerunner_create_resource_record.png
-
-Create a resource record according to the following table:
+Create a nameserver according to the following table:
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "View Name", "external"
-   "Zone Name", "rpz.example.com"
-   "Name", "\*.guns.com.rpz.example.com"
-   "TTL", "300"
-   "Type", "CNAME"
-   "CNAME", "."
+   "Name", "dc01.example.com"
+   "Address", "10.1.70.200"
 
-.. image:: /_static/class2/zonerunner_create_resource_record_properties.png
+.. image:: /_static/class2/create_nameserver_dc01.png
 
-.. image:: /_static/class2/zonerunner_list_resource_records.png
+TMSH commands for router01.branch01:
+
+.. admonition:: TMSH
+
+   tmsh create ltm dns nameserver dc01.example.com { address 10.1.70.200 }

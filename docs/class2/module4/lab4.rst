@@ -1,27 +1,13 @@
-DNS Profile
+Results
 #####################################
 
-**This step may already be complete from the Hidden Master lab**
+From the Windows CMD prompt run: "dig www.example.com"
 
-Navigate to: **Local Traffic  ››  Profiles : Services : DNS**
+.. image:: /_static/class2/cmd_dig_www.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns/properties.jsp?name=/Common/example.com_dns_profile
+From the CLI on the router01.branch01 BIGIP run
 
-Select and modify the example.com_dns_profile DNS profile as shown in the table below.
+dnsxdump
 
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
-
-   "DNS Express", "unchecked"
-
-.. image:: /_static/class2/router01_ltm_profile_dns.png
-
-.. image:: /_static/class2/modify_dns_profile_enable_dnsx.png
-
-TMSH commands for router01.branch01:
-
-.. admonition:: TMSH
-
-   tmsh modify ltm profile dns example.com_dns_profile enable-dns-express default-value
+TODO: add more results
 

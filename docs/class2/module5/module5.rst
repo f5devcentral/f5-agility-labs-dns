@@ -1,7 +1,9 @@
-iRules
-#######################
+RPZ
+######################
 
-TODO: create the URL and IPI lab
+TODO: Put some nice pictures here and some interesting jingo
+
+https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0/8.html
 
 .. toctree::
    :hidden:
