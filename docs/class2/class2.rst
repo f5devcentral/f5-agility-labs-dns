@@ -1,13 +1,17 @@
 Class 2 - Security
 =============================
 
-TODO create a nice overview page here
+The lab is contained in a remote location where F5 BIG-IP is the default gateway for internal corporate networks.
 
-TODO: change the resolver to a validating resolver
+The F5 is pre-configured as a firewall device sitting on the ISP vlans and internal vlans.
 
-https://www.youtube.com/watch?v=opUE7vSvZE8
+Students will migrate the existing DNS topology where two Active Directory servers are handling local DNS.
 
-https://www.youtube.com/watch?v=MrtsKTC3KDM
+The F5 will intercept DNS queries which would normally be routed directely to the Domain Controller IP.
+
+The BIG-IP will intercept all DNS requests and perform DNS security.
+
+Students will learn how to implement the following concepts and learn how to migrate to a secure DNS infrastructure.
 
 .. toctree::
    :hidden:
@@ -16,3 +20,6 @@ https://www.youtube.com/watch?v=MrtsKTC3KDM
    :glob:
 
    module*/module*
+
+.. image:: /_static/class2/class2_overview.png
+

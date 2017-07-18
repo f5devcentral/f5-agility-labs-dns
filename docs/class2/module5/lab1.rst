@@ -38,7 +38,7 @@ Create a resource record according to the following table:
 
    "View Name", "external"
    "Zone Name", "rpz.example.com"
-   "Name", "\*.guns.com.rpz.example.com"
+   "Name", "\*.guns.com.rpz.example.com."
    "TTL", "300"
    "Type", "CNAME"
    "CNAME", "."
