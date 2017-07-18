@@ -1,11 +1,6 @@
-iRules
-#######################
+Topology Views
+######################################
 
-TODO: create the URL and IPI lab
+F5's sophisticated implementation of topology may be used to enhance the concept of "Views"
 
-.. toctree::
-   :hidden:
-   :maxdepth: 2
-   :glob:
 
-   lab*
