@@ -9,6 +9,8 @@ Class 1 - Availability
 
 At the end of the lab students will have configured F5 GSLB DNS servers to alternately resolve www.example.com to 203.0.113.9 and 198.51.100.41.
 
+.. image:: /_static/class1/class1_availability.png
+
 .. toctree::
    :hidden:
    :numbered:

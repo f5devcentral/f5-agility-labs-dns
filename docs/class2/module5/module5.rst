@@ -1,7 +1,7 @@
 iRules
 #######################
 
-TODO: create the RPZ lab
+TODO: create the URL and IPI lab
 
 .. toctree::
    :hidden:

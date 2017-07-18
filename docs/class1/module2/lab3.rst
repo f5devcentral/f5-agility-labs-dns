@@ -20,7 +20,7 @@ Create a new UDP profile as shown in the following table. Retain the defaults if
    "Name", "example.com_udp-dns_profile"
    "Parent Profile", "udp_gtm_dns"
 
-.. figure:: /_static/class1/udp-dns_profile.png
+.. images:: /_static/class1/udp-dns_profile.png
 
 TMSH command for both gtm1.site1 and gtm1.site2:
 
