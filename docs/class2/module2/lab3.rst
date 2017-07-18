@@ -15,10 +15,8 @@ Create a UDP profile as shown in the following table.
    "Parent Profile", "udp_gtm_dns"
 
 .. image:: /_static/class2/router01_create_udp_profile.png
-   :width: 800
 
 .. image:: /_static/class2/router01_create_udp_profile_properties.png
-   :width: 800
 
 .. admonition:: TMSH
 
