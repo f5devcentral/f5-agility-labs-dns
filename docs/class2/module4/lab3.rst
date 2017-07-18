@@ -1,25 +1,50 @@
-DNS Profile
+DNSSEC keys configuration
 #####################################
 
-Navigate to: **Local Traffic  ››  Profiles : Services : DNS**
+Navigate to: **DNS  ››  Delivery : Keys : DNSSEC Key List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns/properties.jsp?name=/Common/example.com_dns_profile
+.. image:: /_static/class2/dnssec-keys-create.png
 
-Modify the example.com_dns_profile DNS profile as shown in the table below.
+Create zone signing key and key signing key 
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "DNS Express", "unchecked"
+   Name, example.com_zsk
+   Type, Zone Signing Key
+   Key Management, Manual
+   Certificate, default.crt
+   Private Key, default.key
 
-.. image:: /_static/class2/router01_ltm_profile_dns.png
+.. image:: /_static/class2/dnssec-zsk.png
 
-.. image:: /_static/class2/modify_dns_profile_enable_dnsx.png
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
 
-TMSH commands for router01.branch01:
+   Name, example.com_ksk
+   Type, Zone Signing Key
+   Key Management, “Manual
+   Certificate, default.crt
+   Private Key, default.key
+
+
+.. image:: /_static/class2/dnssec-ksk.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/dnssec_key/list.jsp
+
+
+TMSH commands for Zone Signing key creation:
 
 .. admonition:: TMSH
 
-   tmsh modify ltm profile dns example.com_dns_profile enable-dns-express default-value
+ tmsh create ltm dns dnssec key example.com_zsk key-type zsk certificate-file default.crt key-file default.key
+
+TMSH commands for Key Signing key creation:
+
+.. admonition:: TMSH
+
+ tmsh create ltm dns dnssec key example.com_ksk key-type ksk certificate-file default.crt key-file default.key
+
 
