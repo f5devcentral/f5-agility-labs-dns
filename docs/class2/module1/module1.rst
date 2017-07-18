@@ -8,9 +8,9 @@ Transparent Cache
 
    lab*
 
-Windows workstations use the local "Active Directory" for DNS resolution.
+In this module we will prepare the objects required to build a transparent cache.
 
-The Windows domain controller has a DNS server role installed and performs recursive DNS services.
+In the next excercise a DNS profile will reference the cache and a Listener will forward traffic to a healthy backend DNS server
 
 .. image:: /_static/class2/before_transparent_cache.png
 

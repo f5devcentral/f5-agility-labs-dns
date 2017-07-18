@@ -3,27 +3,45 @@ Log Profile
 
 Configure DNS query and response logging.
 
-Navigate to **Local Traffic  ››  Profiles : Other : DNS Logging**
+#. Create a "Log Publisher" for local syslog.
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/create.jsp
+   Navigate to: **System  ››  Logs : Configuration : Log Publishers**
 
-Create a DNS logging profile as shown in the table below.
+   https://router01.branch01.example.com/tmui/Control/jspmap/tmui/system/log/create_publisher.jsp
 
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
+   .. image:: /_static/class1/system_log_publisher_flyout.png
 
-   "Name", "example_dns_logging_profile"
-   "Log Publisher", "sys-db-access-publisher"
-   "Log Responses", "enabled"
-   "Include Query ID", "enabled"
+   Create a local syslog publisher
 
-.. image:: /_static/class2/dns_cache_transparent_flyout_router01.png
+   .. image:: /_static/class1/sys_syslog_publisher_details.png
 
-.. image:: /_static/class2/dns_cache_transparent_create_router01.png
+   .. admonition:: TMSH
 
-TMSH command for router01.branch01:
+      tmsh create sys log-config publisher local-syslog-publisher { destinations { local-syslog { } } }
 
-.. admonition:: TMSH
+#. Create a Logging Profile"
 
-   tmsh create ltm profile dns-logging example_dns_logging_profile enable-response-logging yes include-query-id yes log-publisher local-db-publisher
+   Navigate to **Local Traffic  ››  Profiles : Other : DNS Logging**
+
+   https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/create.jsp
+
+   Create a DNS logging profile as shown in the table below.
+
+   .. csv-table::
+      :header: "Setting", "Value"
+      :widths: 15, 15
+
+      "Name", "example_dns_logging_profile"
+      "Log Publisher", "local-syslog-publisher"
+      "Log Responses", "enabled"
+      "Include Query ID", "enabled"
+
+   .. image:: /_static/class2/dns_cache_transparent_flyout_router01.png
+
+   .. image:: /_static/class2/dns_cache_transparent_create_router01.png
+
+   TMSH command for router01.branch01:
+
+   .. admonition:: TMSH
+
+      tmsh create ltm profile dns-logging example_dns_logging_profile enable-response-logging yes include-query-id yes log-publisher local-syslog-publisher

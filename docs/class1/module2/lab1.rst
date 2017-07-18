@@ -1,7 +1,7 @@
 Log Profile
 ############################################
 
-Conimage DNS query and response logging.
+Configure DNS query and response logging.
 
 #. On both gtm1.site1 and gtm1.site2 create a "Log Publisher" for local syslog. Navigate to: **System  ››  Logs : Configuration : Log Publishers**
 

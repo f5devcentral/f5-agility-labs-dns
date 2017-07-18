@@ -13,6 +13,10 @@ The BIG-IP will intercept all DNS requests and perform DNS security.
 
 Students will learn how to implement the following concepts and learn how to migrate to a secure DNS infrastructure.
 
+Windows workstations are configured to use the local "Active Directory" DNS servers for resolution.
+
+The Windows domain controller has a DNS server role installed and performs recursive DNS services.
+
 .. toctree::
    :hidden:
    :numbered:
