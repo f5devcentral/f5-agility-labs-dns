@@ -5,9 +5,9 @@ Define a pool of internal DNS servers to send the DNS query to when the BIG-IP c
 
 Navigate to: **Delivery : Load Balancing : Pools : Pool List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/pool/create.jsp
-
 .. image:: /_static/class2/class2_dns__pool_create_flyout.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/pool/create.jsp
 
 Create a pool according to the following table:
 
