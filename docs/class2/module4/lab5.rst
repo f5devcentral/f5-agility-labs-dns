@@ -1,7 +1,7 @@
 Results
 #####################################
 
-From the Windows CMD prompt run: "dig example.com"
+From the Windows CMD prompt run: "dig example.com +dnssec”
 
 .. image:: /_static/class2/dig.png
 
