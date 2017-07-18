@@ -5,26 +5,31 @@ Welcome to the |classbold| lab at F5 Agility |year|
 
 |repoinfo|
 
-Content in this lab is explained in detail here:
+.. image:: /_static/DNS_labs_overview.png
 
-https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0.html
+#. DNS
+
+   http://f5-agility-labs-dns.readthedocs.io/en/latest/
+
+   http://f5-agility-labs-dns.readthedocs.io/en/latest/
+
+#. Cooking with iRules:
+
+   http://f5-agility-labs-irules.readthedocs.io/en/latest/
+
+   https://github.com/f5devcentral/f5-agility-labs-irules
+
+#. Automation
+
+   http://f5-automation-labs.readthedocs.io/en/latest/
 
 This lab is based off:
 
 https://github.com/0xHiteshPatel/f5-agility-lab-template
 
-This readthedocs article:
+Content in this lab is explained in detail here:
 
-http://f5-agility-labs-dns.readthedocs.io/en/latest/
-
-Github repository:
-
-https://github.com/f5devcentral/f5-agility-labs-dns
-
-Other Groups Classes:
-
-* http://f5-automation-labs.readthedocs.io/en/latest/
-* https://agility-2017-cooking-with-irules-http.readthedocs.io/en/latest
+https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0.html
 
 .. toctree::
    :hidden:
