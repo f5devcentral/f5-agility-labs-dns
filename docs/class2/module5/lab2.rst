@@ -1,4 +1,4 @@
-URL Database
+IPI
 ############################
 
-TODO: put the iRule for URL database filtering here
+TODO: put the irule for IPI DNS filtering here

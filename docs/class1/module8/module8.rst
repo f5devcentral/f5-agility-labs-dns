@@ -21,12 +21,10 @@ Modify the GSLB configuration so that LDNS servers continually receive the same 
 
    .. admonition:: TMSH
 
-   tmsh modify gtm wideip a www.gslb.example.com persistence enabled
+      tmsh modify gtm wideip a www.gslb.example.com persistence enabled
 
 #. View Persistence Records
 
-TODO: where in the GUI are the statistics for persistence
+   .. admonition:: TMSH
 
-.. admonition:: TMSH
-
-   tmsh show gtm persist
+      tmsh show gtm persist

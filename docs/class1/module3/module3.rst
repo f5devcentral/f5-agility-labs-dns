@@ -17,13 +17,13 @@ Create two data centers according to the table below:
    "Name", "site2_datacenter"
 
 .. image:: /_static/class1/create_datacenters.png
-   :width: 800
 
 TMSH command for only site1.gtm1:
 
 .. admonition:: TMSH
 
    tmsh create gtm datacenter site1_datacenter
+
    tmsh create gtm datacenter site2_datacenter
 
 .. toctree::
