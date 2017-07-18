@@ -20,3 +20,5 @@ Results
    .. admonition:: TMSH
 
       tmsh show ltm pool branch01_dns_pool detail
+
+   .. image:: /_static/class2/class2_dc02_is_down.png
