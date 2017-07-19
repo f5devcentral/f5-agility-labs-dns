@@ -14,12 +14,12 @@ Create two TCP listeners according to the table below:
    :widths: 15, 15
 
    "Name", "DC01_tcp_53_virtual"
-   "Destination", "10.1.70.200:53"
+   "Destination", "10.1.70.200"
+   "Service Port", "DNS 53"
+   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
    "Protocol", "TCP"
    "Protocol Profile (Client)", "example.com_tcp-dns_profile"
    "DNS Profile", "example.com_dns_profile"
-   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
-   "Address Translation", "unchecked"
    "Pool", "branch01_dns_pool"
 
 .. csv-table::
@@ -27,12 +27,12 @@ Create two TCP listeners according to the table below:
    :widths: 15, 15
 
    "Name", "DC02_tcp_53_virtual"
-   "Destination", "10.1.70.210:53"
+   "Destination", "10.1.70.210"
+   "Service Port", "DNS 53"
+   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
    "Protocol", "TCP"
    "Protocol Profile (Client)", "example.com_tcp-dns_profile"
    "DNS Profile", "example.com_dns_profile"
-   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
-   "Address Translation", "unchecked"
    "Pool", "branch01_dns_pool"
 
 .. image:: /_static/class2/router01_create_virtual_tcp_properties.png
