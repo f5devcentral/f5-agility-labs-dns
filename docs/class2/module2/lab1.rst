@@ -28,7 +28,9 @@ Configure DNS query and response logging.
 
 #. Create a "Logging Profile"
 
-   Navigate to **Local Traffic  ››  Profiles : Other : DNS Logging**
+   Navigate to **DNS  ››  Delivery : Profiles : Other : DNS Logging**
+
+   .. image:: /_static/class2/dns_cache_transparent_flyout_router01.png
 
    Create a DNS logging profile as shown in the table below:
 
@@ -40,8 +42,6 @@ Configure DNS query and response logging.
       "Log Publisher", "local-syslog-publisher"
       "Log Responses", "enabled"
       "Include Query ID", "enabled"
-
-   .. image:: /_static/class2/dns_cache_transparent_flyout_router01.png
 
    .. image:: /_static/class2/dns_cache_transparent_create_router01.png
 
