@@ -12,7 +12,7 @@ Create a TCP profile as shown in the following table.
    :widths: 15, 15
 
    "Name", "example.com_tcp-dns_profile"
-   "Parent Profile", "udp_gtm_dns"
+   "Parent Profile", "f5-tcp-lan"
 
 .. image:: /_static/class2/router01_create_tcp_profile_properties.png
 
