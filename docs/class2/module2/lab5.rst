@@ -41,9 +41,9 @@ https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/virtual_s
 
 .. admonition:: TMSH
 
-   tmsh create gtm listener DC01_udp_virtual address 10.1.70.200 port 53 ip-protocol udp pool branch01_dns_pool profiles add { example.com_dns_profile  example.com_udp-dns_profile } vlans add { branch01_vlan } vlans-enabled pool branch01_dns_pool
+   tmsh create gtm listener DC01_udp_virtual address 10.1.70.200 port 53 ip-protocol udp pool branch01_dns_pool profiles add { example.com_dns_profile  example.com_udp-dns_profile } vlans add { branch01_vlan } vlans-enabled
 
 .. admonition:: TMSH
 
-   tmsh create gtm listener DC02_udp_virtual address 10.1.70.210 port 53 ip-protocol udp pool branch01_dns_pool profiles add { example.com_dns_profile  example.com_udp-dns_profile } vlans add { branch01_vlan } vlans-enabled pool branch01_dns_pool
+   tmsh create gtm listener DC02_udp_virtual address 10.1.70.210 port 53 ip-protocol udp pool branch01_dns_pool profiles add { example.com_dns_profile  example.com_udp-dns_profile } vlans add { branch01_vlan } vlans-enabled
 
