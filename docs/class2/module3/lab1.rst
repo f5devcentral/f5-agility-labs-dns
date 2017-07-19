@@ -11,15 +11,22 @@ Using Putty, ssh into router01.branch01 and run the following command:
 
    dnssec-dsfromkey -f /root/dnskey.txt .
 
+.. image:: /_static/class2/dnssec-cli.png
+
 Navigate to: **DNS  ››  Caches : Cache List  ››  Trust Anchors : validating-resolver_cache**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_anchor/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_validating_config
 
 Select the validating-resolver_cache and click "Trust Anchors"
 
-For each line of output from the preeeding command create a "Trust Anchor"
+.. image:: /_static/class2/trust-anchor.png
 
-.. image:: /_static/class2/cache_trust_anchors.png
+For each line of output from the preceding command create a "Trust Anchor"
+
+.. image:: /_static/class2/trust-ancor-1.png
+
+.. image:: /_static/class2/trusted-anchors-done.png
+
 
 .. admonition:: TMSH
 
