@@ -14,13 +14,11 @@ After completing this lab the BIG-IP will handle secured recursive cache for DNS
 
 .. image:: /_static/class2/class2_validating-resolver.png
 
-Log into the gateway device router01.brancho1 in the **branch office**
-
 Navigate to **DNS  ››  Caches : Cache List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/create.jsp
-
 .. image:: /_static/class2/cache_list_flyout.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/list.jsp
 
 Create a validating resolver cache according to the table below:
 
@@ -34,7 +32,7 @@ Create a validating resolver cache according to the table below:
 
 .. image:: /_static/class2/cache_validating-resolver.png
 
-TMSH command for router01.branch01:
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/create.jsp
 
 .. admonition:: TMSH
 

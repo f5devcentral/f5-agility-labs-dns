@@ -1,7 +1,7 @@
 DNS Profile
 #####################################
 
-Navigate to: **Local Traffic  ››  Profiles : Services : DNS**
+Navigate to: **DNS  ››  Delivery : Profiles : DNS**
 
 .. image:: /_static/class2/router01_ltm_profile_dns.png
 
