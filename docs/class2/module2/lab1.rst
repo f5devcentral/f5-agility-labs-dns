@@ -17,7 +17,7 @@ Configure DNS query and response logging.
 
    .. admonition:: TMSH
 
-      tmsh create sys log-config publisher local-syslog-publisher { destinations { local-syslog { } } }
+      tmsh create sys log-config publisher local-syslog-publisher { destinations add { local-syslog { } } }
 
 #. Create a Logging Profile"
 
