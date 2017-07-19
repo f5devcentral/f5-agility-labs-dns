@@ -5,6 +5,8 @@ Welcome to the |classbold| lab at F5 Agility |year|
 
 |repoinfo|
 
+201707191005
+
 .. image:: /_static/DNS_labs_overview.png
 
 #. DNS
