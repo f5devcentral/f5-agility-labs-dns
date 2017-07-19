@@ -1,6 +1,8 @@
 Zone Runner
 ==============================
 
+Use Zonerunner to create a custom RPZ zone. Customers will subscribe to their RPZ vendor of choice.
+
 Navigate to **DNS  ››  Zones : ZoneRunner : Zone List**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/zone/create.jsp
