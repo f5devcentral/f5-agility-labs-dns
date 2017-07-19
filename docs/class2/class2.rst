@@ -1,6 +1,8 @@
 Class 2 - Security
 =============================
 
+.. image:: /_static/class2/class2_overview.png
+
 The lab is contained in a remote location where F5 BIG-IP is the default gateway for internal corporate networks.
 
 The F5 is pre-configured as a firewall device sitting on the ISP vlans and internal vlans.
@@ -25,5 +27,4 @@ The Windows domain controller has a DNS server role installed and performs recur
 
    module*/module*
 
-.. image:: /_static/class2/class2_overview.png
 
