@@ -3,7 +3,7 @@ Health Monitor
 
 Before we create a pool of DNS servers we need to define our health monitor.
 
-Navigate to: **Delivery : Load Balancing : Pools : Pool List**
+Navigate to: **Delivery : Load Balancing : Monitors**
 
 .. image:: /_static/class2/class2_create_health-monitor_flyout.png
 
