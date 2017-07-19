@@ -39,7 +39,7 @@ Create new iRule, copy the content below and paste it.
      set static::request_return_nxdomain 0
      set static::request_redirect_to "192.168.57.253"
      # Toggle for debug logs
-     set static::request_debug 0
+     set static::request_debug 1
    }
  
  
