@@ -5,7 +5,7 @@ In order to activate the new "Validating Resolver", modify the DNS profile examp
 
 Navigate to: **DNS  ››  Delivery : Profiles : DNS**
 
-.. image:: /_static/class2/router01_ltm_profile_dns.png
+.. image:: /_static/class2/modify_dns_profile_activate_validating_resolver.png
 
 Select the profile "example.com_dns_profile"
 
