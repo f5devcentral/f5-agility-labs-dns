@@ -38,18 +38,4 @@ https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/create.
 
    tmsh create ltm dns cache validating-resolver validating-resolver_cache answer-default-zones yes
 
-Assign validating-resolver_cache to the DNS profile. 
-Navigate to **DNS  ››  Delivery ›› Profiles: DNS** and click on example.com_dns_profile
-
-.. image:: /_static/class2/cache-assign.png
-
-Change DNS cache name to validating-resolver_cache
-
-.. image:: /_static/class2/cache-swap.png
-
-.. admonition:: TMSH
-
-   tmsh modify ltm profile dns example.com_dns_profile cache validating-resolver_cache
-
-
 https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0/7.html#guid-d4548549-b4e2-4dae-9ada-3ea00eb84c1f

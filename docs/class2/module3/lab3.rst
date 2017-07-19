@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-Results
-#####################
-
-From the CLI on the router01.branch01 BIGIP run
-
-tail -f /var/log/ltm
-
-From the Windows CMD prompt run: “dig dnssec-deployment.org +dnssec”
-
-.. image:: /_static/class2/dnssec-resolver-results.png
-
-
-
-http://www.internetsociety.org/deploy360/resources/dnssec-test-sites/
-=======
 Modify DNS Profile
 ###############################
 
@@ -34,4 +18,3 @@ https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/p
 .. admonition:: TMSH
 
    tmsh modify ltm profile dns example.com_dns_profile cache validating-resolver_cache
->>>>>>> f1aa0736e05a0b71391199d9bb250876e6682f9b
