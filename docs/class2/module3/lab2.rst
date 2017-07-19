@@ -1,7 +1,7 @@
 DLV Anchors
 ########################################
 
-To cache a validated response for the signed zones, you need to obtain a trust or DLV anchor.
+To cache a validated response for the signed zones, you need to obtain a trust and DLV anchor.
 
 Using Putty, ssh into router01.branch01 and run the following command:
 
@@ -11,15 +11,20 @@ Using Putty, ssh into router01.branch01 and run the following command:
 
    dnssec-dsfromkey -f /root/DLVdnskey.txt dlv.isc.org.
 
-Navigate to: **DNS  ››  Caches : Cache List  ››  DLV Anchors : validating-resolver_cache**
+.. image:: /_static/class2/dlv-cli.png
+
+
+Navigate to: **DNS  ››  Caches : Cache List  ››  validating-resolver_cache : DLV Anchors**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_anchor/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_validating_config
 
-Select the validating-resolver_cache and click "DLV Anchors"
+.. image:: /_static/class2/dlv-add.png
 
 For each line of output from the preeeding command create a "DLV Anchor"
 
-.. image:: /_static/class2/cache_dlv_anchors.png
+.. image:: /_static/class2/dlv-add-1.png
+
+.. image:: /_static/class2/dlv-final.png
 
 .. admonition:: TMSH
 
