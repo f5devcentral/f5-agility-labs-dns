@@ -19,7 +19,7 @@ Welcome to the |classbold| lab at F5 Agility |year|
 
    http://f5-automation-labs.readthedocs.io/en/latest/
 
-Content in this lab is explained in detail here:
+Content in this lab references:
 
 https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0.html
 
