@@ -253,19 +253,37 @@
 <ol class="arabic">
 <li><p class="first">Create a “Log Publisher” for local syslog.</p>
 <p>Navigate to: <strong>System  ››  Logs : Configuration : Log Publishers</strong></p>
-<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/system/log/create_publisher.jsp">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/system/log/create_publisher.jsp</a></p>
 <img alt="../../_images/system_log_publisher_flyout.png" src="../../_images/system_log_publisher_flyout.png" />
-<p>Create a local syslog publisher</p>
+<p>Create a local syslog publisher as shown in the table below:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Setting</th>
+<th class="head">Value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Name</td>
+<td>local-syslog-publisher</td>
+</tr>
+<tr class="row-odd"><td>Destinations</td>
+<td>local-syslog</td>
+</tr>
+</tbody>
+</table>
 <img alt="../../_images/sys_syslog_publisher_details.png" src="../../_images/sys_syslog_publisher_details.png" />
+<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/system/log/create_publisher.jsp">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/system/log/create_publisher.jsp</a></p>
 <div class="admonition-tmsh admonition">
 <p class="first admonition-title">TMSH</p>
 <p class="last">tmsh create sys log-config publisher local-syslog-publisher { destinations add { local-syslog { } } }</p>
 </div>
 </li>
-<li><p class="first">Create a Logging Profile”</p>
+<li><p class="first">Create a “Logging Profile”</p>
 <p>Navigate to <strong>Local Traffic  ››  Profiles : Other : DNS Logging</strong></p>
-<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/create.jsp">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/create.jsp</a></p>
-<p>Create a DNS logging profile as shown in the table below.</p>
+<p>Create a DNS logging profile as shown in the table below:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="50%" />
@@ -293,7 +311,7 @@
 </table>
 <img alt="../../_images/dns_cache_transparent_flyout_router01.png" src="../../_images/dns_cache_transparent_flyout_router01.png" />
 <img alt="../../_images/dns_cache_transparent_create_router01.png" src="../../_images/dns_cache_transparent_create_router01.png" />
-<p>TMSH command for router01.branch01:</p>
+<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/create.jsp">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns_log/create.jsp</a></p>
 <div class="admonition-tmsh admonition">
 <p class="first admonition-title">TMSH</p>
 <p class="last">tmsh create ltm profile dns-logging example_dns_logging_profile enable-response-logging yes include-query-id yes log-publisher local-syslog-publisher</p>
