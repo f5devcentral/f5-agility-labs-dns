@@ -3,8 +3,6 @@ DNS Profile
 
 Navigate to: **Local Traffic  ››  Profiles : Services : DNS**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns/create.jsp
-
 Create a DNS profile as shown in the table below.
 
 .. csv-table::
@@ -23,7 +21,7 @@ Create a DNS profile as shown in the table below.
 
 .. image:: /_static/class2/dns_profile_settings_cache_router01.png
 
-TMSH commands for router01.branch01:
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns/create.jsp
 
 .. admonition:: TMSH
 
