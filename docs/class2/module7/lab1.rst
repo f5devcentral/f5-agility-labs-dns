@@ -13,7 +13,7 @@ Create new iRule, copy the content below and paste it.
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   “Name”, “DNS-query-filtering“  
+   Name, DNS-query-filtering  
 
  
 .. code-block:: tcl
