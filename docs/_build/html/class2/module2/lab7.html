@@ -258,18 +258,18 @@
 </pre></div>
 </div>
 <p>Viewing Cache Entries</p>
-<p>Navigate to: <strong>DNS  ››  Caches : Cache List  ››  Properties : resolver_cache</strong></p>
-<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/properties.jsp?name=%2FCommon%2Fresolver_cache">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/properties.jsp?name=%2FCommon%2Fresolver_cache</a></p>
+<p>Navigate to: <strong>DNS  ››  Caches : Cache List  ››  Properties : transparent_cache</strong></p>
+<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/properties.jsp?name=%2FCommon%2Ftransparent_cache">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/properties.jsp?name=%2FCommon%2Ftransparent_cache</a></p>
 <img alt="../../_images/router01_cache_select_statistics.png" src="../../_images/router01_cache_select_statistics.png" />
 <p>Navigate to: <strong>Statistics  ››  Module Statistics : DNS : Caches  ››  Caches</strong></p>
-<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats.jsp?name=%2FCommon%2Fresolver_cache&amp;tab=dns_cache_resolver_config">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats.jsp?name=%2FCommon%2Fresolver_cache&amp;tab=dns_cache_resolver_config</a></p>
+<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats.jsp?name=%2FCommon%2Ftransparent_cache&amp;tab=dns_cache_resolver_config">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats.jsp?name=%2FCommon%2Ftransparent_cache&amp;tab=dns_cache_resolver_config</a></p>
 <img alt="../../_images/router01_cache_click_view.png" src="../../_images/router01_cache_click_view.png" />
-<p>Navigate to: <strong>Statistics  ››  Module Statistics : DNS : Caches  ››  Caches : resolver_cache</strong></p>
-<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_detail.jsp?name=/Common/resolver_cache">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_detail.jsp?name=/Common/resolver_cache</a></p>
+<p>Navigate to: <strong>Statistics  ››  Module Statistics : DNS : Caches  ››  Caches : transparent_cache</strong></p>
+<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_detail.jsp?name=/Common/transparent_cache">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_detail.jsp?name=/Common/transparent_cache</a></p>
 <img alt="../../_images/router01_cache_view_details.png" src="../../_images/router01_cache_view_details.png" />
 <div class="admonition-tmsh admonition">
 <p class="first admonition-title">TMSH</p>
-<p class="last">tmsh show ltm dns cache records rrset cache resolver_cache</p>
+<p class="last">tmsh show ltm dns cache records rrset cache transparent_cache</p>
 </div>
 <img alt="../../_images/tmsh_show_ltm_dns_cache_records.png" src="../../_images/tmsh_show_ltm_dns_cache_records.png" />
 <div class="admonition-tmsh admonition">
@@ -300,7 +300,7 @@ to be deleted can be filtered by several aspects.</li>
 </ul>
 <div class="admonition-tmsh admonition">
 <p class="first admonition-title">TMSH</p>
-<p class="last">tmsh delete ltm dns cache records rrset cache resolver_cache ?</p>
+<p class="last">tmsh delete ltm dns cache records rrset cache reso_cache ?</p>
 </div>
 <p><strong>Clearing Entire Cache</strong></p>
 <p>Navigate to <strong>Statistics &gt; Module Statistics &gt; DNS &gt; Caches</strong></p>

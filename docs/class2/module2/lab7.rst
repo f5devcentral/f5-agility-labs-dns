@@ -14,27 +14,27 @@ Repeat some of the same queries multiple times
 
 Viewing Cache Entries
 
-Navigate to: **DNS  ››  Caches : Cache List  ››  Properties : resolver_cache** 
+Navigate to: **DNS  ››  Caches : Cache List  ››  Properties : transparent_cache** 
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/properties.jsp?name=%2FCommon%2Fresolver_cache
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/properties.jsp?name=%2FCommon%2Ftransparent_cache
 
 .. image:: /_static/class2/router01_cache_select_statistics.png
 
 Navigate to: **Statistics  ››  Module Statistics : DNS : Caches  ››  Caches**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats.jsp?name=%2FCommon%2Fresolver_cache&tab=dns_cache_resolver_config
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats.jsp?name=%2FCommon%2Ftransparent_cache&tab=dns_cache_resolver_config
 
 .. image:: /_static/class2/router01_cache_click_view.png
 
-Navigate to: **Statistics  ››  Module Statistics : DNS : Caches  ››  Caches : resolver_cache**
+Navigate to: **Statistics  ››  Module Statistics : DNS : Caches  ››  Caches : transparent_cache**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_detail.jsp?name=/Common/resolver_cache
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/stats_detail.jsp?name=/Common/transparent_cache
 
 .. image:: /_static/class2/router01_cache_view_details.png
 
 .. admonition:: TMSH
 
-   tmsh show ltm dns cache records rrset cache resolver_cache
+   tmsh show ltm dns cache records rrset cache transparent_cache
 
 .. image:: /_static/class2/tmsh_show_ltm_dns_cache_records.png
 
@@ -70,7 +70,7 @@ Viewing Cache Statistics:
 
 .. admonition:: TMSH
 
-   tmsh delete ltm dns cache records rrset cache resolver_cache ?
+   tmsh delete ltm dns cache records rrset cache reso_cache ?
 
 **Clearing Entire Cache**
 

@@ -5,8 +5,6 @@ Define the Active Directory server as a nameserver and initiate a zone transfer.
 
 Navigate to **DNS  ››  Delivery : Nameservers : Nameserver List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp
-
 .. image:: /_static/class2/create_nameserver_flyout.png
 
 Create a nameserver according to the following table:
@@ -20,7 +18,7 @@ Create a nameserver according to the following table:
 
 .. image:: /_static/class2/create_nameserver_dc01.png
 
-TMSH commands for router01.branch01:
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp
 
 .. admonition:: TMSH
 
