@@ -1,7 +1,7 @@
-iRules
+DNS iRule for query filtering
 #######################
 
-TODO: create the URL and IPI lab
+Configure DNS queries filtering based on the category of the requested domain. This will be done with using F5 iRules and built-in categorization database.
 
 .. toctree::
    :hidden:
