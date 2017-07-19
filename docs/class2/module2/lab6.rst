@@ -3,7 +3,7 @@ TCP Virtuals
 
 Navigate to: **Local Traffic  ››  Virtual Servers : Virtual Server List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/virtual_server/create.jsp
+.. image:: /_static/class2/router01_create_virtual_flyout.png
 
 Create two TCP listeners according to the table below:
 
@@ -33,16 +33,16 @@ Create two TCP listeners according to the table below:
    "Address Translation", "unchecked"
    "Pool", "branch01_dns_pool"
 
-.. image:: /_static/class2/router01_create_virtual_flyout.png
-
 .. image:: /_static/class2/router01_create_virtual_tcp_properties.png
 
-TMSH commands for router01.branch01:
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/listener/create.jsp
 
 .. admonition:: TMSH
 
-   tmsh create ltm virtual DC01_tcp_53_virtual destination 10.1.70.200:domain ip-protocol tcp mask 255.255.255.255 profiles add { example.com_dns_profile { } example.com_tcp-dns_profile { } } translate-address disabled vlans add { branch01_vlan } vlans-enabled pool branch01_dns_pool
+   tmsh create gtm listener DC01_udp_virtual address 10.1.70.200 port 53 ip-protocol tcp pool branch01_dns_pool profiles add { example.com_dns_profile  example.com_tcp-dns_profile } vlans add { branch01_vlan } vlans-enabled pool branch01_dns_pool
 
-   tmsh create ltm virtual DC02_tcp_53_virtual destination 10.1.70.210:domain ip-protocol tcp mask 255.255.255.255 profiles add { example.com_dns_profile { } example.com_tcp-dns_profile { } } translate-address disabled vlans add { branch01_vlan } vlans-enabled pool branch01_dns_pool
+.. admonition:: TMSH
+
+   tmsh create gtm listener DC02_udp_virtual address 10.1.70.210 port 53 ip-protocol tcp pool branch01_dns_pool profiles add { example.com_dns_profile  example.com_tcp-dns_profile } vlans add { branch01_vlan } vlans-enabled pool branch01_dns_pool
 
 https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-dns-cache-implementations-11-3-0/2.html
