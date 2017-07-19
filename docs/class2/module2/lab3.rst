@@ -1,9 +1,11 @@
 UDP Profile
 #####################################
 
-Navigate to: **Local Traffic  ››  Profiles : Protocol : UDP**
+Navigate to: **DNS  ››  Delivery : Profiles : Protocol : UDP**
 
 .. image:: /_static/class2/router01_create_udp_profile.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/udp/list.jsp
 
 Create a UDP profile as shown in the following table.
  
@@ -16,7 +18,7 @@ Create a UDP profile as shown in the following table.
 
 .. image:: /_static/class2/router01_create_udp_profile_properties.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/udp/create.jsp
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/udp/create.jsp
 
 .. admonition:: TMSH
 

@@ -1,7 +1,7 @@
 TCP Profile
 ###################################
 
-Navigate to: **Local Traffic  ››  Profiles : Protocol : TCP**
+Navigate to: **DNS  ››  Delivery : Profiles : Protocol : TCP**
 
 .. image:: /_static/class2/router01_create_tcp_profile.png
 
