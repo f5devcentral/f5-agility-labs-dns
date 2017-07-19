@@ -7,8 +7,6 @@ Navigate to: **Delivery : Load Balancing : Pools : Pool List**
 
 .. image:: /_static/class2/class2_dns__pool_create_flyout.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/pool/create.jsp
-
 Create a pool according to the following table:
 
 .. csv-table::
@@ -25,6 +23,8 @@ Create a pool according to the following table:
    "2. Service Port", "53"
 
 .. image:: /_static/class2/class2_create_dns_pool_properties.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/pool/create.jsp
 
 .. admonition:: TMSH
 
