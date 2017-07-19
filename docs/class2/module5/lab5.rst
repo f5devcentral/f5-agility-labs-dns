@@ -1,17 +1,19 @@
-Local Zone
+Enable RPZ
 #####################################
 
 Navigate to: **DNS  ››  Caches : Cache List**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/list.jsp
 
-.. image:: /_static/class2/select_resolver_cache.png
+Click "validating-resolver_cache"
 
-Select resolver_cahce, click "Local Zones", and click "Add"
+.. image:: /_static/class2/select_validating-resolver_cache.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/local_zone/list.jsp?name=%2FCommon%2Fresolver_cache&tab=dns_cache_config
+Select validating-resolver_cache, click "Response Policy Zones", and then click "Add"
 
-.. image:: /_static/class2/cache_create_local-zone.png
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/rpz/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_config
+
+.. image:: /_static/class2/cache_enable_rpz.png
 
 Create a local zone entry according to the following table:
 
@@ -19,15 +21,15 @@ Create a local zone entry according to the following table:
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "Name", "sorry.example.com"
-   "Type", "Static"
-   "Records", "sorry.example.com. IN A 10.1.71.21"
+   "Zone", "rpz.example.com"
+   "Action", "Walled Garden"
+   "Walled Garden", "sorry.example.com"
 
-.. image:: /_static/class2/create_localzone_entry.png
+.. image:: /_static/class2/cache_enable_rpz_details.png
 
 TMSH commands for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh modify ltm dns cache resolver resolver_cache local-zones { { name sorry.example.com records add { "sorry.example.com. IN A 10.1.71.21" } type static } }
+   tmsh modify ltm dns cache resolver validating-resolver_cache response-policy-zones add { rpz.example.com { action walled-garden walled-garden sorry.example.com } }
 

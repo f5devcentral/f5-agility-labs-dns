@@ -21,4 +21,4 @@ TMSH commands for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh create ltm dns nameserver localhost { address 127.0.0.1 }
+   tmsh create ltm dns nameserver localhost { address 127.0.0.1 tsig-key none }

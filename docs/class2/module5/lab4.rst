@@ -1,27 +1,33 @@
-DNS Profile
+Local Zone
 #####################################
 
-**This step may already be complete from the Hidden Master lab**
+Navigate to: **DNS  ››  Caches : Cache List**
 
-Navigate to: **Local Traffic  ››  Profiles : Services : DNS**
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/list.jsp
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns/properties.jsp?name=/Common/example.com_dns_profile
+.. image:: /_static/class2/select_validating-resolver_cache.png
 
-Select and modify the example.com_dns_profile DNS profile as shown in the table below.
+Select validating-resolver_cache, click "Local Zones", and click "Add"
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/local_zone/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_config
+
+.. image:: /_static/class2/cache_create_local-zone.png
+
+Create a local zone entry according to the following table:
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "DNS Express", "unchecked"
+   "Name", "sorry.example.com"
+   "Type", "Static"
+   "Records", "sorry.example.com. IN A 10.1.71.21"
 
-.. image:: /_static/class2/router01_ltm_profile_dns.png
-
-.. image:: /_static/class2/modify_dns_profile_enable_dnsx.png
+.. image:: /_static/class2/create_localzone_entry.png
 
 TMSH commands for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh modify ltm profile dns example.com_dns_profile enable-dns-express default-value
+   tmsh modify ltm dns cache validating-resolver validating-resolver_cache local-zones { { name sorry.example.com records add { "sorry.example.com. IN A 10.1.71.21" } type static } }
 
