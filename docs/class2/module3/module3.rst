@@ -30,6 +30,7 @@ Create a validating resolver cache according to the table below:
 
    "Name", "validating-resolver_cache"
    "Resolver Type", "Validating Resolver"
+   "Answer default zones", "Checked - Enabled"
 
 .. image:: /_static/class2/cache_validating-resolver.png
 
@@ -37,6 +38,6 @@ TMSH command for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh create ltm dns cache validating-resolver validating-resolver_cache
+   tmsh create ltm dns cache validating-resolver validating-resolver_cache answer-default-zones yes
 
 https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0/7.html#guid-d4548549-b4e2-4dae-9ada-3ea00eb84c1f
