@@ -12,12 +12,12 @@ Create two UDP listeners according to the tables below:
    :widths: 15, 15
 
    "Name", "DC01_udp_53_virtual"
-   "Destination Address/Mask", "10.1.70.200"
-   "Service Port", "53"
+   "Destination Address", "10.1.70.200"
+   "Service Port", "DNS 53"
+   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
    "Protocol", "UDP"
    "Protocol Profile (Client)", "example.com_udp-dns_profile"
    "DNS Profile", "example.com_dns_profile"
-   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
    "Default Pool", "branch01_dns_pool"
 
 .. csv-table::
@@ -25,12 +25,12 @@ Create two UDP listeners according to the tables below:
    :widths: 15, 15
 
    "Name", "DC02_udp_53_virtual"
-   "Destination Address/Mask", "10.1.70.210"
-   "Service Port", "53"
+   "Destination Address", "10.1.70.210"
+   "Service Port", "DNS 53"
+   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
    "Protocol", "UDP"
    "Protocol Profile (Client)", "example.com_udp-dns_profile"
    "DNS Profile", "example.com_dns_profile"
-   "VLAN and Tunnel Traffic -> Enabled on..", "branch01_vlan"
    "Default Pool", "branch01_dns_pool"
 
 .. image:: /_static/class2/router01_create_virtual_udp_properties.png
