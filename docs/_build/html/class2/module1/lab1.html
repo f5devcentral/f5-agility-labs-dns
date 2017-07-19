@@ -247,7 +247,6 @@
 <h1>1.1. Health Monitor<a class="headerlink" href="#health-monitor" title="Permalink to this headline">¶</a></h1>
 <p>Before we create a pool of DNS servers we need to define our health monitor.</p>
 <p>Navigate to: <strong>Delivery : Load Balancing : Pools : Pool List</strong></p>
-<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/monitor/create.jsp">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/monitor/create.jsp</a></p>
 <img alt="../../_images/class2_create_health-monitor_flyout.png" src="../../_images/class2_create_health-monitor_flyout.png" />
 <p>Create a pool according to the following table:</p>
 <table border="1" class="colwidths-given docutils">
@@ -273,6 +272,7 @@
 </tbody>
 </table>
 <img alt="../../_images/class2_dns_monitor_create_properties.png" src="../../_images/class2_dns_monitor_create_properties.png" />
+<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/monitor/create.jsp">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/monitor/create.jsp</a></p>
 <div class="admonition-tmsh admonition">
 <p class="first admonition-title">TMSH</p>
 <p class="last">tmsh create ltm monitor dns example.com_dns_monitor defaults-from dns qname www.example.com</p>
