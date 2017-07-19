@@ -1,6 +1,8 @@
 Name Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Define the Active Directory server as a nameserver and initiate a zone transfer.
+
 Navigate to **DNS  ››  Delivery : Nameservers : Nameserver List**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp

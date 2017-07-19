@@ -1,6 +1,8 @@
 DNS Express
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The zone example.com is served from the high performance authoritative resolver.
+
 Navigate to **DNS  ››  Zones : Zones : Zone List**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/zone/create.jsp
