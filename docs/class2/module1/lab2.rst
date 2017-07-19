@@ -15,10 +15,10 @@ Create a pool according to the following table:
 
    "Name", "branch01_dns_pool"
    "Health Monitors", "example.com_dns_monitor"
-   "1. Nade Name", "dc01.branch01.example.com_node"
+   "1. Node Name", "dc01.branch01.example.com_node"
    "1. Address", "10.1.70.200"
    "1. Service Port", "53"
-   "2. Nade Name", "dc02.branch01example.com_node"
+   "2. Node Name", "dc02.branch01example.com_node"
    "2. Address", "10.1.70.210"
    "2. Service Port", "53"
 
