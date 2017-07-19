@@ -25,4 +25,4 @@ https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/d
 
 .. admonition:: TMSH
 
-   tmsh create ltm profile dns example.com_dns_profile { avr-dnsstat-sample-rate 1 cache transparent_cache defaults-from dns enable-cache yes enable-logging yes log-profile example_dns_logging_profile unhandled-query-action allow use-local-bind no }
+   tmsh create ltm profile dns example.com_dns_profile { avr-dnsstat-sample-rate 1 cache transparent_cache defaults-from dns enable-cache yes enable-logging yes log-profile example_dns_logging_profile use-local-bind no }
