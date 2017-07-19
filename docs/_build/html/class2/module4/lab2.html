@@ -249,7 +249,6 @@
 <h1>4.2. DNS Express<a class="headerlink" href="#dns-express" title="Permalink to this headline">¶</a></h1>
 <p>The zone example.com is served from the high performance authoritative resolver.</p>
 <p>Navigate to <strong>DNS  ››  Zones : Zones : Zone List</strong></p>
-<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/zone/create.jsp">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/zone/create.jsp</a></p>
 <img alt="../../_images/create_dnsxpress_flyout.png" src="../../_images/create_dnsxpress_flyout.png" />
 <p>Create a DNS Express zone according to the following table:</p>
 <table border="1" class="colwidths-given docutils">
@@ -275,6 +274,7 @@
 </tbody>
 </table>
 <img alt="../../_images/create_dnsxpress_zone_example.png" src="../../_images/create_dnsxpress_zone_example.png" />
+<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/zone/create.jsp">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/zone/create.jsp</a></p>
 <div class="admonition-tmsh admonition">
 <p class="first admonition-title">TMSH</p>
 <p class="last">tmsh create ltm dns zone example.com { dns-express-allow-notify add { 10.1.70.200 } dns-express-notify-tsig-verify no dns-express-server dc01.example.com }</p>
