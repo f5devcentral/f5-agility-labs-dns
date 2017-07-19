@@ -1,6 +1,11 @@
-Topology Views
-######################################
+DNS iRule for query filtering
+####################################
 
-F5's sophisticated implementation of topology may be used to enhance the concept of "Views"
+Configure DNS queries filtering based on the category of the requested domain. This will be done with using F5 iRules and built-in categorization database.
 
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+   :glob:
 
+   lab*
