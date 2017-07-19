@@ -1,7 +1,9 @@
 Zone Runner
 ==============================
 
-Use Zonerunner to create a custom RPZ zone. Customers will subscribe to their RPZ vendor of choice.
+Customers will subscribe to their RPZ vendor of choice.
+
+Use Zonerunner to create a custom RPZ zone for our lab.
 
 Navigate to **DNS  ››  Zones : ZoneRunner : Zone List**
 
