@@ -7,6 +7,8 @@ We will be creating both TCP and UDP based listeners that have the same IP addre
 
 Note: the Windows workstation is configured to use 10.1.70.200 and 10.1.70.210 for DNS.
 
+After this module students will have enabled the BIG-IP to intercept and cache DNS requests.
+
 .. image:: /_static/class2/class2_create_listenerVIPS.png
 
 .. toctree::
