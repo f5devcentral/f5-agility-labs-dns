@@ -23,7 +23,7 @@ Content in this lab is explained in detail here:
 
 https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0.html
 
-This lab is based on:
+This lab is based on the template:
 
 https://github.com/0xHiteshPatel/f5-agility-lab-template
 
