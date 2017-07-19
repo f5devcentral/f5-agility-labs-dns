@@ -3,6 +3,8 @@ DNS Profile
 
 Navigate to: **Local Traffic  ››  Profiles : Services : DNS**
 
+.. image:: /_static/class2/router01_ltm_profile_dns.png
+
 Create a DNS profile as shown in the table below.
 
 .. csv-table::
@@ -16,8 +18,6 @@ Create a DNS profile as shown in the table below.
    "Logging", "Enabled"
    "Logging Profile", "example_dns_logging_profile"
    "AVR statistics Sample Rate", "Enabled, 1/1 queries sampled"
-
-.. image:: /_static/class2/router01_ltm_profile_dns.png
 
 .. image:: /_static/class2/dns_profile_settings_cache_router01.png
 
