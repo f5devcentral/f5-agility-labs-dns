@@ -1,9 +1,11 @@
-UDP Virtual
+UDP Listener
 ################################
 
-Navigate to: **Local Traffic  ››  Virtual Servers : Virtual Server List**
+Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
 .. image:: /_static/class2/router01_create_virtual_flyout.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/listener/list.jsp
 
 Create two UDP listeners according to the tables below:
 

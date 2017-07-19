@@ -5,6 +5,8 @@ Navigate to: **Local Traffic  ››  Profiles : Protocol : TCP**
 
 .. image:: /_static/class2/router01_create_tcp_profile.png
 
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/list.jsp
+
 Create a TCP profile as shown in the following table.
  
 .. csv-table::
@@ -16,7 +18,7 @@ Create a TCP profile as shown in the following table.
 
 .. image:: /_static/class2/router01_create_tcp_profile_properties.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/tcp/create.jsp
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/create.jsp
 
 .. admonition:: TMSH
 
