@@ -1,4 +1,4 @@
-TCP Virtuals
+TCP Listeners
 ####################################
 
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
