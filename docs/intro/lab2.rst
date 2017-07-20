@@ -22,4 +22,3 @@ Service IP Addresses:
    :widths: 15, 15
 
    "www.example.com = 203.0.113.9", "www.example.com = 198.51.100.41"
-   "vpn.example.com = 203.0.113.10", "vpn.example.com = 198.51.100.42"
