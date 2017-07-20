@@ -9,4 +9,10 @@ From the Windows CMD prompt run: “dig dnssec-deployment.org +dnssec”
 
 .. image:: /_static/class2/dnssec-resolver-results.png
 
+From the Windows CMD prompt run: “dig dnssec-failed.org +dnssec”
+
+.. image:: /_static/class2/dnssec-failed.png
+
+
+
 http://www.internetsociety.org/deploy360/resources/dnssec-test-sites/
