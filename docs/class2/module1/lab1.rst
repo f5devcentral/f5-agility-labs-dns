@@ -7,7 +7,7 @@ Navigate to: **Delivery : Load Balancing : Monitors**
 
 .. image:: /_static/class2/class2_create_health-monitor_flyout.png
 
-Create a pool according to the following table:
+Create a monitor according to the following table:
 
 .. csv-table::
    :header: "Setting", "Value"
