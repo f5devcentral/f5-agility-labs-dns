@@ -1,4 +1,4 @@
-gtm1.site1
+gtm1.site2
 ###############################################
 
 All GTM devices need to be defined. Create a server object for gtm1.site1
