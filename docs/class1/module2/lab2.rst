@@ -5,11 +5,9 @@ A DNS profile controls the way a listener processes a query.
 
 Navigate to: **DNS > Delivery > Profiles > DNS: Create**
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/create.jsp
-
-https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/create.jsp
-
 .. note::  **It is required to complete the following task on both gtm1.site1 and gtm1.site2**
+
+.. image:: /_static/class1/dns_profile_flyout.png
 
 Create a new DNS profile as shown in the following table.
 
@@ -24,9 +22,11 @@ Create a new DNS profile as shown in the following table.
    "Logging Profile", "example_dns_logging_profile"
    "AVR statistics Sample Rate", "Enabled, 1/1 queries sampled"
 
-.. figure:: /_static/class1/dns_profile_flyout.png
-
 .. figure:: /_static/class1/dns_profile_settings.png
+
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/create.jsp
+
+https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/create.jsp
 
 TMSH command for both gtm1.site1 and gtm1.site2:
 
