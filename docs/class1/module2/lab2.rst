@@ -3,9 +3,9 @@ DNS Profile
 
 A DNS profile controls the way a listener processes a query.
 
-Navigate to: **DNS > Delivery > Profiles > DNS: Create**
-
 .. note::  **It is required to complete the following task on both gtm1.site1 and gtm1.site2**
+
+Navigate to: **DNS > Delivery > Profiles > DNS: Create**
 
 .. image:: /_static/class1/dns_profile_flyout.png
 
@@ -22,7 +22,7 @@ Create a new DNS profile as shown in the following table.
    "Logging Profile", "example_dns_logging_profile"
    "AVR statistics Sample Rate", "Enabled, 1/1 queries sampled"
 
-.. figure:: /_static/class1/dns_profile_settings.png
+.. image:: /_static/class1/dns_profile_settings.png
 
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/create.jsp
 
