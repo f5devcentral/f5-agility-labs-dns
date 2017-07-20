@@ -1,11 +1,9 @@
 site2_ha-pair
 ###############################################
 
-LTM devices need to be defined. Create a server object for the bigip1.site2 and bigip2.site2 HA pair.
+LTM devices need to be defined. Create a server object for the bigip1.site1 and bigip2.site1 HA pair
 
-Navigate to: **DNS > GSLB > Servers > Server List: Create**
-
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
+.. image:: /_static/class1/server_create_gtm1-gtm2-site1-hapair.png
 
 Create a Server Object as defined in the table below:
 
@@ -21,9 +19,27 @@ Create a Server Object as defined in the table below:
    "Virtual Server Discovery", "Enabled"
    "Link Discovery", "Enabled"
 
-.. image:: /_static/class1/site2_ha-pair.png
+#. Fill in the Name and Datacenter
 
-TMSH command for only gtm1.site1:
+   .. image:: /_static/class1/site2_click-addserver.png
+
+#. Click the "Add" button to define IP addresses
+
+   .. image:: /_static/class1/site2_ha_pair_bigip1_add.png
+
+#. Click "Add" again to define the other BIG-IP in the HA pair.
+
+   .. image:: /_static/class1/site2_click-addserver_again.png
+
+#. Click the "Add" button to define IP addresses
+
+   .. image:: /_static/class1/site2_ha_pair_bigip2_add.png
+
+#. Complete the form and associate the "bigip" "Health Monitor"
+
+   .. image:: /_static/class1/site2-HA_pair_create.png
+
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
 
 .. admonition:: TMSH
 
