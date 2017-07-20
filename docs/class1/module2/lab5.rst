@@ -13,7 +13,7 @@ Create a UDP listener according to the following table:
 
 .. csv-table::
    :header: "Setting", "gtm1.site1", "gtm1.site2"
-   :widths: 15, 15, 15
+   :widths: 6, 10, 10
 
    "Name", "isp1_site1_ns1.example.com_udp_53_virtual", "isp2_site2_ns2.example.com_udp_53_virtual"
    "Destination", "203.0.113.8", "198.51.100.40"

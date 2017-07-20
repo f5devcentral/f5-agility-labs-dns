@@ -3,11 +3,9 @@ gtm1.site1
 
 All GTM devices need to be defined. Create a server object for gtm1.site1
 
-Navigate to: **DNS  ››  GSLB : Servers : Server List**
+.. image:: /_static/class1/server_create_none.png
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
-
-Create a Server Object as defined in the table below:
+Click "Create" to define gtm1.site1 as defined in the table below:
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -19,8 +17,9 @@ Create a Server Object as defined in the table below:
    "Health Monitors", "bigip"
    "**Virtual Server Discovery**", "**Disabled**"
 
-.. figure:: /_static/class1/gtm1.site1_create.png
-   :width: 800
+.. image:: /_static/class1/gtm1.site1_create.png
+
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
 
 TMSH command for only site1.gtm1:
 

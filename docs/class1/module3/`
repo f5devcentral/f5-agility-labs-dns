@@ -1,15 +1,13 @@
 Datacenters
 ############################################
 
-Datacenters are logical groupings of devices that share a gateway.
+Datacenters are logical groupings of network devices that share a gateway.
 
 .. note::   The tasks in this section are to be only completed on gtm1.site1
 
 Navigate to: **DNS > GSLB > Data Centers > Data Center List: Create**
 
 .. image:: /_static/class1/create_datacenters_flyout.png
-
-https://gtm1.site1.example.com/tmui/Control/jspmap/xsl/gtm_dc/list
 
 Create two data centers according to the table below:
 
@@ -22,7 +20,7 @@ Create two data centers according to the table below:
 
 .. image:: /_static/class1/create_datacenters.png
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/data_center/create.jsp
+https://gtm1.site1.example.com/tmui/Control/jspmap/xsl/gtm_dc/list
 
 TMSH command for only site1.gtm1:
 
