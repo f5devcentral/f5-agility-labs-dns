@@ -24,11 +24,11 @@ Configure the global settings for GSLB according to the following table:
 
 .. image:: /_static/class1/gtm_global_settings.png
 
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/settings/gslb/properties_general.jsp
+
 .. admonition:: TMSH
 
    tmsh modify gtm global-settings general synchronization yes synchronization-group-name EXAMPLE_group synchronize-zone-files yes
-
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/settings/gslb/properties_general.jsp
 
 https://support.f5.com/csp/article/K13734
 
