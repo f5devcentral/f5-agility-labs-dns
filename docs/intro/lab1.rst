@@ -15,13 +15,13 @@ Orientation
 
    **Start** –> **Remote Desktop Connection** –> **10.1.70.200**.
 
-   .. image:: /_static/start-rdp-dco1.png
+   .. image:: /_static/start-rdp-dc01-1.png
 
    .. image:: /_static/logon_screen.png
 
 #. Click on **Server Manager**, and in the top right corner choose **Tools** and then **DNS**.
 
-   .. image:: /_static/AD_tools.png
+   .. image:: /_static/AD_tools-1.png
 
 #. Double click on **EXAMPLE.COM** and examine DNS records.
 
