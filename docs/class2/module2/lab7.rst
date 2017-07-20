@@ -46,7 +46,7 @@ Results
 
       tmsh show ltm dns cache records rrset cache resolver-cache owner f5.com
 
-$. View cache entries of a particular RR type:
+#. View cache entries of a particular RR type:
 
    .. admonition:: TMSH
 
