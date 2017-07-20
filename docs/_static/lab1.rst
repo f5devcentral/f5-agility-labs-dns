@@ -29,8 +29,7 @@ Orientation
 
    .. image:: /_static/www_properties.png
 
-#. Connect to https://bigip1.site1.example.com and list the virtual server (**203.0.113.9**).
-   Use Internet Explorer Browser on the jumpbox to log in via the GUI, or use Putty for SSH to get a shell. Note, the status of the BIG-IP might be either active or standby. 
+#. Connect to https://bigip1.site1.example.com and list the virtual server (**203.0.113.9**).Use Internet Explorer Browser on the jumpbox to log in via the GUI, or use Putty for SSH to get a shell.
 
 GUI username = **admin/admin**
 
@@ -45,7 +44,5 @@ GUI username = **admin/admin**
 
 CLI username = **root/default**
 
-   .. image:: /_static/bigip1.site2_virtuals-1.png
-
-
+   .. image:: /_static/bigip1.site2_virtuals.png
 
