@@ -1,13 +1,22 @@
-Log Profile
+Logging
 ############################################
 
-Configure DNS query and response logging.
+Configure DNS query and response logging. Create a "Log Publisher", and a "Logging Profile"
 
-#. On both gtm1.site1 and gtm1.site2 create a "Log Publisher" for local syslog. Navigate to: **System  ››  Logs : Configuration : Log Publishers**
+Be sure to complete the following tasks on both gtm1.site1 and gtm1.site2
+
+#. Navigate to: **System  ››  Logs : Configuration : Log Publishers**
 
    .. image:: /_static/class1/system_log_publisher_flyout.png
 
-   Create a local syslog publisher
+   Create a local syslog publisher according to the table below:
+
+   .. csv-table::
+      :header: "Setting", "Value"
+      :widths: 15, 15
+
+      "Name", "local-syslog-publisher"
+      "Destinations", "local-syslog"
 
    .. image:: /_static/class1/sys_syslog_publisher_details.png
 
@@ -21,7 +30,9 @@ Configure DNS query and response logging.
 
       tmsh create sys log-config publisher local-syslog-publisher { destinations { local-syslog { } } }
 
-#. On both gtm1.site1 and gtm1.site2 create a "Log Profile": **DNS > Delivery > Profiles > Other > DNS Logging: Create**
+#. Navigate to: **DNS > Delivery > Profiles > Other > DNS Logging: Create**
+
+   .. image:: /_static/class1/dns_logging_profile_flyout.png
 
    Create a new DNS logging profile as shown in the table below.
 
@@ -34,18 +45,16 @@ Configure DNS query and response logging.
       "Log Responses", "enabled"
       "Include Query ID", "enabled"
 
-.. image:: /_static/class1/dns_logging_profile_flyout.png
-
-.. image:: /_static/class1/dns_logging_profile_create.png
+   .. image:: /_static/class1/dns_logging_profile_create.png
 
    https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/dns_log/create.jsp
 
    https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/dns_log/create.jsp
 
-**TMSH command for both gtm1.site1 and gtm1.site2:**
+   **TMSH command for both gtm1.site1 and gtm1.site2:**
 
-.. admonition:: TMSH
+   .. admonition:: TMSH
 
-   tmsh create ltm profile dns-logging example_dns_logging_profile enable-response-logging yes include-query-id yes log-publisher local-syslog-publisher
+      tmsh create ltm profile dns-logging example_dns_logging_profile enable-response-logging yes include-query-id yes log-publisher local-syslog-publisher
 
 https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-external-monitoring-implementations-12-0-0/5.html
