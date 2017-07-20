@@ -5,8 +5,6 @@ The zone example.com is served from the high performance authoritative resolver.
 
 Navigate to **DNS  ››  Zones : Zones : Zone List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/zone/create.jsp
-
 .. image:: /_static/class2/create_dnsxpress_flyout.png
 
 Create a DNS Express zone according to the following table:
@@ -20,6 +18,8 @@ Create a DNS Express zone according to the following table:
    "Allow NOTIFY From", "10.1.70.200"
 
 .. image:: /_static/class2/create_dnsxpress_zone_example.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/zone/create.jsp
 
 .. admonition:: TMSH
 
