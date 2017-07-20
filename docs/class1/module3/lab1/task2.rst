@@ -18,15 +18,15 @@ Click "Create" to define gtm1.site1 as defined in the table below:
 
 #. Fill in the Name and Datacenter
 
-   .. image:: /_static/class1/gtm1-click_add.png
+   .. image:: /_static/class1/gtm2-click_add.png
 
 #. Click the "Add" button to define IP addresses
 
-   .. image:: /_static/class1/gtm1_click-addserver.png
+   .. image:: /_static/class1/gtm2_click-addserver.png
 
 #. Complete the form and associate the "bigip" "Health Monitor"
 
-   .. image:: /_static/class1/gtm1.site1_create.png
+   .. image:: /_static/class1/gtm1.site2_create.png
 
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
 
