@@ -30,7 +30,6 @@ Create a transparent cache
 
    "Name", "transparent_cache"
    "Resolver Type", "Transparent"
-   "Answer Default Zones", "Checked - Enabled"
 
 .. image:: /_static/class2/cache_transparent.png
 
@@ -40,5 +39,5 @@ TMSH command for router01.branch01:
 
 .. admonition:: TMSH
 
-   tmsh create ltm dns cache transparent transparent_cache answer-default-zones yes
+   tmsh create ltm dns cache transparent transparent_cache
 
