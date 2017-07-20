@@ -37,7 +37,7 @@ Create new iRule, copy the content below and paste it.
      # If the category returns as blocked, return NXDOMAIN (1)
      # Otherwise if (0), return a statically defined IP address
      set static::request_return_nxdomain 0
-     set static::request_redirect_to "192.168.57.253"
+     set static::request_redirect_to "10.1.71.21"
      # Toggle for debug logs
      set static::request_debug 1
    }
