@@ -3,7 +3,7 @@ Logging
 
 Configure DNS query and response logging. Create a "Log Publisher", and a "Logging Profile"
 
-.. note::  **It is required to complete the following task on both gtm1.site1 and gtm1.site2*
+.. note::  **It is required to complete the following task on both gtm1.site1 and gtm1.site2**
 
 #. Navigate to: **System  ››  Logs : Configuration : Log Publishers**
 
