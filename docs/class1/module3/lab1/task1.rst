@@ -15,13 +15,20 @@ Click "Create" to define gtm1.site1 as defined in the table below:
    "Data Center", "site1_datacenter"
    "Devices Add:", "gtm1.site1.example.com : 203.0.113.7"
    "Health Monitors", "bigip"
-   "**Virtual Server Discovery**", "**Disabled**"
 
-.. image:: /_static/class1/gtm1.site1_create.png
+#. Fill in the Name and Datacenter
+
+   .. image:: /_static/class1/gtm1-click_add.png
+
+#. Click the "Add" button to define IP addresses
+
+   .. image:: /_static/class1/gtm1_click-addserver.png
+
+#. Complete the form and associate the "bigip" "Health Monitor"
+
+   .. image:: /_static/class1/gtm1.site1_create.png
 
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
-
-TMSH command for only site1.gtm1:
 
 .. admonition:: TMSH
 
