@@ -7,8 +7,6 @@ A mesh of F5 DNS servers need to exchange keys to establish a trusted mechanism 
 
 Lanch Putty and login to gtm1.site1.example.com
 
-.. image:: /_static/class1/putty_gtm1.site1.png
-
 Run the following command:
 
 When prompted for a password use "default".
@@ -16,6 +14,8 @@ When prompted for a password use "default".
 .. admonition:: TMSH
 
    bigip_add
+
+.. image:: /_static/class1/putty_gtm1_site1.png
 
 Navigate to: **DNS  ››  GSLB : Servers : Trusted Server Certificates**
 
