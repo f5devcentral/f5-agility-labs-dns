@@ -13,11 +13,9 @@ Create new iRule, copy the content below and paste it.
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   Name, DNS-query-filtering  
+   Name, IPInteliigence_irule
 
- 
 .. code-block:: tcl
-   :linenos:
    :emphasize-lines: 10
  
    when RULE_INIT {
@@ -68,10 +66,7 @@ Create new iRule, copy the content below and paste it.
      }
    }
  
-TMSH commands for router01.branch01 (Make sure you use text editor to copy content above and paste it)
-
 .. admonition:: TMSH
 
-   tmsh create ltm rule DNS-query-filtering
-
+   tmsh create ltm rule IPIntelligence_irule
 
