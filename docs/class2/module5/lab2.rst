@@ -1,4 +1,4 @@
-DNSSEC signed zone
+Signed Zone
 ###################
 
 Navigate to: **DNS  ››  Zones : DNSSEC Zones : DNSSEC Zone List**

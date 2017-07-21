@@ -1,4 +1,4 @@
-DNSSEC keys
+Keys
 #####################################
 
 Navigate to: **DNS  ››  Delivery : Keys : DNSSEC Key List**
