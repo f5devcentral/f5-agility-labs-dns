@@ -5,7 +5,7 @@ Navigate to: **DNS  ››  Delivery : Keys : DNSSEC Key List**
 
 .. image:: /_static/class2/dnssec-keys-create.png
 
-Create zone signing key and key signing key 
+Create zone signing key according the following table:
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -19,6 +19,8 @@ Create zone signing key and key signing key
 
 .. image:: /_static/class2/dnssec-zsk.png
 
+Create key signing key according to the following table:
+
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
@@ -29,11 +31,9 @@ Create zone signing key and key signing key
    Certificate, default.crt
    Private Key, default.key
 
-
 .. image:: /_static/class2/dnssec-ksk.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/dnssec_key/list.jsp
-
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/dnssec_key/create.jsp
 
 TMSH commands for Zone Signing key creation:
 
