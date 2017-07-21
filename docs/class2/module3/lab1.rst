@@ -15,15 +15,13 @@ Using Putty, ssh into router01.branch01 and run the following command:
 
 Navigate to: **DNS  ››  Caches : Cache List  ››  validating-resolver_cache : Trust Anchors**
 
-<<<<<<< HEAD
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_anchor/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_validating_config
-=======
 Select the validating-resolver_cache and click "Trust Anchors"
->>>>>>> f1aa0736e05a0b71391199d9bb250876e6682f9b
+
+.. image:: /_static/class2/selet_validating_resolver.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_anchor/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_validating_config
 
 .. image:: /_static/class2/trust-anchor.png
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_anchor/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_validating_config
 
 For each line of output from the preceding command create a "Trust Anchor"
 
