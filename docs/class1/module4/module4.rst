@@ -5,9 +5,9 @@ LTM virtual server objects are grouped together into GTM pools.
 
 Navigate to: **DNS  ››  GSLB : Pools : Pool List**
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/pool/create.jsp
+.. image:: /_static/class1/gtm_pool_list.png
 
-Create a GTM pool of LTM Virtuals according to the following table:
+Create a Pool of LTM Virtuals according to the following table:
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -18,7 +18,7 @@ Create a GTM pool of LTM Virtuals according to the following table:
    "member", "isp1_site1_www.example.com_tcp_https_virtual"
    "member", "isp2_site2_www.example.com_tcp_https_virtual"
 
-.. image:: /_static/class1/gtm_pool_list.png
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/pool/create.jsp
 
 .. image:: /_static/class1/create_gtm_pool.png
 
