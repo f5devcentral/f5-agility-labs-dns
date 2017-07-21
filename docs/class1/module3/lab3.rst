@@ -1,7 +1,9 @@
 Sync Group Formation
 ==================================
 
-The BIG-IP DNS server in datacenter two needs to join the "sync group"
+After the BIG-IP DNS server in datacenter 2 is joined to the sync group, administrators may make changes to either F5 DNS server.
+
+Changes will be automatically replicated across all F5 DNS servers.
 
 Launch Putty and log in to gtm1.site2
 
