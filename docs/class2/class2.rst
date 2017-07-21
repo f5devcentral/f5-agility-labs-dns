@@ -11,11 +11,11 @@ Students will work with the following concepts as part of a group of lab excerci
 
 #. Transparent Cache
 
-#. Validating Resolver
-
 #. Hidden Master
 
 #. DNSSec
+
+#. Validating Resolver
 
 #. RPZ
 
