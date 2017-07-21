@@ -1,6 +1,8 @@
 UDP Profile
 #####################################
 
+A UDP profile controls the way the platform processes UDP traffic.
+
 Navigate to: **DNS  ››  Delivery : Profiles : Protocol : UDP**
 
 .. image:: /_static/class2/router01_create_udp_profile.png

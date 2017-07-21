@@ -1,6 +1,8 @@
 DNS Profile
 #####################################
 
+A DNS profile will control which features are enabled as part of processing a query.
+
 Navigate to: **DNS  ››  Delivery : Profiles : DNS**
 
 .. image:: /_static/class2/router01_ltm_profile_dns.png

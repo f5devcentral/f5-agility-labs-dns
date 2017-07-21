@@ -1,6 +1,8 @@
 TCP Listeners
 ####################################
 
+A TCP listener is an IP address that will receive DNS queries.
+
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
 .. image:: /_static/class2/router01_create_virtual_flyout.png

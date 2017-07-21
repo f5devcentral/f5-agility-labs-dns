@@ -1,6 +1,8 @@
 TCP Profile
 ###################################
 
+A TCP profile controls the way the platform processes TCP traffic.
+
 Navigate to: **DNS  ››  Delivery : Profiles : Protocol : TCP**
 
 .. image:: /_static/class2/router01_create_tcp_profile.png
