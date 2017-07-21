@@ -14,7 +14,7 @@ In the next excercise a DNS profile will reference the cache and a Listener will
 
 .. image:: /_static/class2/before_transparent_cache.png
 
-Enabling a transparent cache on the BIG-IP will offload some DNS queries from being sent to the Domain Controller.
+Enabling a transparent cache on the BIG-IP will offload some DNS queries from being sent to the internal DNS servers.
 
 .. image:: /_static/class2/transparent_cache_enabled.png
 

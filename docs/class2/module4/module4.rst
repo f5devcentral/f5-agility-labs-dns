@@ -1,7 +1,7 @@
 Hidden Master
 ########################
 
-The Domain Controllers are authoritative for example.com so we need to slave the zone to the BIG-IP
+The internal DNS servers are authoritative for example.com so we need to slave the zone to the BIG-IP.
 
 After this module is complete the BIG-IP will become an authoritative slave.
 
