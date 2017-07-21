@@ -1,77 +1,56 @@
-Create an iRule
-############################
+Zone Runner
+==============================
 
-Navigate to: **DNS  ››  Delivery : iRules : iRules List**
+Customers will subscribe to their RPZ vendor of choice.
 
-.. image:: /_static/class2/irule-new.png 
+Use Zonerunner to create a custom RPZ zone for our lab.
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/rule/list.jsp
+Navigate to **DNS  ››  Zones : ZoneRunner : Zone List**
 
-Create new iRule, copy the content below and paste it.
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/zone/create.jsp
+
+.. image:: /_static/class2/zonerunner_create_zone.png
+
+Create a zone according to the following table:
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   Name, DNS-query-filtering  
+   "View Name", "external"
+   "Zone Name", "rpz.example.com"
+   "Zone Type", "Master"
+   "Zone File Name", "db.external.rpz.example.com"
+   "Options", "also-notify { ::1 port 5353; };"
+   "TTL", "300"
+   "Master Server", "router01.branch01.example.com."
+   "Email Contact", "hostmaster.example.com."
+   "NS Record: TTL", "300"
+   "NS Record: Nameserver", "router01.branch01.example.com."
+   "Create A Record", "Checked - Enabled"
+   "A Record: IP Address", "10.1.71.1"
 
- 
-.. code-block:: tcl
-   :linenos:
-   :emphasize-lines: 10
- 
-   when RULE_INIT {
-     # Set categories to block for DNS hosts
-     set static::blocked_categories {
-       /Common/Bot_Networks
-       /Common/Spyware
-       /Common/Malicious_Web_Sites
-       /Common/Adult_Content
-       /Common/Sex
-     }
- 
- 
-     # CONFIGURATION
-     # Check all requests by default
-     set static::request_check 1
-     # If the category returns as blocked, return NXDOMAIN (1)
-     # Otherwise if (0), return a statically defined IP address
-     set static::request_return_nxdomain 0
-     set static::request_redirect_to "10.1.71.21"
-     # Toggle for debug logs
-     set static::request_debug 1
-   }
- 
- 
-   when DNS_REQUEST {
-     if { $static::request_check } {
-       set lookup_category [getfield [CATEGORY::lookup "http://[DNS::question name]"] " " 1]
-       if { [lsearch -exact $static::blocked_categories $lookup_category] >= 1 } {
-         if { $static::request_debug } {
-            log local0. "BLOCKED: Category $lookup_category matching [DNS::question name] is filtered."
-         }
-         DNS::answer clear
-         if { $static::request_return_nxdomain } {
-            DNS::header opcode QUERY
-            DNS::header rcode NXDOMAIN
-         } else {
-            if { [DNS::question type] equals "A" } {
-               DNS::answer insert "[DNS::question name]. 111 [DNS::question class] [DNS::question type] $static::request_redirect_to"
-            }
-         }
-         DNS::return
-    } else {
-      if { $static::request_debug } {
-         log local0. "Category $lookup_category matching [DNS::question name] is not filtered"
-         }
-       }
-     }
-   }
- 
-TMSH commands for router01.branch01 (Make sure you use text editor to copy content above and paste it)
+.. image:: /_static/class2/zonerunner_create_zone_properties.png
 
-.. admonition:: TMSH
+Navigate to: **DNS  ››  Zones : ZoneRunner : Resource Record List**
 
-   tmsh create ltm rule DNS-query-filtering
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/record/create.jsp
 
+.. image:: /_static/class2/zonerunner_create_resource_record.png
 
+Create a resource record according to the following table:
+
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
+
+   "View Name", "external"
+   "Zone Name", "rpz.example.com"
+   "Name", "\*.guns.com.rpz.example.com."
+   "TTL", "300"
+   "Type", "CNAME"
+   "CNAME", "."
+
+.. image:: /_static/class2/zonerunner_create_resource_record_properties.png
+
+.. image:: /_static/class2/zonerunner_list_resource_records.png

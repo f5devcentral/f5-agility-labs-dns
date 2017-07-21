@@ -1,25 +1,12 @@
-DNS Express
-==============================
+Results
+#####################################
 
-Navigate to **DNS  ››  Zones : Zones : Zone List**
+From the CLI on the router01.branch01 BIGIP run tail -f /var/log/ltm
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/zone/create.jsp
+From the Windows CMD prompt run: "dig example.com +dnssec”
 
-.. image:: /_static/class2/create_dnsxpress_flyout.png
+.. image:: /_static/class2/dnssec-logs.png
 
-Create a DNS Express zone according to the following table:
 
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
 
-   "Name", "rpz.example.com"
-   "Server", "localhost"
-   "Allow NOTIFY From", "127.0.0.1"
-   "Response Policy", "checked"
 
-.. image:: /_static/class2/create_dnsxpress_zone.png
-
-.. admonition:: TMSH
-
-   tmsh create ltm dns zone rpz.example.com { dns-express-server localhost response-policy yes dns-express-allow-notify add { 127.0.0.1  } dns-express-notify-tsig-verify no }

@@ -1,15 +1,15 @@
-RPZ
-######################
+DNSSec
+########################
 
-Response Policy Zone will be turned on to stop clients from trying to resolve blacklisted domains.
+TODO: put one liner description here
 
-.. image:: /_static/class2/class2_rpz_overview.png
+.. image:: /_static/class2/class2_hidden_masters.png
 
-https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0/8.html
+https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/dns-services-implementations-11-6-0/2.html#unique_1658664851
 
 .. toctree::
    :hidden:
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    lab*

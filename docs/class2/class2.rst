@@ -1,23 +1,27 @@
 Class 2 - Security
 =============================
 
+The lab environment consists of a Lan of workstations in a remote location with internal DNS servers behind an F5 firewall.
+
+The F5 device is directly connected to the internet.
+
 .. image:: /_static/class2/class2_overview.png
 
-The lab is contained in a remote location where F5 BIG-IP is the default gateway for internal corporate networks.
+Students will configure the following concepts as part of a group of lab excercises.
 
-The F5 is pre-configured as a firewall device sitting on the ISP vlans and internal vlans.
+#. Transparent Cache
 
-Students will migrate the existing DNS topology where two Active Directory servers are handling local DNS.
+#. Validating Resolver
 
-The F5 will intercept DNS queries which would normally be routed directely to the Domain Controller IP.
+#. Hidden Master
 
-The BIG-IP will intercept all DNS requests and perform DNS security.
+#. DNSSec
 
-Students will learn how to implement the following concepts and learn how to migrate to a secure DNS infrastructure.
+#. RPZ
 
-Windows workstations are configured to use the local "Active Directory" DNS servers for resolution.
+#. URL Categorization
 
-The Windows domain controller has a DNS server role installed and performs recursive DNS services.
+#. IP Intelligence
 
 .. toctree::
    :hidden:

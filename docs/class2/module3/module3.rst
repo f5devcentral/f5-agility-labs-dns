@@ -10,7 +10,7 @@ Validating Resolver
 
 Configure a validating resolver cache on the BIG-IP® system to recursively query public DNS servers, validate the identity of the DNS server sending the responses, and then cache the responses.
 
-After completing this lab the BIG-IP will handle secured recursive cache for DNS.
+After completing this lab students will entirely offload DNS queries from internal masters.
 
 .. image:: /_static/class2/class2_validating-resolver.png
 

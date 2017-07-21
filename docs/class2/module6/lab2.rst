@@ -1,30 +1,24 @@
-iRule assignment
-############################
+Name Server
+##############################
 
-Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
+Navigate to **DNS  ››  Delivery : Nameservers : Nameserver List**
 
-.. image:: /_static/class2/listener-assignment-1.png
+.. image:: /_static/class2/create_nameserver_flyout.png
 
-Navigate to the listener DC01_udp_virtual 
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/list.jsp
 
-.. image:: /_static/class2/listener-assignment-2-c.png
+Create a nameserver according to the following table:
 
-Navigate to iRules section
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
 
-.. image:: /_static/class2/irule-assignment-3-c.png
+   "Name", "localhost"
 
-Navigate to Manage
+.. image:: /_static/class2/create_nameserver_localhost.png
 
-.. image:: /_static/class2/irule-assignment-4-c.png
-
-https://router01.branch01.example.com/tmui/Control/form?__handler=/tmui/dns/listener/irules&__source=Manage...&__linked=false&__fromError=false
-
-Highlight DNS-query-filtering iRule and move it to Selected column
-
-.. image:: /_static/class2/irule-assignment-5-c.png
-
-TMSH commands for router01.branch01 
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp
 
 .. admonition:: TMSH
 
-   tmsh modify ltm virtual branch01_udp_53_virtual rules { DNS-query-filtering }
+   tmsh create ltm dns nameserver localhost { address 127.0.0.1 tsig-key none }

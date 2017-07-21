@@ -1,56 +1,50 @@
-Zone Runner
-==============================
+DNSSEC keys
+#####################################
 
-Customers will subscribe to their RPZ vendor of choice.
+Navigate to: **DNS  ››  Delivery : Keys : DNSSEC Key List**
 
-Use Zonerunner to create a custom RPZ zone for our lab.
+.. image:: /_static/class2/dnssec-keys-create.png
 
-Navigate to **DNS  ››  Zones : ZoneRunner : Zone List**
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/zone/create.jsp
-
-.. image:: /_static/class2/zonerunner_create_zone.png
-
-Create a zone according to the following table:
+Create zone signing key and key signing key 
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "View Name", "external"
-   "Zone Name", "rpz.example.com"
-   "Zone Type", "Master"
-   "Zone File Name", "db.external.rpz.example.com"
-   "Options", "also-notify { ::1 port 5353; };"
-   "TTL", "300"
-   "Master Server", "router01.branch01.example.com."
-   "Email Contact", "hostmaster.example.com."
-   "NS Record: TTL", "300"
-   "NS Record: Nameserver", "router01.branch01.example.com."
-   "Create A Record", "Checked - Enabled"
-   "A Record: IP Address", "10.1.71.1"
+   Name, example.com_zsk
+   Type, Zone Signing Key
+   Key Management, Manual
+   Certificate, default.crt
+   Private Key, default.key
 
-.. image:: /_static/class2/zonerunner_create_zone_properties.png
-
-Navigate to: **DNS  ››  Zones : ZoneRunner : Resource Record List**
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/record/create.jsp
-
-.. image:: /_static/class2/zonerunner_create_resource_record.png
-
-Create a resource record according to the following table:
+.. image:: /_static/class2/dnssec-zsk.png
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "View Name", "external"
-   "Zone Name", "rpz.example.com"
-   "Name", "\*.guns.com.rpz.example.com."
-   "TTL", "300"
-   "Type", "CNAME"
-   "CNAME", "."
+   Name, example.com_ksk
+   Type, Zone Signing Key
+   Key Management, “Manual
+   Certificate, default.crt
+   Private Key, default.key
 
-.. image:: /_static/class2/zonerunner_create_resource_record_properties.png
 
-.. image:: /_static/class2/zonerunner_list_resource_records.png
+.. image:: /_static/class2/dnssec-ksk.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/dnssec_key/list.jsp
+
+
+TMSH commands for Zone Signing key creation:
+
+.. admonition:: TMSH
+
+ tmsh create ltm dns dnssec key example.com_zsk key-type zsk certificate-file default.crt key-file default.key
+
+TMSH commands for Key Signing key creation:
+
+.. admonition:: TMSH
+
+ tmsh create ltm dns dnssec key example.com_ksk key-type ksk certificate-file default.crt key-file default.key
+
+

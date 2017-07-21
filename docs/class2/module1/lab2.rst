@@ -1,7 +1,7 @@
-DNS Server Pool
+Load Balancing
 ####################################
 
-Define a pool of internal DNS servers to send the DNS query to when the BIG-IP cache does not have the answer.
+Augment and scale an exiting DNS infrastructure by Load Balancing DNS queries across a pool of DNS servers.
 
 Navigate to: **Delivery : Load Balancing : Pools : Pool List**
 

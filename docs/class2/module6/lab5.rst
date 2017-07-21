@@ -1,4 +1,4 @@
-Enable RPZ
+Walled Garden
 #####################################
 
 Navigate to: **DNS  ››  Caches : Cache List**
