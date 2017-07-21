@@ -1,4 +1,4 @@
-Sync Group Formation
+Sync Group
 ==================================
 
 After the BIG-IP DNS server in datacenter 2 is joined to the sync group, administrators may make changes to either F5 DNS server.
