@@ -3,7 +3,7 @@ Device Trust
 
 A mesh of F5 DNS servers need to exchange keys to establish a trusted mechanism for HA communications.
 
-.. image:: /_static/class1/establish_trust
+.. image:: /_static/class1/establish_trust.png
 
 Lanch Putty and login to gtm1.site1.example.com
 
