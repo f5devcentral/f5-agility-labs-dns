@@ -1,4 +1,4 @@
-DNSSec
+DNSSec Zone Signing
 ########################
 
 TODO: put one liner description here
