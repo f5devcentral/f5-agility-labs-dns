@@ -1,4 +1,4 @@
-DNSSec Validating Resolver
+Validating Resolver
 ##########################################
 
 .. toctree::
