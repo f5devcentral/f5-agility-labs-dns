@@ -1,7 +1,7 @@
 IP Intelligence
 ####################################
 
-IP Intelligence is used to prevent reflection attacks
+.. image:: /_static/class2/ipi.png
 
 .. toctree::
    :hidden:

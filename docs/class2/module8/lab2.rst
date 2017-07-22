@@ -19,9 +19,7 @@ Navigate to Manage
 
 https://router01.branch01.example.com/tmui/Control/form?__handler=/tmui/dns/listener/irules&__source=Manage...&__linked=false&__fromError=false
 
-Highlight DNS-query-filtering iRule and move it to Selected column
-
-.. image:: /_static/class2/irule-assignment-5-c.png
+Highlight IPI iRule and move it to Selected column
 
 TMSH commands for router01.branch01 
 
