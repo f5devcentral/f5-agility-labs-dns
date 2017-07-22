@@ -1,50 +1,25 @@
-Keys
-#####################################
+Name Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Navigate to: **DNS  ››  Delivery : Keys : DNSSEC Key List**
+Define the Active Directory server as a nameserver and initiate a zone transfer.
 
-.. image:: /_static/class2/dnssec-keys-create.png
+Navigate to **DNS  ››  Delivery : Nameservers : Nameserver List**
 
-Create zone signing key according the following table:
+.. image:: /_static/class2/create_nameserver_flyout.png
 
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
-
-   Name, example.com_zsk
-   Type, Zone Signing Key
-   Key Management, Manual
-   Certificate, default.crt
-   Private Key, default.key
-
-.. image:: /_static/class2/dnssec-zsk.png
-
-Create key signing key according to the following table:
+Create a nameserver according to the following table:
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   Name, example.com_ksk
-   Type, Zone Signing Key
-   Key Management, “Manual
-   Certificate, default.crt
-   Private Key, default.key
+   "Name", "dc01.example.com"
+   "Address", "10.1.70.200"
 
-.. image:: /_static/class2/dnssec-ksk.png
+.. image:: /_static/class2/create_nameserver_dc01.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/dnssec_key/create.jsp
-
-TMSH commands for Zone Signing key creation:
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp
 
 .. admonition:: TMSH
 
- tmsh create ltm dns dnssec key example.com_zsk key-type zsk certificate-file default.crt key-file default.key
-
-TMSH commands for Key Signing key creation:
-
-.. admonition:: TMSH
-
- tmsh create ltm dns dnssec key example.com_ksk key-type ksk certificate-file default.crt key-file default.key
-
-
+   tmsh create ltm dns nameserver dc01.example.com { address 10.1.70.200 }

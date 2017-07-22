@@ -13,7 +13,7 @@ Create new iRule, copy the content below and paste it.
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   Name, IPInteliigence_irule
+   Name, IPI_irule
 
 .. code-block:: tcl
    :emphasize-lines: 10
@@ -22,5 +22,5 @@ TODO: get updated irule from Brian Van Lieu
  
 .. admonition:: TMSH
 
-   tmsh create ltm rule IPIntelligence_irule
+   tmsh create ltm rule IPI_irule
 

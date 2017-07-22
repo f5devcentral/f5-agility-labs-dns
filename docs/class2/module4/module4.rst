@@ -1,7 +1,9 @@
-DNSSec
+Hidden Master
 ########################
 
-TODO: put one liner description here
+The internal DNS servers are authoritative for example.com so we need to slave the zone to the BIG-IP.
+
+After this module is complete the BIG-IP will become an authoritative slave.
 
 .. image:: /_static/class2/class2_hidden_masters.png
 
