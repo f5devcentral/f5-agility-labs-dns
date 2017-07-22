@@ -1,31 +1,28 @@
-DLV Anchors
-########################################
+DNS Express
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To cache a validated response for the signed zones, you need to obtain a trust and DLV anchor.
+The zone example.com is served from the high performance authoritative resolver.
 
-Using Putty, ssh into router01.branch01 and run the following command:
+Navigate to **DNS  ››  Zones : Zones : Zone List**
 
-.. admonition:: TMSH
+.. image:: /_static/class2/create_dnsxpress_flyout.png
 
-   dig dnskey dlv.isc.org.  | grep 257 > /root/DLVdnskey.txt
+Create a DNS Express zone according to the following table:
 
-   dnssec-dsfromkey -f /root/DLVdnskey.txt dlv.isc.org.
+.. csv-table::
+   :header: "Setting", "Value"
+   :widths: 15, 15
 
-.. image:: /_static/class2/dlv-cli.png
+   "Name", "example.com"
+   "Server", "dc01.example.com"
+   "Allow NOTIFY From", "10.1.70.200"
 
+.. image:: /_static/class2/create_dnsxpress_zone_example.png
 
-Navigate to: **DNS  ››  Caches : Cache List  ››  validating-resolver_cache : DLV Anchors**
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_anchor/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_validating_config
-
-.. image:: /_static/class2/dlv-add.png
-
-For each line of output from the preeeding command create a "DLV Anchor"
-
-.. image:: /_static/class2/dlv-add-1.png
-
-.. image:: /_static/class2/dlv-final.png
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/zone/create.jsp
 
 .. admonition:: TMSH
 
-   tmsh modify ltm dns cache validating-resolver validating-resolver_cache dlv-anchors replace-all-with { "dlv.isc.org. IN DS 19297 5 1 7D480DBEF530374D8A4333FCB22106EB10013B46" "dlv.isc.org. IN DS 19297 5 2 A11D16F6733983E159EDF8053B2FB57B479D81A309A50EAA79A81AF48A47C617" }
+   tmsh create ltm dns zone example.com { dns-express-allow-notify add { 10.1.70.200 } dns-express-notify-tsig-verify no dns-express-server dc01.example.com }
+
+https://support.f5.com/kb/en-us/products/big-ip-dns/manuals/product/bigip-dns-services-implementations-12-1-0/1.html#guid-977cd16a-5d12-4b1e-964c-5d8206f647ed
