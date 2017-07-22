@@ -14,6 +14,8 @@ After completing this lab students will entirely offload DNS queries from intern
 
 .. image:: /_static/class2/class2_validating-resolver.png
 
+.. image:: /_static/class2/class2_validating-resolver2.png
+
 Navigate to **DNS  ››  Caches : Cache List**
 
 .. image:: /_static/class2/cache_list_flyout.png
