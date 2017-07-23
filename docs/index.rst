@@ -35,5 +35,5 @@ https://github.com/0xHiteshPatel/f5-agility-lab-template
    :caption: Contents:
    :glob:
 
-   intro/intro*
+   intro.rst
    class*/class*

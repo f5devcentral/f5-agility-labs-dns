@@ -13,7 +13,6 @@ Using Putty, ssh into router01.branch01 and run the following command:
 
 .. image:: /_static/class2/dlv-cli.png
 
-
 Navigate to: **DNS  ››  Caches : Cache List  ››  validating-resolver_cache : DLV Anchors**
 
 https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_anchor/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_validating_config
