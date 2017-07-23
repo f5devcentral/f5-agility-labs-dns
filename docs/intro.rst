@@ -11,6 +11,8 @@ Lab Environment
 
 .. image:: /_static/orientation_remote_site_MGMT.png 
 
+.. image:: /_static/orientation_remote_site_MGMT_connected.png 
+
 .. toctree::
    :numbered:
    :hidden:
