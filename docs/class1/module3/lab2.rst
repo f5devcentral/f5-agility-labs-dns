@@ -5,7 +5,7 @@ A mesh of F5 DNS servers need to exchange keys to establish a trusted mechanism 
 
 .. image:: /_static/class1/establish_trust.png
 
-Lanch Putty and login to gtm1.site1.example.com
+Launch Putty and login to gtm1.site1.example.com
 
 Run the following command:
 
