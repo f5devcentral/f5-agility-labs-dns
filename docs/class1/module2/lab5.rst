@@ -1,7 +1,7 @@
 UDP IP Address
 ############################################
 
-A UDP listener will receive and proess DNS queries.
+A UDP listener will receive and process DNS queries.
 
 .. note:: **It is required to complete the following task on both gtm1.site1 and gtm1.site2**
 

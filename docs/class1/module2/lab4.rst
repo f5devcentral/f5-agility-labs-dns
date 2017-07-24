@@ -29,5 +29,3 @@ TMSH Command for both gtm1.site and gtm1.site2:
 .. admonition:: TMSH
 
    tmsh create ltm profile tcp example.com_tcp-dns_profile defaults-from tcp-wan-optimized
-
-Share cool links here
