@@ -1,5 +1,5 @@
-F5 Agility Labs - DNS
-=======================
+F5 Agility Labs - DNS Services
+===================================
 
 .. image:: /_static/html_front_cover.png
 
