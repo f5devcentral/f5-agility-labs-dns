@@ -5,11 +5,11 @@ From the CLI on the router01.branch01 BIGIP run
 
 tail -f /var/log/ltm
 
-From a Windows command prompt run “dig example.com” and check for the results
+From the Workstation command prompt run “dig example.com” and check for the results
 
 .. image:: /_static/class2/examplecom.png
 
-From a Windows command prompt run “dig porno.com” and check for the results
+From the Workstation command prompt run “dig porno.com” and check for the results
  
 .. image:: /_static/class2/pornocom.png
 
@@ -23,6 +23,6 @@ Click on the DNS-query-filtering iRule and add new filtering category “News_an
 
 .. image:: /_static/class2/news.png 
 
-From a Windows command prompt run “dig cnn.com” and check for the results
+From the Workstation command prompt run “dig cnn.com” and check for the results
 
 .. image:: /_static/class2/cnn.png 
