@@ -1,7 +1,7 @@
 Load Balancing
 ####################################
 
-Augment and scale an exiting DNS infrastructure by Load Balancing DNS queries across a pool of DNS servers.
+Augment and scale an existing DNS infrastructure by Load Balancing DNS queries across a pool of DNS servers.
 
 Navigate to: **Delivery : Load Balancing : Pools : Pool List**
 
