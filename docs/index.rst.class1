@@ -1,4 +1,4 @@
-DNS Services
+DNS Services - Availability
 ===================================
 
 .. image:: /_static/html_front_cover.png
@@ -10,4 +10,4 @@ DNS Services
    :glob:
 
    intro.rst
-   class*/class*
+   class1/class1.rst

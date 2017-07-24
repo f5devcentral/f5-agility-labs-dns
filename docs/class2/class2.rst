@@ -21,8 +21,6 @@ Students will work with the following concepts as part of a group of lab excerci
 
 #. URL Categorization
 
-#. IP Intelligence
-
 .. toctree::
    :hidden:
    :numbered:

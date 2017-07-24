@@ -13,11 +13,3 @@ Lab Environment
 
 .. image:: /_static/orientation_remote_site_MGMT_connected.png 
 
-.. toctree::
-   :numbered:
-   :hidden:
-   :maxdepth: 1
-   :glob:
-
-   lab*
-
