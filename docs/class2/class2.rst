@@ -7,7 +7,7 @@ The F5 device is directly connected to the internet.
 
 .. image:: /_static/class2/class2_overview.png
 
-Students will work with the following concepts as part of a group of lab excercises.
+Students will work with the following concepts as part of a group of lab exercises.
 
 #. Transparent Cache
 

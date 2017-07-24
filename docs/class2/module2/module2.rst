@@ -1,7 +1,7 @@
 Listeners
 ############################################
 
-A listener object is an spcialized virtual server that is configured to respond to DNS queries.
+A listener object is an specialized virtual server that is configured to respond to DNS queries.
 
 We will be creating both TCP and UDP based listeners that have the same IP address of the existing DNS server.
 

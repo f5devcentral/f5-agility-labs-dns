@@ -10,7 +10,7 @@ Transparent Cache
 
 In this module we will prepare the objects required to build a transparent cache.
 
-In the next excercise a DNS profile will reference the cache and a Listener will forward traffic to a healthy backend DNS server
+In the next exercise a DNS profile will reference the cache and a Listener will forward traffic to a healthy backend DNS server
 
 .. image:: /_static/class2/before_transparent_cache.png
 
