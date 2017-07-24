@@ -19,7 +19,7 @@ https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_a
 
 .. image:: /_static/class2/dlv-add.png
 
-For each line of output from the preeeding command create a "DLV Anchor"
+For each line of output from the preceding command create a "DLV Anchor"
 
 .. image:: /_static/class2/dlv-add-1.png
 
