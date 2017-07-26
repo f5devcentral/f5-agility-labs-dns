@@ -9,6 +9,8 @@ Credits
 
    Brendan Gladney
 
+   Brian Buback
+
    Emilio Torres
 
    Josh Anderson
@@ -19,8 +21,6 @@ Credits
 - Advisors:
 
    Brian Van Lieu
-
-   Brian Buback
 
    Dave Doucette
 
