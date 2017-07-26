@@ -1,11 +1,11 @@
 gtm1.site2
 ###############################################
 
-All GTM devices need to be defined. Create a server object for gtm1.site1
+All GTM devices need to be defined. Create a server object for gtm1.site2
 
 .. image:: /_static/class1/server_create_gtm1.png
 
-Click "Create" to define gtm1.site1 as defined in the table below:
+Click "Create" to define gtm1.site2 as defined in the table below:
 
 .. csv-table::
    :header: "Setting", "Value"

@@ -1,7 +1,7 @@
 site2_ha-pair
 ###############################################
 
-LTM devices need to be defined. Create a server object for the bigip1.site1 and bigip2.site1 HA pair
+LTM devices need to be defined. Create a server object for the bigip1.site2 and bigip2.site2 HA pair
 
 .. image:: /_static/class1/server_create_gtm1-gtm2-site1-hapair.png
 
@@ -38,6 +38,10 @@ Create a Server Object as defined in the table below:
 #. Complete the form and associate the "bigip" "Health Monitor"
 
    .. image:: /_static/class1/site2-HA_pair_create.png
+
+#. Make sure to enable both "Virtual Server" and "Link" discovery
+
+   .. image:: /_static/class1/VS_and_link_auto_discovery.png
 
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
 

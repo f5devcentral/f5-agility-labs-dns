@@ -15,7 +15,7 @@ Create a TCP listener.
    :header: "Setting", "gtm1.site1", "gtm1.site2"
    :widths: 6, 10, 10
 
-   "Name", "isp1_site1_ns1.example.com_tcp_53_virtual", "isp2_site2_ns2.example.com_tcp_53_virtual"
+   "Name", "isp1_site1_ns1.example.com_tcp_53_virtual", "isp1_site2_ns2.example.com_tcp_53_virtual"
    "Destination", "203.0.113.8", "198.51.100.40"
    "Protocol Profile (Client)", "example.com_tcp-dns_profile", "example.com_tcp-dns_profile"
    "DNS Profile", "example.com_dns_profile", "example.com_dns_profile"

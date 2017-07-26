@@ -39,6 +39,10 @@ Create a Server Object as defined in the table below:
 
    .. image:: /_static/class1/site1-HA_pair_create.png
 
+#. Make sure to enable both "Virtual Server" and "Link" discovery
+
+   .. image:: /_static/class1/VS_and_link_auto_discovery.png
+
 https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
 
 .. admonition:: TMSH
