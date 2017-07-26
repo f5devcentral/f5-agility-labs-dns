@@ -10,6 +10,8 @@ Credits
    Brendan Gladney
 
    Brian Buback
+   
+   Dave Doucette
 
    Emilio Torres
 
@@ -21,8 +23,6 @@ Credits
 - Advisors:
 
    Brian Van Lieu
-
-   Dave Doucette
 
    Hitesh Patel
 
