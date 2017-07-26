@@ -38,37 +38,13 @@ Results
 
    .. admonition:: TMSH
 
-      tmsh show ltm dns cache resolver
-
-#. View cache entries for a particular domain / owner:
-
-   .. admonition:: TMSH
-
-      tmsh show ltm dns cache records rrset cache resolver-cache owner f5.com
-
-#. View cache entries of a particular RR type:
-
-   .. admonition:: TMSH
-
-      tmsh show ltm dns cache records rrset cache resolver-cache type NS
-
-#. Viewing Cache Statistics:
-
-   .. admonition:: TMSH
-
-      tmsh show ltm dns cache resolver resolver-cache
-
-#. Deleting Cache Entries
-
-   .. admonition:: TMSH
-
-      tmsh delete ltm dns cache records rrset cache reso_cache ?
+   show ltm dns cache transparent transparent_cache
 
 #. Clearing Entire Cache
 
    Navigate to **Statistics > Module Statistics > DNS > Caches**
 
-   Set “Statistics Type” to “Caches”.
+   Set "Statistics Type" to "Caches".
 
-   Select the cache and click “Clear Cache” to empty the cache.
+   Select the cache and click "Clear Cache" to empty the cache.
 

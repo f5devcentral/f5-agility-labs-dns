@@ -11,3 +11,4 @@ DNS Services
 
    intro.rst
    class*/class*
+   credits.rst

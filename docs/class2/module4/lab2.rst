@@ -1,27 +1,31 @@
-Signed Zone
-###################
+Key Signing Key
+############################################
 
-Navigate to: **DNS  ››  Zones : DNSSEC Zones : DNSSEC Zone List**
+Navigate to: **DNS  ››  Delivery : Keys : DNSSEC Key List**
 
-.. image:: /_static/class2/dnssec-zone.png
+.. image:: /_static/class2/dnssec-keys-create.png
 
-https://router01.branch01.example.com/tmui/Control/form?__handler=/tmui/dns/dnssec_zone/list&__source=delete_confirm&__linked=false&__fromError=false
-
-Create DNS Express zone signed by DNSSEC
+Create a key signing key according to the following table:
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   Name, example.com
-   Zone Signing Key, example.com_zsk
-   Key Signing Key, example.com_ksk
+   Name, example.com_ksk
+   Type, Key Signing Key
+   Key Management, Manual
+   Certificate, default.crt
+   Private Key, default.key
 
-.. image:: /_static/class2/dnssec-new-zone.png
+.. image:: /_static/class2/dnssec-ksk.png
+
+https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/dnssec_key/create.jsp
 
 
-TMSH commands for DNSSEC signed zone creation:
+TMSH commands for Key Signing key creation:
 
 .. admonition:: TMSH
 
- tmsh create ltm dns dnssec zone example.com keys add { example.com_ksk example.com_zsk }
+ tmsh create ltm dns dnssec key example.com_ksk key-type ksk certificate-file default.crt key-file default.key
+
+

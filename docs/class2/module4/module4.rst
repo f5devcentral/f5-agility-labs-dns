@@ -1,4 +1,4 @@
-DNSSec Zone Signing
+DNSSec
 ########################
 
 .. image:: /_static/class2/dnssec_zone_sign.png
