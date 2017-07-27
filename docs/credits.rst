@@ -22,8 +22,6 @@ Credits
 
 - Advisors:
 
-   Brian Van Lieu
-
    Hitesh Patel
 
    Joe Hermes
