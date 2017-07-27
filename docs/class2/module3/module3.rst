@@ -11,7 +11,7 @@ https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/dns-services
 
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    lab*
