@@ -9,7 +9,7 @@ Class 1 - Availability
 * Students will add glue records and delegate gslb.example.com to the F5 GSLB DNS servers.
 * Convert the A record "www.example.com" to be a CNAME record pointing to *www.gslb.example.com*.
 
-At the end of the lab students will have configured F5 GSLB DNS servers to alternately resolve www.example.com to 203.0.113.9 and 198.51.100.41.
+At the end of the lab students will have configured F5 GSLB DNS servers to alternately resolve www.example.com to 203.0.113.9 and 198.51.100.41
 
 .. toctree::
    :hidden:
