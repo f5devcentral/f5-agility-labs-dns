@@ -10,10 +10,10 @@ Credits
    Brendan Gladney
 
    Brian Buback
-   
-   Dave Doucette
 
    Emilio Torres
+   
+   Dave Doucette
 
    Josh Anderson
 
