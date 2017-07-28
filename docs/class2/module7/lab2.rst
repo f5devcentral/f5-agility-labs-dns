@@ -27,4 +27,4 @@ TMSH commands for router01.branch01
 
 .. admonition:: TMSH
 
-   tmsh modify ltm virtual branch01_udp_53_virtual rules { DNS-query-filtering }
+   tmsh modify gtm listener all rules { DNS-query-filtering }
