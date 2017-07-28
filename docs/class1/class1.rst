@@ -1,4 +1,4 @@
-Class 1 - Intro to Global Server Load Balancing
+Class 1 - Intro to GSLB
 =====================================================
 
 .. image:: /_static/class1/class1_availability.png
