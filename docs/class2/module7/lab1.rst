@@ -15,10 +15,7 @@ Create new iRule, copy the content below and paste it.
 
    Name, DNS-query-filtering  
 
- 
 .. code-block:: tcl
-   :linenos:
-   :emphasize-lines: 10
  
    when RULE_INIT {
      # Set categories to block for DNS hosts
