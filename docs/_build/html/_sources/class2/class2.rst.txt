@@ -1,5 +1,5 @@
-Class 2 - Security
-=============================
+Class 2 - Advanced Global Server Load Balancing
+======================================================
 
 The lab environment consists of a Lan of workstations in a remote location with internal DNS servers behind an F5 firewall.
 

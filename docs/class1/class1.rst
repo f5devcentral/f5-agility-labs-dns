@@ -1,5 +1,5 @@
-Class 1 - Availability
-=============================================
+Class 1 - Intro to Global Server Load Balancing
+=====================================================
 
 .. image:: /_static/class1/class1_availability.png
 
