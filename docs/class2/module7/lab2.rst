@@ -1,6 +1,8 @@
 iRule assignment
 ############################
 
+Repeat the following steps for all 4 DNS listeners.
+
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
 .. image:: /_static/class2/listener-assignment-1.png
