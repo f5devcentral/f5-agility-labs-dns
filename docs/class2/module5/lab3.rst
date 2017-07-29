@@ -1,20 +1,24 @@
-Modify DNS Profile
-###############################
+Results
+#####################
 
-In order to activate the new "Validating Resolver", modify the DNS profile example.com_dns_profile.
+From the CLI on the router01.branch01 BIGIP run
 
-Navigate to: **DNS  ››  Delivery : Profiles : DNS**
+tail -f /var/log/ltm
 
-.. image:: /_static/class2/modify_dns_profile_activate_validating_resolver.png
+From the Workstation CMD prompt run: "dig ghghghghg.com"
 
-Select the profile "example.com_dns_profile"
+.. image:: /_static/class2/nxdomain.png
 
-Modify the DNS profile to activate the new validating-resolver_cache.
+From the Workstation CMD prompt run: "dig google.com"
 
-.. image:: /_static/class2/modify_dns_profile_validating_resolver.png
+.. image:: /_static/class2/google.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/properties.jsp?name=/Common/example.com_dns_profile
+From the Workstation CMD prompt run: "dig dnssec-deployment.org +dnssec"
 
-.. admonition:: TMSH
+.. image:: /_static/class2/dnssec-resolver-results.png
 
-   tmsh modify ltm profile dns example.com_dns_profile cache validating-resolver_cache
+From the Workstation CMD prompt run: "dig dnssec-failed.org +dnssec"
+
+.. image:: /_static/class2/dnssec-failed.png
+
+http://www.internetsociety.org/deploy360/resources/dnssec-test-sites/
