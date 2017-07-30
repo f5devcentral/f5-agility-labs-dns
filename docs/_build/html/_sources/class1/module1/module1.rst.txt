@@ -1,4 +1,4 @@
-Sync Group
+Settings
 =====================
 
 .. toctree::
