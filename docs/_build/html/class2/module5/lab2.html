@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>5.2. DLV Anchors &#8212; DNS Services  documentation</title>
+    <title>5.2. Modify DNS Profile &#8212; DNS Services  documentation</title>
     
     <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -28,7 +28,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="5.3. Modify DNS Profile" href="lab3.html" />
+    <link rel="next" title="5.3. Results" href="lab3.html" />
     <link rel="prev" title="5.1. Trust Anchors" href="lab1.html" />
 <!--
 # Copyright 2017 F5 Networks
@@ -220,9 +220,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../module4/module4.html">4. DNSSec</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="module5.html">5. Validating Resolver</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="lab1.html">5.1. Trust Anchors</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">5.2. DLV Anchors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lab3.html">5.3. Modify DNS Profile</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lab4.html">5.4. Results</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">5.2. Modify DNS Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lab3.html">5.3. Results</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../module6/module6.html">6. RPZ</a></li>
@@ -237,7 +236,7 @@
                         title="previous chapter">5.1. Trust Anchors</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="lab3.html"
-                        title="next chapter">5.3. Modify DNS Profile</a></p>
+                        title="next chapter">5.3. Results</a></p>
         
       </div>
       <div class="col-md-offset-3 col-sm-offset-3 main">
@@ -246,25 +245,19 @@
           <span class="right"><a href="../../genindex.html">Index</a></span>
         </h4>
         
-  <div class="section" id="dlv-anchors">
-<h1>5.2. DLV Anchors<a class="headerlink" href="#dlv-anchors" title="Permalink to this headline">¶</a></h1>
-<p>To cache a validated response for the signed zones, you need to obtain a trust and DLV anchor.</p>
-<p>Using Putty, ssh into router01.branch01 and run the following command:</p>
+  <div class="section" id="modify-dns-profile">
+<h1>5.2. Modify DNS Profile<a class="headerlink" href="#modify-dns-profile" title="Permalink to this headline">¶</a></h1>
+<p>In order to activate the new “Validating Resolver”, modify the DNS profile example.com_dns_profile.</p>
+<p>Navigate to: <strong>DNS  ››  Delivery : Profiles : DNS</strong></p>
+<img alt="../../_images/modify_dns_profile_activate_validating_resolver.png" src="../../_images/modify_dns_profile_activate_validating_resolver.png" />
+<p>Select the profile “example.com_dns_profile”</p>
+<p>Modify the DNS profile to activate the new validating-resolver_cache.</p>
+<img alt="../../_images/modify_dns_profile_validating_resolver.png" src="../../_images/modify_dns_profile_validating_resolver.png" />
+<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/properties.jsp?name=/Common/example.com_dns_profile">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/properties.jsp?name=/Common/example.com_dns_profile</a></p>
 <div class="admonition-tmsh admonition">
 <p class="first admonition-title">TMSH</p>
-<p>dig dnskey dlv.isc.org.  | grep 257 &gt; /root/DLVdnskey.txt</p>
-<p class="last">dnssec-dsfromkey -f /root/DLVdnskey.txt dlv.isc.org.</p>
+<p class="last">tmsh modify ltm profile dns example.com_dns_profile cache validating-resolver_cache</p>
 </div>
-<img alt="../../_images/dlv-cli.png" src="../../_images/dlv-cli.png" />
-<p>Navigate to: <strong>DNS  ››  Caches : Cache List  ››  validating-resolver_cache : DLV Anchors</strong></p>
-<p><a class="reference external" href="https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_anchor/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&amp;tab=dns_cache_validating_config">https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/trust_anchor/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&amp;tab=dns_cache_validating_config</a></p>
-<img alt="../../_images/dlv-add.png" src="../../_images/dlv-add.png" />
-<p>For each line of output from the preceding command create a “DLV Anchor”</p>
-<img alt="../../_images/dlv-add-1.png" src="../../_images/dlv-add-1.png" />
-<img alt="../../_images/dlv-final.png" src="../../_images/dlv-final.png" />
-<div class="highlight-tcl"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nv">tmsh</span> modify ltm dns cache validating-resolver validating-resolver_cache dlv-anchors replace-all-with <span class="k">{</span> <span class="s2">&quot;dlv.isc.org. IN DS 19297 5 1 7D480DBEF530374D8A4333FCB22106EB10013B46&quot;</span> <span class="s2">&quot;dlv.isc.org. IN DS 19297 5 2 A11D16F6733983E159EDF8053B2FB57B479D81A309A50EAA79A81AF48A47C617&quot;</span> <span class="k">}</span>
-</pre></div>
-</td></tr></table></div>
 </div>
 
 
@@ -275,7 +268,7 @@
 		        <a href="lab1.html" title="5.1. Trust Anchors" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
            
            
-              <a href="lab3.html" title="5.3. Modify DNS Profile" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+              <a href="lab3.html" title="5.3. Results" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
            
 		     </div>
          </div>
