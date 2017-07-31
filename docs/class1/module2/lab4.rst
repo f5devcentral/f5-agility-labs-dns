@@ -20,7 +20,7 @@ Create a new TCP profile as shown in the following table.
 
 .. image:: /_static/class1/dns_profile_tcp.png
 
-https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/create.jsp
+https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/create.jsp
 
 https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/create.jsp
 
