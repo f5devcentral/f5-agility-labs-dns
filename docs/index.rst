@@ -1,5 +1,5 @@
 DNS Services
-===================================
+============
 
 .. image:: /_static/html_front_cover.png
 

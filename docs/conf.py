@@ -82,7 +82,7 @@ print "on_snops = %s" % on_snops
 extensions = [
   'sphinxjp.themes.basicstrap',
   'sphinx.ext.todo',
-  'sphinx.ext.autosectionlabel'
+#  'sphinx.ext.autosectionlabel'
 ]
 
 if 'googleanalytics_id' in locals() and len(googleanalytics_id) > 0:
@@ -143,7 +143,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '**disabled*']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'

@@ -14,7 +14,7 @@ Results
 
 #. Viewing Cache Entries
 
-   Navigate to: **DNS  ››  Caches : Cache List  ››  Properties : transparent_cache** 
+   Navigate to: **DNS  ››  Caches : Cache List  ››  Properties : transparent_cache**
 
    .. image:: /_static/class2/router01_cache_select_statistics.png
 
@@ -38,7 +38,7 @@ Results
 
    .. admonition:: TMSH
 
-   show ltm dns cache transparent transparent_cache
+      show ltm dns cache transparent transparent_cache
 
 #. Clearing Entire Cache
 
