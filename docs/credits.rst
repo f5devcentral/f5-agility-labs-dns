@@ -1,5 +1,5 @@
 Credits
-#######################################
+=======
 
 - Agility 2017:
 
@@ -12,7 +12,7 @@ Credits
    Brian Buback
 
    Emilio Torres
-   
+
    Dave Doucette
 
    Josh Anderson
