@@ -1,5 +1,5 @@
-Class - |classname|
-===================
+Class 3 - |classname|
+=====================
 
 
 This class covers the following topics:
