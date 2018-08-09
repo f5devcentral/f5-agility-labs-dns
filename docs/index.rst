@@ -1,4 +1,4 @@
-DNS Services
+DNS Classes
 ============
 
 .. toctree::

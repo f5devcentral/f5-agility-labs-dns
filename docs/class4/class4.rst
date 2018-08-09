@@ -1,5 +1,5 @@
-Class 3 - |classname|
-=====================
+Class 4 - EDNS0 client subnet
+=============================
 
 
 This class covers the following topics:
