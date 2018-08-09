@@ -60,8 +60,8 @@ Follow these steps to get your lab started:
 #. Enter your class number (instructor will provide this) and your student number.
 #. You should now be seeing the class portal and can now access the RDP and lab resrouces.
 
-..  image:: /_static/agility_site.png
-..  image:: /_static/class_page.png
+..  image:: _static/agility_site.png
+..  image:: _static/class_page.png
 
 
 
@@ -71,4 +71,4 @@ To log into the jump box for the lab start your session and access the jumpbox v
 Once the RDP window is open then just click to log in the "supernetops" user.  
 You should not need a password.
 
-..  image:: /_static/rdp_jumpbox.png
+..  image:: _static/rdp_jumpbox.png

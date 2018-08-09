@@ -27,7 +27,7 @@ Follow these steps to complete this task:
 #. Once wireshark is open, choose file->open and open the edns0.pcap file in wireshark.
 #. Open up the DNS query and examine the ends0 section. It is under the "Additional Records" arrow. What is the client subnet set to? 
 
-..  image:: /_static/wireshark_edns0.png
+..  image:: /class4/_static/wireshark_edns0.png
 
 Task - Use wireshark to view a client dns request from the linux jumphost
 
@@ -41,5 +41,5 @@ This task is pretty simple but looking at the client request should in theory lo
 #. Inspect the dns request and the response packets, and look to see if you can see any difference between the last tasks output.
 #. Notice the difference in the dig output between the query to the BIGIP DNS listener and 8.8.8.8.
 
-..  image:: /_static/dig_msft.png
+..  image:: /class4/_static/dig_msft.png
 

@@ -19,7 +19,7 @@ Follow these steps to complete this task:
 #. Navigate to **DNS >> Delivery: Listeners: Listener List** and select the listener your interested in viewing.
 #. Make sure that the right dns profile is selected for the listeners.  Also are there two listeners?
 
-..  image:: /_static/dns_listeners.png
+..  image:: /class4/_static/dns_listeners.png
 
 
 Task – Review the DNS GSLB server objects
@@ -34,7 +34,7 @@ Follow these steps to complete this task:
 #. Inspect the servers.  Identify the servers and the underlying objects associated with them.
 #. What is the state of the servers , green?
 
-..  image:: /_static/gslb_servers.png
+..  image:: /class4/_static/gslb_servers.png
 
 Task – Review the DNS GSLB Data Center objects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,7 +47,7 @@ Follow these steps to complete this task:
 #. Inspect the data centers.  
 #. What is the what happens when you disable a DC?  Discuss.
 
-..  image:: /_static/data_centers.png
+..  image:: /class4/_static/data_centers.png
 
 Task – Review the DNS Pools and examine the LB algorithm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +60,7 @@ Follow these steps to complete this task:
 #. Inspect the Pools and understand their algorithm.
 #. What is the what happens If you changed this ? would it make a difference?  Discuss.
 
-..  image:: /_static/gslb_pools.png
+..  image:: /class4/_static/gslb_pools.png
 
 
 Task – Review the GSLB WideIP and its configuration
@@ -75,7 +75,7 @@ Follow these steps to complete this task:
 
 #. Do you notice anything new here? Use the built in help for the explination.
 
-..  image:: /_static/wideip.png
+..  image:: /class4/_static/wideip.png
 
 Task – Review the Global GSLB settings for Client Subnet
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -89,7 +89,7 @@ Follow these steps to complete this task:
 #. Open the help tab and take a look at the included documentation.
 
 
-..  image:: /_static/global_gslb_client_subnet.png
+..  image:: /class4/_static/global_gslb_client_subnet.png
 
 Task – Review the  GSLB Topology records 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,5 +103,5 @@ Follow these steps to complete this task:
 
 when you check out the topology records you will see that we have created a topology record that matches the local subnet coming from the querier and then another record was added to simulate a different client subnet sent by the dig query with edns0.  
 
-..  image:: /_static/topo_records.png
+..  image:: /class4/_static/topo_records.png
 

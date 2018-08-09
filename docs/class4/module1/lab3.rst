@@ -26,7 +26,7 @@ Follow these steps to complete this task:
 #. Take a look at the following output ``dig -h | grep subnet``
 #. Now do a simple query for the wideip that is configured on one of the east or west DC listener IPs ``dig @listener_IP app.f5demo.com``
 
-..  image:: /_static/dig_cmd.png
+..  image:: /class4/_static/dig_cmd.png
 
 Task – View the query logs and observe the dig query
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,7 +37,7 @@ that we are looking for just to make sure things are going correctly and we see 
 #. Open two new terminal windows if you do not have them open from previous sessions, logging into both the East and West DC BigIPs.
 #. Once you have logged in as admin you can then ``tail -f /var/log/ltm`` in both windows to view the logs for the listeners.
 
-..  image:: /_static/query_log.png
+..  image:: /class4/_static/query_log.png
 
 
 Task – Use the +subnet option in dig to change the client subnet
@@ -52,5 +52,5 @@ To do this we will be using our friend dig.
 #. Examine the response and the logs to see what decision was made ... why?
 #. Change your query request to include a matching client subnet for a topology record that matches the configuration. ``dig @10.1.0.245 app.f5demo.com=1.2.2.0/24`` .
 
-..  image:: /_static/dig_client_subnet.png
+..  image:: /class4/_static/dig_client_subnet.png
 

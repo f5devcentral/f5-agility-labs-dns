@@ -35,7 +35,7 @@ Follow these steps to complete this task:
 #. Navigate to "DNS : Delivery : Profiles : DNS "
 #. Click the dns_nobind_edns0 profile and examine the options set.
 
-..  image:: /_static/dns_profile.png
+..  image:: /class4/_static/dns_profile.png
 
 Task – Review the DNS Logging profile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,8 +47,8 @@ Follow these steps to complete this task:
 #. Examine the log publisher by navigating to "System: Logs: Configuration: Log Publishers" and click on "local-log"
 
 
-..  image:: /_static/dns_log_profile.png
-..  image:: /_static/dns_log_settings.png
+..  image:: /class4/_static/dns_log_profile.png
+..  image:: /class4/_static/dns_log_settings.png
 
 Task - Open a terminal session to view the log output
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,5 +60,5 @@ Follow these steps to complete this task:
 
 ``tail -f /var/log/ltm``
 
-..  image:: /_static/ssh_tail_log.png
+..  image:: /class4/_static/ssh_tail_log.png
 
