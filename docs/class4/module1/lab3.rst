@@ -48,7 +48,7 @@ To do this we will be using our friend dig.
 
 #. Use the dig command to hit your favorite listener and query the wideip ``app.f5demo.com``
 #. ``dig @10.1.0.245 app.f5demo.com``
-#. Change the client subnet using ``dig @10.1.0.245 app.f5demo.com=9.9.9.0/24``
+#. Change the client subnet using ``dig @10.1.0.245 app.f5demo.com +subnet=9.9.9.0/24``
 #. Examine the response and the logs to see what decision was made ... why?
 #. Change your query request to include a matching client subnet for a topology record that matches the configuration. ``dig @10.1.0.245 app.f5demo.com=1.2.2.0/24`` .
 
