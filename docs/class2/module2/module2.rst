@@ -1,19 +1,28 @@
-Listeners
-############################################
+Security
+======================================================
 
-A listener object is an specialized virtual server that is configured to respond to DNS queries.
+The lab environment consists of a Lan of workstations in a remote location with internal DNS servers behind an F5 firewall.
 
-We will be creating both TCP and UDP based listeners that have the same IP address of the existing DNS server.
+The F5 device is directly connected to the internet.
 
-Note: the Workstation is configured to use 10.1.70.200 and 10.1.70.210 for DNS.
+.. image:: /_static/class2/class2_overview.png
 
-After this module students will have enabled the BIG-IP to intercept and cache DNS requests.
+Students will work with the following concepts as part of a group of lab exercises.
 
-.. image:: /_static/class2/class2_create_listenerVIPS.png
+#. Transparent Cache
+
+#. Hidden Master
+
+#. DNSSec
+
+#. Validating Resolver
+
+#. RPZ
+
+#. URL Categorization
 
 .. toctree::
-   :maxdepth: 2
    :hidden:
    :glob:
 
-   lab*
+   lab*/lab*

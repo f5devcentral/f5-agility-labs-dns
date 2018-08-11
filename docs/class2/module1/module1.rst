@@ -1,43 +1,20 @@
-Transparent Cache
-#####################################
+Data Center Availability Services Using BIG-IP DNS
+=====================================================
+
+.. image:: /_static/class1/class1_availability.png
+
+* Students will configure F5 DNS servers to support GSLB (Global Services Load Balancing) on a single device in site1.
+* Join an additional F5 DNS server in site2 to the GSLB cluster.
+* An Internal group of DNS servers is authoritative for the zone example.com and contains a static A record for "www.example.com", which resolves to 203.0.113.9.
+* Students will add glue records and delegate gslb.example.com to the F5 GSLB DNS servers.
+* Convert the A record "www.example.com" to be a CNAME record pointing to *www.gslb.example.com*.
+* Students will create an additional GSLB service using iControlREST
+* Integration with BIG-IQ for reporting and logging
+
+By the end of the lab students will have configured F5 GSLB DNS servers to alternately resolve www.example.com to 203.0.113.9 and 198.51.100.41. At the end of the lab, students will then have an opportunity to simulate a real-life failure scenario and observe how BIG-IP DNS responds to mitigate the service outage.
 
 .. toctree::
-   :hidden:
-   :maxdepth: 2
    :glob:
+   :hidden:
 
-   lab*
-
-In this module we will prepare the objects required to build a transparent cache.
-
-In the next exercise a DNS profile will reference the cache and a Listener will forward traffic to a healthy backend DNS server
-
-.. image:: /_static/class2/before_transparent_cache.png
-
-Enabling a transparent cache on the BIG-IP will offload some DNS queries from being sent to the internal DNS servers.
-
-.. image:: /_static/class2/transparent_cache_enabled.png
-
-Log into the gateway device router01.brancho1 in the **branch office**
-
-Navigate to **DNS  ››  Caches : Cache List**
-
-Create a transparent cache
-
-.. csv-table::
-   :header: "Setting", "Value"
-   :widths: 15, 15
-
-   "Name", "transparent_cache"
-   "Resolver Type", "Transparent"
-
-.. image:: /_static/class2/cache_transparent.png
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/create.jsp
-
-TMSH command for router01.branch01:
-
-.. admonition:: TMSH
-
-   tmsh create ltm dns cache transparent transparent_cache
-
+   lab*/lab*
