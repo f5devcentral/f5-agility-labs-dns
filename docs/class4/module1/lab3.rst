@@ -21,7 +21,7 @@ In this task you will open a terminal session and ssh to the linux server to use
 
 Follow these steps to complete this task:
 
-#. Log into the linux server at 10.1.0.245 using the user named ubuntu and the password ubuntu
+#. Log into the linux server at 10.0.1.253 using the user named ubuntu and the password ubuntu
 #. Once logged into the linux server check out the linux dig command by typing ``dig -v``
 #. Take a look at the following output ``dig -h | grep subnet``
 #. Now do a simple query for the wideip that is configured on one of the east or west DC listener IPs ``dig @listener_IP app.f5demo.com``

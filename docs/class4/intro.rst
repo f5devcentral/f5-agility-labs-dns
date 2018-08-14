@@ -52,7 +52,7 @@ components:
       - ``ubuntu``/``supernetops``
     * - ubuntu server
       - - **Management:** 10.0.1.253
-      - ``ubuntu``/``supernetops``
+      - ``ubuntu``/``ubuntu``
 
 Follow these steps to get your lab started:
 
