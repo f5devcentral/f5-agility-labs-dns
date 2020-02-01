@@ -1,36 +1,21 @@
 Credits
 =======
 
-- Agility 2017:
+- Agility 2020:
 
    Bill Wester
 
-   Boris Gekhtman
-
-   Brendan Gladney
-
-   Brian Buback
-
-   Emilio Torres
-
+   Brandn Burns
+   
    Dave Doucette
-
-   Josh Anderson
-
-   Robin Mordasiewicz
-
-
-- Advisors:
-
-   Hitesh Patel
-
-   Joe Hermes
-
-   Jonathan Dehaan
-
-   Pat Chang
 
    Pat Fiorino
 
+   Matt Harmon
+
+   Bret Pleines
+
+   Nick Stathakis
+   
    Brian Van Lieu
 
