@@ -8,21 +8,21 @@ Transparent Cache
 
    lab*
 
-In this module we will prepare the objects required to build a transparent cache.
 
-In the next exercise a DNS profile will reference the cache and a Listener will forward traffic to a healthy backend DNS server
+In this module we will implement all the configuration objects required to for a transparent cache.
 
-.. image:: /class2/media/before_cache.png
+Enabling a transparent cache offloads the back end DNS servers from every query freeing resources on the servers. 
 
-Enabling a transparent cache on the BIG-IP will offload some DNS queries from being sent to the internal DNS servers.
 
-.. image:: /class2/media/transparentcache_enabled.png
+.. image:: /class2/media/transparent_cache.png
 
-Log into the gateway device **router01.branch01** *(bigip01)* in the **branch office** using the Chromium Browser on your desktop with the credentials u:**admin** p:**admin**
 
-Navigate to **DNS  ››  Caches : Cache List**
+Log into *(bigip01)* in the using either the TMUI or ssh interface with credentials u:**admin** p:**agility2020**
 
-Create a transparent cache
+Navigate to **DNS  ››  Caches ›› Cache List**
+
+And click the *Create* button to create a transparent cache with the following settings: 
+
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -32,12 +32,12 @@ Create a transparent cache
    "Resolver Type", "Transparent"
 
 .. image:: /class2/media/cache_transparent.png
+  :align: center
+  :scale: 50%   
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/create.jsp
-
-TMSH command for router01.branch01:
 
 .. admonition:: TMSH
 
    tmsh create ltm dns cache transparent transparent_cache
+
 

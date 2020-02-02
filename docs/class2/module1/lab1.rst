@@ -1,17 +1,15 @@
 Monitors
 ####################################
 
-A DNS application specific health monitor provides intelligence in the steering of DNS queries towards the fastest responding DNS server.
+A DNS application specific monitor should be used to monitor pool members. 
 
-.. image:: /class2/media/monitors.png
-
-Navigate to: **DNS >> Delivery : Load Balancing : Monitors**
+Navigate to: **DNS >> Delivery >> Load Balancing >> Monitors**
 
 .. image:: /class2/media/class2_create_health-monitor_flyout.png
+  :align: center
+  :scale: 75%
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/monitor/list.jsp
-
-Create a monitor according to the following table:
+Create a new monitor according to the following settings:
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -22,8 +20,8 @@ Create a monitor according to the following table:
    "Query Name", "www.example.com"
 
 .. image:: /class2/media/class2_dns_monitor_create_properties.png
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/monitor/create.jsp
+  :align: center
+  :scale: 75%
 
 .. admonition:: TMSH
  
