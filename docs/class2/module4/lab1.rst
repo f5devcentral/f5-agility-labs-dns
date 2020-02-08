@@ -1,6 +1,8 @@
 Zone Signing Key
 #####################################
 
+Managing keys is an administrative task that the BIG-IP can do automatically. In order to sign zones, we must first create keys!
+
 Navigate to: **DNS  ››  Delivery : Keys : DNSSEC Key List**
 
 .. image:: /class2/media/dnssec-keys-create.png
@@ -18,8 +20,6 @@ Create zone signing key according the following table:
    Private Key, default.key
 
 .. image:: /class2/media/mod4lab1-zsk.png
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/dnssec_key/create.jsp
 
 .. admonition:: TMSH
 

@@ -1,15 +1,16 @@
 Listeners
 ############################################
 
-A listener object is an specialized virtual server that is configured to respond to DNS queries.
+A listener object is synonyous with a virtual server. In the DNS Delivery interface on a BIG-IP, Listeners are configured to process DNS traffic. 
 
-We will be creating both TCP and UDP based listeners that have the same IP address of the existing DNS server.
+We will be creating both TCP and UDP based listeners as remember DNS can use both TCP and UDP! 
 
-Note: the Workstation is configured to use 10.1.20.200 and 10.1.20.210 for DNS.
+BIG-IP can be configured for multiple functions from the Listener, starting with simple load balancing, transparent or full caching, along with optional security functions. 
 
-After this module students will have enabled the BIG-IP to intercept and cache DNS requests.
+After this module we will have enabled the BIG-IP to process and cache DNS requests.
 
 .. image:: /class2/media/listeners.png
+  :scale: 50%   
 
 .. toctree::
    :maxdepth: 2

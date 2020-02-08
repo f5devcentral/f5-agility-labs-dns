@@ -5,7 +5,7 @@ The lab section for this class will cover the following topics:
 
 #. Transparent Cache
 
-#. Hidden Master
+#. DNS Express with a Hidden Master
 
 #. DNSSec
 

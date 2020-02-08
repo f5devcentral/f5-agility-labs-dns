@@ -20,8 +20,6 @@ Navigate to **DNS  ››  Caches : Cache List**
 
 .. image:: /class2/media/cache_list_flyout.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/list.jsp
-
 Create a validating resolver cache according to the table below:
 
 .. csv-table::
@@ -33,8 +31,6 @@ Create a validating resolver cache according to the table below:
    "Answer default zones", "Checked - Enabled"
 
 .. image:: /class2/media/cache_validating-resolver.png
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/create.jsp
 
 .. admonition:: TMSH
 

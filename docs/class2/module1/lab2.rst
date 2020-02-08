@@ -1,13 +1,13 @@
 Load Balancing
 ####################################
 
-Create pool for back end load balancing. The Ubuntu server will be the pool member.
+Create a new pool for back end load balancing of DNS queries. The Ubuntu server will be the pool member.
 
 Navigate to: **DNS >> Delivery : Load Balancing : Pools : Pool List**
 
 .. image:: /class2/media/class2_dns__pool_create_flyout.png
   :align: center
-  :scale: 50%
+  :scale: 50
 
 Create a pool according to the following table:
 

@@ -13,13 +13,13 @@ Create a nameserver according to the following table:
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "Name", "dc01.example.com"
-   "Address", "10.1.20.200"
+   "Name", "master.example.com"
+   "Address", "10.1.20.4"
 
 .. image:: /class2/media/nameserver.png
+   :scale: 75
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp
 
 .. admonition:: TMSH
 
-   tmsh create ltm dns nameserver dc01.example.com { address 10.1.20.200 }
+   tmsh create ltm dns nameserver master.example.com { address 10.1.20.4 }

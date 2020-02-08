@@ -1,9 +1,9 @@
 Results
 ##################################
 
-The BIG-IP will now be an authoratative slave for the example.com zone.  This protects the master as well as increases performance utilizing the BIG-DNS delivery engine.
+Now that the BIG-IP has transfered the zone, we can look at status and if needed dump the zone. To check the status:
 
-#. Click on the newly created DNS Express zone and make sure it is showing green for 'Available' indicating that the initial AXFR transfer was successful.
+#. Click on the newly created *example.com* zone and make sure it is showing green for 'Available' indicating that the initial AXFR transfer was successful.
 
    .. image:: /class2/media/DNS_Express_result1.png
 
@@ -13,13 +13,13 @@ You can use the **dnsxdump** utility to view the DNS Express database informatio
    * The **DB Dump** section of the **dnsxdump** utility output displays the zone information for all configured DNS Express zones.
    * The **DB Stats** section of the **dnsxdump** utility output displays a cumulative count of records for all configured DNS Express zones.
 
-#. Using putty from the taskbar, log in to router01.branch01.example.com using u: root p: default 
+#. From the Web Shell of SSH session to the BIG-IP:  
  
-  Run the following command to see the contents of the DNS Express database:
+  Run the following command to see the contents of the DNS Express database from the Advanced Shell (not tmsh): 
 
    .. code-block:: console
 
-      dnsxdump | less
+      #dnsxdump | less
 
    Examine the results
 

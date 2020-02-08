@@ -1,13 +1,17 @@
 DNS Profile
 #####################################
 
-A DNS profile will control which features are enabled as part of processing a query.
+The DNS profile unlocks all BIG-IP features by making the BIG-IP fully aware of DNS as a protocol. 
+
+Without a DNS profile applied to a listener, the BIG-IP cannot natively understand DNS and can only load balance requests. 
 
 Navigate to: **DNS  ››  Delivery : Profiles : DNS**
 
 .. image:: /class2/media/router01_ltm_profile_dns.png
 
-Create a DNS profile as shown in the table below.
+Create a DNS profile as shown in the table below. Check boxes on the right to enable editing and overriding default properties. 
+
+  Note: AVR sampling in production should be a ratio of queries so as not to overload local database. 
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -22,8 +26,7 @@ Create a DNS profile as shown in the table below.
    "AVR statistics Sample Rate", "Enabled, 1/1 queries sampled"
 
 .. image:: /class2/media/dns_profile_settings_cache_router01.png
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/profile/dns/create.jsp
+   :scale: 75
 
 .. admonition:: TMSH
 

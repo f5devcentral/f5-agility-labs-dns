@@ -1,13 +1,12 @@
 TCP Profile
 ###################################
 
-A TCP profile controls the way the platform processes TCP traffic.
+Like the UDP profile, a TCP profile controls certain properties of TCP Flows on the BIG-IP. 
 
 Navigate to: **DNS  ››  Delivery : Profiles : Protocol : TCP**
 
 .. image:: /class2/media/router01_create_tcp_profile.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/list.jsp
 
 Create a TCP profile as shown in the following table.
  
@@ -19,8 +18,7 @@ Create a TCP profile as shown in the following table.
    "Parent Profile", "f5-tcp-lan"
 
 .. image:: /class2/media/router01_create_tcp_profile_properties.png
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/create.jsp
+   :scale: 50
 
 .. admonition:: TMSH
 

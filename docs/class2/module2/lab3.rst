@@ -1,15 +1,15 @@
 UDP Profile
 #####################################
 
-A UDP profile controls the way the platform processes UDP traffic.
+A UDP profile is a protocol profile that controls the way the platform processes UDP traffic. With DNS, custom UDP profiles are often used to set low idle times and preseve memory in the connection table as DNS tends to be a lot of short lived connectetions. 
+
 
 Navigate to: **DNS  ››  Delivery : Profiles : Protocol : UDP**
 
 .. image:: /class2/media/router01_create_udp_profile.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/udp/list.jsp
 
-Create a UDP profile as shown in the following table.
+Create a UDP profile as shown in the following table. By inheriting from the non default *UDP* profile, notice the idle timeout setting. 
  
 .. csv-table::
    :header: "Setting", "Value"
@@ -20,7 +20,6 @@ Create a UDP profile as shown in the following table.
 
 .. image:: /class2/media/router01_create_udp_profile_properties.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/udp/create.jsp
 
 .. admonition:: TMSH
 

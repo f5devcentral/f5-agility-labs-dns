@@ -7,7 +7,7 @@ Navigate to: **DNS >> Delivery >> Load Balancing >> Monitors**
 
 .. image:: /class2/media/class2_create_health-monitor_flyout.png
   :align: center
-  :scale: 75%
+  :scale: 50
 
 Create a new monitor according to the following settings:
 
@@ -21,7 +21,7 @@ Create a new monitor according to the following settings:
 
 .. image:: /class2/media/class2_dns_monitor_create_properties.png
   :align: center
-  :scale: 75%
+  :scale: 75
 
 .. admonition:: TMSH
  
