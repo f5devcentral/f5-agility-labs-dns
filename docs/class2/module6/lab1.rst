@@ -1,17 +1,14 @@
 Zone Runner
 ==============================
 
-Customers will subscribe to their RPZ vendor of choice.
-
-Use Zonerunner to create a custom RPZ zone for our lab.
+For the purpose of the lab, we will utilize Zonerunner to create a RPZ zone.
 
 Navigate to **DNS  ››  Zones : ZoneRunner : Zone List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/zone/create.jsp
-
 .. image:: /class2/media/zonerunner_create_zone.png
+   :scale: 50
 
-Create a zone according to the following table:
+Create a *new* zone according to the following table:
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -31,12 +28,13 @@ Create a zone according to the following table:
    "A Record: IP Address", "10.1.20.252"
 
 .. image:: /class2/media/zonerunner_create_zone_properties.png
+   
+Next, lets create some resource records in the new zone.
 
 Navigate to: **DNS  ››  Zones : ZoneRunner : Resource Record List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/globallb/zfd/record/create.jsp
-
 .. image:: /class2/media/zonerunner_create_resource_record.png
+   :scale: 50
 
 Create a resource record according to the following table:
 
@@ -46,11 +44,13 @@ Create a resource record according to the following table:
 
    "View Name", "external"
    "Zone Name", "rpz.example.com"
-   "Name", "\*.guns.com.rpz.example.com."
+   "Name", "\*.fuzzybunnies.com.rpz.example.com."
    "TTL", "300"
    "Type", "CNAME"
    "CNAME", "."
 
 .. image:: /class2/media/zonerunner_create_resource_record_properties.png
+
+Finally, set the type to *All* to find all records and click search to see all records: 
 
 .. image:: /class2/media/zonerunner_list_resource_records.png

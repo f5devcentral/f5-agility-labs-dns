@@ -8,17 +8,16 @@ Validating Resolver
 
    lab*
 
-Configure a validating resolver cache on the BIG-IP® system to recursively query public DNS servers, validate the identity of the DNS server sending the responses, and then cache the responses.
+In this lab we will use the BIG-IP as a Validating resolver and not send any queries to the back end server upon completion of the lab. 
 
-After completing this lab students will entirely offload DNS queries from internal masters.
+The *validating* function of the resolver means that recusive queries are sent requesting DNSSEC, and responses are validated to authenticate validity of the the response!
 
-.. image:: /class2/media/validating_resolver.png
-
-.. image:: /class2/media/validating_resolver_whitehouse.png
+First lets create a new DNS cache on the BIG-IP:
 
 Navigate to **DNS  ››  Caches : Cache List**
 
 .. image:: /class2/media/cache_list_flyout.png
+   :scale: 50
 
 Create a validating resolver cache according to the table below:
 
@@ -31,9 +30,9 @@ Create a validating resolver cache according to the table below:
    "Answer default zones", "Checked - Enabled"
 
 .. image:: /class2/media/cache_validating-resolver.png
+   :scale: 50
 
 .. admonition:: TMSH
 
    tmsh create ltm dns cache validating-resolver validating-resolver_cache answer-default-zones yes
 
-https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-dns-services-implementations-13-1-0/7.html

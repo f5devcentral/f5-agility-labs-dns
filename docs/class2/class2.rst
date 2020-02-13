@@ -38,10 +38,10 @@ components:
     * - **Component**
       - **VLAN/IP Address(es)**
       - **Credentials**
-    * - bigip
+    * - BIG-IP DNS
       - - **Management:** 10.1.1.4
-        - **External Self:** 10.1.10.10
-        - **Internal Self:** 10.1.20.10
+        - **External Self:** 10.1.10.6
+        - **Internal Self:** 10.1.20.6
       - ``admin``/``agility2020``
     * - Ubuntu Desktop
       - - **Management:** 10.1.1.6

@@ -4,10 +4,9 @@ Create an iRule
 Navigate to: **DNS  ››  Delivery : iRules : iRules List**
 
 .. image:: /class2/media/irule-new.png 
+   :scale: 75
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/rule/list.jsp
-
-Create new iRule, copy the content below and paste it.
+Create a new iRule by copying the content below and pasting into the iRule editor window: 
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -65,10 +64,4 @@ Create new iRule, copy the content below and paste it.
      }
    }
  
-TMSH commands for router01.branch01 (Make sure you use text editor to copy content above and paste it)
-
-.. admonition:: TMSH
-
-   tmsh create ltm rule DNS-query-filtering
-
 

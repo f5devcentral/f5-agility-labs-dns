@@ -5,8 +5,6 @@ Navigate to **DNS  ››  Delivery : Nameservers : Nameserver List**
 
 .. image:: /class2/media/create_nameserver_flyout.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/list.jsp
-
 Create a nameserver according to the following table:
 
 .. csv-table::
@@ -16,8 +14,6 @@ Create a nameserver according to the following table:
    "Name", "localhost"
 
 .. image:: /class2/media/create_nameserver_localhost.png
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/nameserver/create.jsp
 
 .. admonition:: TMSH
 

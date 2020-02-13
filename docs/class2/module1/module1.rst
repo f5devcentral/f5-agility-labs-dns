@@ -33,7 +33,7 @@ And click the *Create* button to create a transparent cache with the following s
 
 .. image:: /class2/media/cache_transparent.png
   :align: center
-  :scale: 50%   
+  :scale: 50
 
 
 .. admonition:: TMSH

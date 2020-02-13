@@ -1,7 +1,7 @@
 Modify DNS Profile
 ###############################
 
-In order to activate the new "Validating Resolver", modify the DNS profile example.com_dns_profile.
+Now that we have a Validating Resolver configured with trust anchors, we can enable it by altering our exisiting DNS profile.
 
 Navigate to: **DNS  ››  Delivery : Profiles : DNS**
 
@@ -13,7 +13,6 @@ Modify the DNS profile to activate the new validating-resolver_cache.
 
 .. image:: /class2/media/modify_dns_profile_validating_resolver.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/profile/dns/properties.jsp?name=/Common/example.com_dns_profile
 
 .. admonition:: TMSH
 

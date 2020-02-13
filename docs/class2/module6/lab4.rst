@@ -3,13 +3,9 @@ Local Zone
 
 Navigate to: **DNS  ››  Caches : Cache List**
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/list.jsp
-
 .. image:: /class2/media/select_validating-resolver_cache.png
 
 Select validating-resolver_cache, click "Local Zones", and click "Add"
-
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/cache/local_zone/list.jsp?name=%2FCommon%2Fvalidating-resolver_cache&tab=dns_cache_config
 
 .. image:: /class2/media/cache_create_local-zone.png
 
@@ -24,7 +20,8 @@ Create a local zone entry according to the following table:
    "Records", "sorry.example.com. IN A 10.1.20.252"
 
 .. image:: /class2/media/local_zone.png
-
+   :scale: 50
+   
 TMSH commands for router01.branch01:
 
 .. code-block:: tcl

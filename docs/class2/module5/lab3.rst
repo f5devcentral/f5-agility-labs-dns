@@ -1,24 +1,32 @@
 Results
 #####################
 
-From the CLI on the router01.branch01 BIGIP run
+Now lets look at results. Tail the *ltm* log on the BIG-IP
 
-tail -f /var/log/ltm
+tail -f /var/log/ltm | grep tmm
 
-From the Workstation CMD prompt run: "dig ghghghghg.com"
+From a shell on the Ubuntu Client, start wtih some DNS queries. 
+
+First, a query that returns no response: 
+
+   .. code-block:: console
+
+      dig @10.1.10.53 nope.f5.com
 
 .. image:: /class2/media/nxdomain.png
 
-From the Workstation CMD prompt run: "dig google.com"
+Next, set the DNSSEC OK bit in the query (DO): 
 
-.. image:: /class2/media/google.png
+   .. code-block:: console
 
-From the Workstation CMD prompt run: "dig dnssec-deployment.org +dnssec"
+      dig @10.1.10.53 dnssec-deployment.org +dnssec
 
 .. image:: /class2/media/dnssec-resolver-results.png
 
-From the Workstation CMD prompt run: "dig dnssec-failed.org +dnssec"
+Finally, set the DNSSEC but but observe how the response is different: 
 
-.. image:: /class2/media/dnssec-failed.png
+   .. code-block:: console
 
-http://www.internetsociety.org/deploy360/resources/dnssec-test-sites/
+      dig @10.1.10.53 www.google.com +dnssec
+
+

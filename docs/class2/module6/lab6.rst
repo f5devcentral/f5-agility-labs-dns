@@ -1,12 +1,15 @@
 Results
 ########################################
 
-From a Workstation command prompt run "dig www.guns.com"
+From a shell on the Ubuntu Client: 
+
+First, a query that returns no response: 
+
+   .. code-block:: console
+
+      dig @10.1.10.53 www.fuzzzybunnies.com
+
 
 .. image:: /class2/media/cmd_dig_guns_rpz.png
 
-Trying going to www.guns.com in a browser. Do you get redirected as expected by the Response Policy Zone?
-
-Try running additional dig commands to verify that other domains still resolve as expected.
-
-dig www.f5.com
+Matches to RPZ will respond back with the walled garden IP from the local zone. Alternatively, the action could be changed from Walled Garden!

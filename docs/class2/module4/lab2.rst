@@ -19,9 +19,6 @@ Create a key signing key according to the following table:
 
 .. image:: /class2/media/dnssec-ksk.png
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/dnssec_key/create.jsp
-
-
 TMSH commands for Key Signing key creation:
 
 .. admonition:: TMSH

@@ -1,31 +1,24 @@
 iRule assignment
 ############################
 
-Repeat the following steps for all 4 DNS listeners.
+Assigned the iRule to the DNS Listeners:
 
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
 .. image:: /class2/media/listener-assignment-1.png
+   :scale: 50
 
-Navigate to the listener DC01_udp_53_virtual 
+Navigate to the *udp_53_virtual* listener:  
 
 .. image:: /class2/media/mod7lab2-listener.png
 
-Navigate to iRules section
+Navigate to the iRules section
 
 .. image:: /class2/media/mod7lab2-irule.png
 
-Navigate to Manage
-
-.. image:: /class2/media/irule-assignment-4-c.png
-
-https://router01.branch01.example.com/tmui/Control/form?__handler=/tmui/dns/listener/irules&__source=Manage...&__linked=false&__fromError=false
-
-Highlight DNS-query-filtering iRule and move it to Selected column
+Click Manage button and assign the iRule
 
 .. image:: /class2/media/irule-assignment-5-c.png
-
-TMSH commands for router01.branch01 
 
 .. admonition:: TMSH
 
