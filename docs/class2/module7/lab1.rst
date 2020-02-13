@@ -23,7 +23,7 @@ Create a new iRule by copying the content below and pasting into the iRule edito
        /Common/Spyware
        /Common/Malicious_Web_Sites
        /Common/Adult_Content
-       /Common/Sex
+       /Common/Entertainment
      }
  
  

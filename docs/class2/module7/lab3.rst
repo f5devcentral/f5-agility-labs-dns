@@ -1,30 +1,48 @@
 Results
 ###########################
 
-From the CLI on the router01.branch01 BIGIP run
+With the iRule applied, DNS queries will be processed and log messages sent out. Open a shell to the BIG-IP and run :
 
-tail -f /var/log/ltm
+.. code-block:: tcl
 
-From the Workstation command prompt run "dig example.com" and check for the results
+   tail -f /var/log/ltm
 
-.. image:: /class2/media/mod7lab3-results1.png
+Now run DNS queries from the Ubuntu Client:
 
-From the Workstation command prompt run "dig sex.com" and check for the results
+.. code-block:: tcl
+
+   dig @10.1.10.53 www.f5.com
+
+And analyze the results:
+
+.. code-block:: tcl
+
+   Feb 13 14:47:14 ip-10-1-1-4 info tmm[10647]: 2020-02-13 14:47:13 ip-10-1-1-4.us-west-2.compute.internal qid 29530 from 10.1.10.4#43881: view none: query: www.f5.com IN A +E (10.1.10.53%0)
+   Feb 13 14:47:14 ip-10-1-1-4 info tmm3[10647]: Rule /Common/DNS-query-filtering <DNS_REQUEST>: Category /Common/Uncategorized matching www.f5.com is not filtered
+   Feb 13 14:47:14 ip-10-1-1-4 info tmm[10647]: 2020-02-13 14:47:14 ip-10-1-1-4.us-west-2.compute.internal qid 29530 to 10.1.10.4#43881: [NOERROR qr,rd,ra] response: www.f5.com. 30 IN CNAME dwbfwz8xncgmg.cloudfront.net; dwbfwz8xncgmg.cloudfront.net. 60 IN A 99.86.33.52; dwbfwz8xncgmg.cloudfront.net. 60 IN A 99.86.33.5; dwbfwz8xncgmg.cloudfront.net. 60 IN A 99.86.33.9; dwbfwz8xncgmg.cloudfront.net. 60 IN A 99.86.33.53;
+
+
+The query *www.f5.com* did not match any categories, and was resolved. Now lets try a matching query:
+
+.. code-block:: tcl
+
+   dig @10.1.10.53 www.tmz.com
  
-.. image:: /class2/media/mod7lab3-results2.png
 
-Navigate to: **DNS  ››  Delivery : iRules : iRules List**
+Notice the DNS response is quite different, and the match statement in the log!
 
-.. image:: /class2/media/irule-new.png 
+.. code-block:: tcl 
 
-https://router01.branch01.example.com/tmui/Control/jspmap/tmui/dns/rule/list.jsp
+   Feb 13 15:27:37 ip-10-1-1-4 info tmm[10647]: Rule /Common/DNS-query-filtering <DNS_REQUEST>: BLOCKED: Category /Common/Entertainment matching www.tmz.com is filtered.
+   Feb 13 15:27:37 ip-10-1-1-4 info tmm[10647]: 2020-02-13 15:27:36 ip-10-1-1-4.us-west-2.compute.internal qid 32427 to 10.1.10.4#55151: [NOERROR qr,rd,ad] response: www.tmz.com. 111 IN A 10.1.20.252;
 
-Click on the DNS-query-filtering iRule and add new filtering category "News_and_Media"
 
-.. image:: /class2/media/news.png 
+You can experiment with various queries to see the catagory from the log messages. If you want to add a new category, edit the iRule accordingly.
 
-Try opening a web broswer and navigating to www.foxnews.com
+To list current categories, from the BIG-IP *tmsh*, run the following command:
 
-From the Workstation command prompt run "dig cnn.com" and check for the results
+.. code-block:: tcl
+  
+   root@(ip-10-1-1-4)(cfg-sync Standalone)(TimeLimitedModules::Active)(/Common)(tmos)# list sys url-db url-category
 
-.. image:: /class2/media/mod7lab3-results3.png 
+
