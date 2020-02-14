@@ -23,7 +23,7 @@ The F5 device is directly connected to the internet.
 Below is a lab diagram and connectivity information:
 
 .. image:: /class2/media/lab_diagram.png
-
+   :scale: 50
 
 Lab Components
 ^^^^^^^^^^^^^^
