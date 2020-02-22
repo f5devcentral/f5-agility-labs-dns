@@ -1,7 +1,7 @@
 TCP Profile
 ###################################
 
-Like the UDP profile, a TCP profile controls certain properties of TCP Flows on the BIG-IP. 
+Like the UDP profile, a TCP profile controls properties of TCP connections on the BIG-IP. 
 
 Navigate to: **DNS  ››  Delivery : Profiles : Protocol : TCP**
 

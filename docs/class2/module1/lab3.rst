@@ -11,8 +11,7 @@ Results
 #. Observe the health status of the pool (green is good)
 
 .. image:: /class2/media/dns_pool_status.png
-   :align: center
-   :scale: 50
+   :scale: 75
 
 .. admonition:: TMSH
 

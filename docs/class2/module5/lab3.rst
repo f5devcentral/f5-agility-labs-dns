@@ -5,9 +5,9 @@ Now lets look at results. Tail the *ltm* log on the BIG-IP
 
 tail -f /var/log/ltm | grep tmm
 
-From a shell on the Ubuntu Client, start wtih some DNS queries. 
+From a Web shell on the Ubuntu Client, start wtih some DNS queries. 
 
-First, a query that returns no response: 
+First, issue a DNS query that returns no response: 
 
    .. code-block:: console
 

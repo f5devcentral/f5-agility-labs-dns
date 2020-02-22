@@ -1,7 +1,7 @@
 Name Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Define the Active Directory server as a nameserver and initiate a zone transfer.
+First, we define the Ubuntu server as a *nameserver* and initiate a zone transfer.
 
 Navigate to **DNS  ››  Delivery : Nameservers : Nameserver List**
 
@@ -17,8 +17,8 @@ Create a nameserver according to the following table:
    "Address", "10.1.20.4"
 
 .. image:: /class2/media/nameserver.png
-   :scale: 75
-
+   :scale: 90
+   
 
 .. admonition:: TMSH
 

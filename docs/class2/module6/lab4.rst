@@ -22,9 +22,7 @@ Create a local zone entry according to the following table:
 .. image:: /class2/media/local_zone.png
    :scale: 50
    
-TMSH commands for router01.branch01:
-
-.. code-block:: tcl
+.. admonition:: TMSH
 
    tmsh modify ltm dns cache validating-resolver validating-resolver_cache local-zones { { name sorry.example.com records add { "sorry.example.com. IN A 10.1.20.252" } type static } }
 

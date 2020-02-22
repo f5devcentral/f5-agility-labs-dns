@@ -8,9 +8,9 @@ Validating Resolver
 
    lab*
 
-In this lab we will use the BIG-IP as a Validating resolver and not send any queries to the back end server upon completion of the lab. 
+In this lab we will use the BIG-IP as a Validating resolver and not send any queries to the back end server. 
 
-The *validating* function of the resolver means that recusive queries are sent requesting DNSSEC, and responses are validated to authenticate validity of the the response!
+The *validating* function of the resolver means that recusive queries are sent requesting DNSSEC, and responses are validated to authenticate validity of  the response!
 
 First lets create a new DNS cache on the BIG-IP:
 

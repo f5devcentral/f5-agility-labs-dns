@@ -31,5 +31,3 @@ Create two TCP listeners according to the table below:
 .. admonition:: TMSH
 
    tmsh create gtm listener tcp_53_virtual address 10.1.10.53 port 53 translate-address enabled ip-protocol tcp pool dns_pool profiles add { example.com_dns_profile  example.com_tcp-dns_profile } vlans add { external } vlans-enabled
-
-https://support.f5.com/kb/en-us/products/big-ip_ltm/manuals/product/bigip-dns-services-implementations-13-1-0/7.html

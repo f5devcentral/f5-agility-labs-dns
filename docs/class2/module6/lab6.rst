@@ -7,7 +7,7 @@ First, a query that returns no response:
 
    .. code-block:: console
 
-      dig @10.1.10.53 www.fuzzzybunnies.com
+      dig @10.1.10.53 www.fuzzybunnies.com
 
 
 .. image:: /class2/media/cmd_dig_guns_rpz.png

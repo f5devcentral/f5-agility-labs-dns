@@ -29,7 +29,7 @@ The query *www.f5.com* did not match any categories, and was resolved. Now lets 
    dig @10.1.10.53 www.tmz.com
  
 
-Notice the DNS response is quite different, and the match statement in the log!
+Notice the DNS response is quite different as well as the log entry on the BIG-IP.
 
 .. code-block:: tcl 
 
@@ -37,9 +37,9 @@ Notice the DNS response is quite different, and the match statement in the log!
    Feb 13 15:27:37 ip-10-1-1-4 info tmm[10647]: 2020-02-13 15:27:36 ip-10-1-1-4.us-west-2.compute.internal qid 32427 to 10.1.10.4#55151: [NOERROR qr,rd,ad] response: www.tmz.com. 111 IN A 10.1.20.252;
 
 
-You can experiment with various queries to see the catagory from the log messages. If you want to add a new category, edit the iRule accordingly.
+You can experiment with various queries to see the catagory of the domain name via the log messages. If you want to add a new category, edit the iRule accordingly.
 
-To list current categories, from the BIG-IP *tmsh*, run the following command:
+To list current categories, from the BIG-IP enter the TMSH shell with *tmsh*, then run the following command:
 
 .. code-block:: tcl
   

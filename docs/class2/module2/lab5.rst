@@ -1,7 +1,7 @@
 UDP Listener
 ################################
 
-Now that profiles are created, we can create our listeners starting with the UDP listener. 
+Now that all of our profiles are created, we can create our listeners starting with the UDP listener. 
 
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
@@ -25,7 +25,7 @@ Create a UDP listener according to the tables below:
    "Default Pool", "dns_pool"
 
 .. image:: /class2/media/udp_listener.png
-   :scale: 75
+   :scale: 85
 
 
 .. admonition:: TMSH

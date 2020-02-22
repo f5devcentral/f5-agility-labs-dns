@@ -6,7 +6,6 @@ A DNS application specific monitor should be used to monitor pool members.
 Navigate to: **DNS >> Delivery >> Load Balancing >> Monitors**
 
 .. image:: /class2/media/class2_create_health-monitor_flyout.png
-  :align: center
   :scale: 50
 
 Create a new monitor according to the following settings:
@@ -20,7 +19,6 @@ Create a new monitor according to the following settings:
    "Query Name", "www.example.com"
 
 .. image:: /class2/media/class2_dns_monitor_create_properties.png
-  :align: center
   :scale: 75
 
 .. admonition:: TMSH

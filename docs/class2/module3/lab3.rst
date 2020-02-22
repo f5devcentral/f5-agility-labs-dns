@@ -23,4 +23,10 @@ You can use the **dnsxdump** utility to view the DNS Express database informatio
 
    Examine the results
 
+To see or troubleshoot zone transfers, we can refer to the */var/log/ltm* log file. A quick examination of the log should show a successful zone transfer in the lab:
+
+   .. code-block:: console
+
+      #tail -100 /var/log/ltm | grep zxfrd 
+
    .. image:: /class2/media/mod3lab3.png

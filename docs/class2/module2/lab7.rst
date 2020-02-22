@@ -44,7 +44,9 @@ Results
 
 #. Back End Visibility
 
-Loging to the Ubuntu Server using a Web SHell or SSH Session. You can run tcpdump to view DNS queries and see what hits the back end and what does not. 
+Log onto the Ubuntu Server using a Web SHell. You can then run tcpdump to view DNS queries and see what hits the back end and what does not.
+
+Use the Ubuntu Client to issue DNS queries for various domains.
 
 .. code-block:: console
 

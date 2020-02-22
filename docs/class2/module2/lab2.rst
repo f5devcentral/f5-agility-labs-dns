@@ -3,7 +3,7 @@ DNS Profile
 
 The DNS profile unlocks all BIG-IP features by making the BIG-IP fully aware of DNS as a protocol. 
 
-Without a DNS profile applied to a listener, the BIG-IP cannot natively understand DNS and can only load balance requests. 
+Without a DNS profile applied to a listener, the TMOS does not parse DNS requests and load balance UDP/TCP packets. 
 
 Navigate to: **DNS  ››  Delivery : Profiles : DNS**
 
@@ -11,7 +11,7 @@ Navigate to: **DNS  ››  Delivery : Profiles : DNS**
 
 Create a DNS profile as shown in the table below. Check boxes on the right to enable editing and overriding default properties. 
 
-  Note: AVR sampling in production should be a ratio of queries so as not to overload local database. 
+  Note: *AVR sampling in production should be a ratio of queries so as not to overload local database.*
 
 .. csv-table::
    :header: "Setting", "Value"

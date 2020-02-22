@@ -1,7 +1,7 @@
 UDP Profile
 #####################################
 
-A UDP profile is a protocol profile that controls the way the platform processes UDP traffic. With DNS, custom UDP profiles are often used to set low idle times and preseve memory in the connection table as DNS tends to be a lot of short lived connectetions. 
+A UDP profile is a protocol profile that controls the way BIG-IP processes UDP traffic. With DNS, custom UDP profiles are often used to set low idle times so as not to fill the connection table as DNS tends to be a lot of short lived connections. 
 
 
 Navigate to: **DNS  ››  Delivery : Profiles : Protocol : UDP**
@@ -9,7 +9,7 @@ Navigate to: **DNS  ››  Delivery : Profiles : Protocol : UDP**
 .. image:: /class2/media/router01_create_udp_profile.png
 
 
-Create a UDP profile as shown in the following table. By inheriting from the non default *UDP* profile, notice the idle timeout setting. 
+Create a UDP profile as shown in the following table. By inheriting from *udp_gtm_dns* profile, notice the idle timeout setting. 
  
 .. csv-table::
    :header: "Setting", "Value"

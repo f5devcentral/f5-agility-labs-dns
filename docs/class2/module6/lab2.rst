@@ -12,6 +12,7 @@ Create a nameserver according to the following table:
    :widths: 15, 15
 
    "Name", "localhost"
+   "Address","127.0.0.1"
 
 .. image:: /class2/media/create_nameserver_localhost.png
 

@@ -54,6 +54,8 @@ components:
 
 Follow these steps to get your lab started:
 
+Access to each component will be via a web SSH shell, or TMUI (BIG-IP GUI) to keep things simple. 
+
  <lab steps for UDF to be put here> 
 
 

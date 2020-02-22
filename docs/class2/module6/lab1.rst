@@ -20,12 +20,12 @@ Create a *new* zone according to the following table:
    "Zone File Name", "db.external.rpz.example.com"
    "Options", "also-notify { ::1 port 5353; };"
    "TTL", "300"
-   "Master Server", "router01.branch01.example.com."
-   "Email Contact", "hostmaster.example.com."
+   "Master Server", "master.example.com."
+   "Email Contact", "hostmaster.master.example.com."
    "NS Record: TTL", "300"
-   "NS Record: Nameserver", "router01.branch01.example.com."
+   "NS Record: Nameserver", "master.example.com."
    "Create A Record", "Checked - Enabled"
-   "A Record: IP Address", "10.1.20.252"
+   "A Record: IP Address", "10.1.10.53"
 
 .. image:: /class2/media/zonerunner_create_zone_properties.png
    

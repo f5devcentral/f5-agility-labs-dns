@@ -9,19 +9,19 @@ Transparent Cache
    lab*
 
 
-In this module we will implement all the configuration objects required to for a transparent cache.
+In this module we will implement all the configuration objects required for a transparent DNS cache on the BIG-IP.
 
-Enabling a transparent cache offloads the back end DNS servers from every query freeing resources on the servers. 
+Enabling a transparent cache offloads the back end DNS servers from responding to every query which frees resources on the servers. 
 
 
 .. image:: /class2/media/transparent_cache.png
 
 
-Log into *(bigip01)* in the using either the TMUI or ssh interface with credentials u:**admin** p:**agility2020**
+Log into *BIG-IP DNS* using either the TMUI or webshell interface with credentials u:**admin** p:**agility2020**
 
 Navigate to **DNS  ››  Caches ›› Cache List**
 
-And click the *Create* button to create a transparent cache with the following settings: 
+then click the *Create* button to create a transparent cache with the following settings: 
 
 
 .. csv-table::
@@ -32,7 +32,6 @@ And click the *Create* button to create a transparent cache with the following s
    "Resolver Type", "Transparent"
 
 .. image:: /class2/media/cache_transparent.png
-  :align: center
   :scale: 50
 
 
