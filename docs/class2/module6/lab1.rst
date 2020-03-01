@@ -36,7 +36,7 @@ Navigate to: **DNS  ››  Zones : ZoneRunner : Resource Record List**
 .. image:: /class2/media/zonerunner_create_resource_record.png
    :scale: 50
 
-Create a resource record according to the following table:
+Create a resource record according to the following table. Note the *Name* must not be fully qualified as its the hostname portion of the resource record! 
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -44,8 +44,8 @@ Create a resource record according to the following table:
 
    "View Name", "external"
    "Zone Name", "rpz.example.com"
-   "Name", "\*.fuzzybunnies.com.rpz.example.com."
-   "TTL", "300"
+   "Name", "\*.fuzzybunnies.com"
+   "TTL", "60"
    "Type", "CNAME"
    "CNAME", "."
 
