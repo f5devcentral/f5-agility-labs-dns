@@ -36,6 +36,5 @@ The lab consists of four sections:
 
    topology
    components
-   access
    module*/module*
    resources*
