@@ -1,5 +1,4 @@
 Accessing the Lab
 ~~~~~~~~~~~~~~~~~
 
-TBD; pending UDF team instructions
-
+Instructions for accessing the lab will be provided during the presentation.
