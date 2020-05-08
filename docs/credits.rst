@@ -5,7 +5,7 @@ Credits
 
    Bill Wester
 
-   Brandn Burns
+   Brandon Burns
    
    Dave Doucette
 
@@ -18,4 +18,8 @@ Credits
    Nick Stathakis
    
    Brian Van Lieu
+
+   Greg Robinson
+
+   Fred Wittenberg
 
