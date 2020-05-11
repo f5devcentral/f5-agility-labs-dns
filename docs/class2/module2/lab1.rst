@@ -34,6 +34,7 @@ Normally due to log volume, DNS logs would be sent off the BIG-IP, but for the p
 
    .. image:: /class2/media/dns_cache_transparent_flyout_router01.png
       :scale: 50
+   
    Create a DNS logging profile as shown in the table below:
 
    .. csv-table::
