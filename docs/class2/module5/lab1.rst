@@ -1,11 +1,11 @@
 Trust Anchors
-########################################
+#############
 
 Next, create a trust anchor to validate DNS payloads in a DNSSEC response.
 
 Begin by connecting to the BIG-IP via a web shell and run the commands shown below:
 
-.. admonition:: 
+.. code-block:: bash
 
    dig dnskey . | grep 257 > /root/dnskey.txt
 
