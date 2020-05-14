@@ -54,9 +54,11 @@ components:
 
 Follow these steps to get your lab started:
 
-Access to each component will be via a web SSH shell, or TMUI (BIG-IP GUI) to keep things simple. 
+Follow the instructions in your lab email to log into the F5 Unified Demo Framework (UDF) where your lab is hosted. 
 
- <lab steps for UDF to be put here> 
+The UDF provides both ssh, TMUI (Web Interface) and a Web Shell  access to each component in the lab. No RDP is required for this lab. 
+
+For simplicity, its suggested to use the Web Shell in a browser and not the native SSH interface as the latter requires an additional step of setting up ssh keys. 
 
 
 .. toctree::
