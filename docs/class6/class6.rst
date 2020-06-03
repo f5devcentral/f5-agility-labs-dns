@@ -9,4 +9,4 @@ This class will cover the following topics:
 
    intro
    labinfo
-   lab*
+   lab*/lab*

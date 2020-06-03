@@ -8,7 +8,7 @@ Lab Environment Setup / Validation
 
 In order to use F5 Cloud Services, you need to be logged in with a valid user account. If you need to sign up, or if you already have one, proceed to the `F5 Cloud Services sign up portal <http://bit.ly/f5csreg>`_
 
-.. figure:: _figures/1.png 
+..figure:: ../_figures/1.png 
 
 Once you've logged in with an account, you will be using the user name and password values in the lab to authenticate with the F5 Cloud Services and the API.
 
@@ -18,7 +18,7 @@ In order to access specific F5 Cloud Services, you need to subscribe to the corr
 
    `1.` Click on the **Your F5 Cloud** tab in the left navigation panel and you will see the available service catalogs, as well as the services you have subscribed to, if any. For this lab you will need to click **Subscribe** to **DNS** and **DNS Load Balancer** services.  
 
-   .. figure:: _figures/2.png 
+   ..figure:: ../_figures/2.png 
 
    `2.` For the purposes of the lab you can utilize the Free Tier for both the DNS and DNS Load Balancer services. 
    
@@ -34,23 +34,23 @@ In order to access specific F5 Cloud Services, you need to subscribe to the corr
    - `AWS Marketplace: F5 DNS Cloud Service <https://aws.amazon.com/marketplace/pp/B07NKSRQ99>`_
    - `AWS Marketplace: F5 DNS Load Balancer Service <https://aws.amazon.com/marketplace/pp/B07W3P8HM4>`_
  
-   .. figure:: _figures/33.jpg 
+   ..figure:: ../_figures/33.jpg 
    
    Add payment card to pay by credit card:
    
-   .. figure:: _figures/200.jpg 
+   ..figure:: ../_figures/200.jpg 
       
    Or initiate the subscription from AWS Marketplace to subscribe through it:
       
-   .. figure:: _figures/202.jpg 
+   ..figure:: ../_figures/202.jpg 
 
    After successfully subscribing, your services will appear in the **Your F5 Cloud** tab. You will also see their current status.  
 
-   .. figure:: _figures/4.png 
+   ..figure:: ../_figures/4.png 
 
    If you need to check your payment information, it is available in the **Accounts** tab, **Payment** section.  
 
-   .. figure:: _figures/5.png 
+   ..figure:: ../_figures/5.png 
 
 2. Opera with VPN to Test Geo Services 
 --------------------------------------
@@ -59,7 +59,7 @@ You will need the Opera browser to test proximity rules we will set later.
 
 Open the Opera browser, click **Settings**,  **Advanced**, **Features** and then **Enable VPN**.   
 
-.. figure:: _figures/7.png 
+..figure:: ../_figures/7.png 
 
 3. Postman Configuration
 ------------------------
@@ -68,15 +68,15 @@ Open the Opera browser, click **Settings**,  **Advanced**, **Features** and then
 
 `b)` Clone or download and extract the repository
 
-.. figure:: _figures/120.png
+..figure:: ../_figures/120.png
 
 `c)` Import collection – **/postman/F5 Cloud Services DNS LAB.postman_collection.json** and environment – **/postman/F5 Cloud Services DNS LAB.postman_environment.json**.
 
-.. figure:: _figures/121.png
+..figure:: ../_figures/121.png
 
 You will now see the imported collection (left side) with the calls that you will be utilizing grouped into several categories, as well as the environment variables (top right) used to store and pass data between Postman and the API.     
 
-.. figure:: _figures/2.jpg 
+..figure:: ../_figures/2.jpg 
 
 You are now ready to interface with the F5 Cloud Services using Postman. 
 
@@ -87,25 +87,25 @@ In order to create secondary DNS zone in the F5 Cloud Services portal, you need 
 
 `a)` Open the “F5 Cloud Services DNS LAB” environment variables by clicking the “Environment Quick Look”, click into the field of the corresponding variable, and type the value of user email in the variable “USER_EMAIL” (click **Enter** after typing the values). 
 
-.. figure:: _figures/72.png 
+..figure:: ../_figures/72.png 
 
 Repeat the same for the “USER_PASSWORD”. 
 
 `b)` Select the **Login** request in the sidebar to login to your F5 Cloud Services profile and click **Send** to get the authorization token. More detailed information on this `API request can be found here <http://bit.ly/36ffsyy>`_.
 
-.. figure:: _figures/73.png 
+..figure:: ../_figures/73.png 
 
 A successful login will result in Postman returning the tokens from the API, shown in the response body below: 
 
-.. figure:: _figures/84.jpg 
+..figure:: ../_figures/84.jpg 
 
 These tokens are then stored for subsequent calls using a function inside Postman to set environment variables. You can see the test function in the **Tests** tab: 
 
-.. figure:: _figures/9.jpg 
+..figure:: ../_figures/9.jpg 
 
 .. note:: If any of the subsequent Postman calls return a blank response or **"status": "unauthorized"** response (see the screenshot below), it means your user token has expired and you will need to re-login. To do that you just need to re-send the **Login** request. 
 
-.. figure:: _figures/10.jpg 
+..figure:: ../_figures/10.jpg 
 
 `c)` OPTIONAL: Set User ID & Account Info
 
@@ -113,11 +113,11 @@ These tokens are then stored for subsequent calls using a function inside Postma
 
 You can do this by running the following **Set User Info** API call, after you've updated the Body of the request with your own organization & address information:
 
-.. figure:: _figures/118.jpg
+..figure:: ../_figures/118.jpg
 
 The response returns the following detail, including your own organization account ID (id):
 
-.. figure:: _figures/119.jpg
+..figure:: ../_figures/119.jpg
 
 `More information on this API request can be found here <https://portal.cloudservices.f5.com/docs#operation/CreateAccount>`_
 
@@ -127,15 +127,15 @@ At this point you should be a full user with an "Owned Account" and a primary or
 
 Select the **Get Current User** request and click **Send** to retrieve User ID and Account ID to be used in the further requests. 
 
-.. figure:: _figures/86.jpg 
+..figure:: ../_figures/86.jpg 
 
 The response returns the following detail: 
 
-.. figure:: _figures/12.jpg 
+..figure:: ../_figures/12.jpg 
 
 The retrieved User ID and Account ID are then stored for subsequent calls. 
 
-.. figure:: _figures/11.jpg 
+..figure:: ../_figures/11.jpg 
 
 `More detailed information on this API request can be found here <http://bit.ly/37hyQw3>`_
 
@@ -143,14 +143,14 @@ The retrieved User ID and Account ID are then stored for subsequent calls.
 
 Request: 
 
-.. figure:: _figures/74.png 
+..figure:: ../_figures/74.png 
 
 The response will return your test DNS zone name and the status. 
 
-.. figure:: _figures/27.jpg 
+..figure:: ../_figures/27.jpg 
 
 Sending this request will automatically capture of the Zone variables: 
 
-.. figure:: _figures/26.jpg 
+..figure:: ../_figures/26.jpg 
 
 This Zone Name will be used for creating Secondary DNS Zone in the F5 Cloud Services portal, as well as throughout the lab as the domain name for your test applications. 
