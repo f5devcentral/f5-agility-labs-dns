@@ -1,8 +1,8 @@
 Lab Environment Overview
 ========================
 
-1. APIs and Services 
---------------------
+APIs and Services 
+-----------------
 
 This Lab utilizes standard *F5 Cloud Services API*, as well as a *Lab Service API*, which was custom-built just for executing this lab: 
 
@@ -14,8 +14,8 @@ The following diagram captures the core components of this Lab:
 
 .. figure:: _figures/Diagram.png
      
-2. Application Scenario 
------------------------
+Application Scenario 
+--------------------
 
 In order to fully explore the capabilities of F5 Cloud Services, you will be able to use an existing application with a set of live instances across different clouds and geographic locations. This app is `"BuyTime Auction" <http://bit.ly/37fVwfX>`_, a fictitious multi-instance deployment that helps to simulate a globally deployed app topology. Unsurprisingly, performance, global availability, zero downtime, 
 and security are critical for this application, while the app Developers & DevOps are used to consuming app infrastructure as-a-Service.  

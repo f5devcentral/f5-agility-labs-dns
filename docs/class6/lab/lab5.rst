@@ -1,8 +1,8 @@
 F5 DNS Load Balancer Cloud Service - API
 ========================================
 
-1. Create DNS Load Balancer Subscription
-----------------------------------------
+Create DNS Load Balancer Subscription
+-------------------------------------
 
 Select the **Create GSLB Subscription** request and click **Send** to create a new service instance of DNS Load Balancer using “account_id” and “catalog_id” retrieved a few steps above.
 
@@ -22,8 +22,8 @@ You can change its status from "DISABLED” to “ACTIVE” sending the **Activa
 
 More detailed information on this API request can be found here `Create a subscription <http://bit.ly/36fvHLX>`_.  
 
-2. Activate DNS Load Balancer Subscription
-------------------------------------------
+Activate DNS Load Balancer Subscription
+---------------------------------------
 
 Select the **Activate GSLB Subscription** request and click **Send**. This will deploy DNS Load Balancer using “subscription_id” captured in one of the steps above.
 
@@ -35,8 +35,8 @@ You will see “active” subscription status.
 
 More detailed information on this API request can be found here `Activate a subscription <http://bit.ly/36h6tgj>`_. 
 
-3. Test NA Pool
----------------
+Test NA Pool
+------------
 
 Send the **Test NA Availability (lab)** request to execute a call against the Lab service API, which in turn uses an external VM (located in the USA) to run a "wget" to retrieve the response from http://auction.cloudservicesdemo.net. This should show the only available instance NA1 in the HTML that is returned. 
 
@@ -46,8 +46,8 @@ The response shows that your first instance is available:
 
 .. figure:: ../_figures/53.jpg 
 
-4. Add Endpoints & Pool Members
--------------------------------
+Add Endpoints & Pool Members
+----------------------------
 
 Send the **Add Endpoint & Pool Members** request to add a few more endpoints for load balancing of the application. Note that three of the new endpoints (EU and NA2) are deployed on Amazon AWS, and one (NA3) is running on Microsoft Azure. NA1, NA2, and NA3 endpoints are aggregated into a pool "usa", which demonstrates multi-cloud load balancing. 
 
@@ -57,8 +57,8 @@ You will see all the information on the added endpoints:
 
 .. figure:: ../_figures/55.jpg 
 
-5. Test Round Robin
--------------------
+Test Round Robin
+----------------
 
 Run the **Test Round Robin** request to check the response from the Lab service API to test what instance is now being returned. This should show a result different from the previous due to the newly-configured round-robin load balancing. 
 
@@ -72,8 +72,8 @@ And check the response:
 
 You can send the same request to check other instances. 
 
-6. Update Proximity Rule
-------------------------
+Update Proximity Rule
+---------------------
 
 Run the **Update Proximity Rules & Regions**. This adds a new region "europe", and assigns a EU endpoint to it. It also updates the DNS Load Balancer with new proximity rules: to send the traffic originating in Europe to the "europe" pool, utilizing a higher relative score than the previous rule of routing traffic from "Anywhere" to the "usa" pool. This type of geo-proximity based routing is useful for GDPR compliance. 
 
@@ -83,8 +83,8 @@ And you will see all the information on available pools and regions:
 
 .. figure:: ../_figures/76.png 
 
-7. Test Proximity Rules
------------------------
+Test Proximity Rules
+--------------------
 
 Send the **Test Proximity Rules** request, which uses an external VM (located in Europe) to run a "wget" to retrieve the response from http://auction.cloudservicesdemo.net. This simulates what an EU-based customer would see when opening this URL in their browser. NOTE: you can also test this in your Opera browser (using EU proxy), the way you've done it previously with the UI. 
 
@@ -94,8 +94,8 @@ Here’s what you should see in the response:
 
 .. figure:: ../_figures/61.jpg 
 
-8. Review the JSON 
-------------------
+Review the JSON 
+---------------
 
 Let's now see the structure of the JSON. In order to get the JSON, send the **Get GSLB JSON** request which uses your ACCESS_TOKEN to retrieve the JSON:
 
@@ -125,8 +125,8 @@ And another section provides information on "virtual_servers": their IP endpoint
 
 .. figure:: ../_figures/113.png
 
-9. Delete DNS Load Balancer Service
------------------------------------
+Delete DNS Load Balancer Service
+--------------------------------
 
 Send the **Retire GSLB Subscription** request which uses the relevant “subscription_id”.
 
