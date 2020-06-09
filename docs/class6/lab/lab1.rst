@@ -6,7 +6,7 @@ F5 Cloud Services Portal
 
 a. Login
 
-   In order to use F5 Cloud Services, you need to be logged in with a valid user account. If you need to sign up, or if you already have one, proceed to the `F5 Cloud Services sign up portal <http://bit.ly/f5csreg>`_
+   In order to use F5 Cloud Services, you need to be logged in with a valid user account. If you already have an account, please `Log In <https://portal.cloudservices.f5.com/>`_, or if you need to sign up for a new account, proceed to the `F5 Cloud Services sign up <http://bit.ly/f5csreg>`_
 
    .. figure:: ../_figures/1.png 
 
@@ -16,11 +16,11 @@ a. Login
 
 In order to access specific F5 Cloud Services, you need to subscribe to the corresponding service catalogs.
 
-#. Click on the **Your F5 Cloud** tab in the left navigation panel and you will see the available service catalogs, as well as the services you have subscribed to, if any. For this lab you will need to click **Subscribe** to **DNS** and **DNS Load Balancer** services.  
+#. Click on the **Your F5 Cloud** tab in the left navigation panel and you will see the available service catalogs, as well as the services you have subscribed to, if any. For this lab you will need to click **Try it free** for both the **DNS** and the **DNS Load Balancer** services.
 
    .. figure:: ../_figures/2.png 
 
-#. For the purposes of the lab you can utilize the Free Tier for both the DNS and DNS Load Balancer services. 
+#. For the purposes of the lab you can utilize the Trial or the Free Tier for either one of the services. 
    
    .. note:: you will be asked to add your payment card even for the free tier, however you will not be charged if you follow the Free Tier guidelines outlined here:
 
@@ -55,7 +55,7 @@ In order to access specific F5 Cloud Services, you need to subscribe to the corr
 Opera with VPN to Test Geo Services 
 -----------------------------------
 
-You will need the Opera browser to test proximity rules we will set later. 
+In order to test geo-proximity rules, you can use your own VPN service (if you have one), remote desktop to a VM in a different region (if you have one), or alternatively use the Opera browser; the latter approach is within the scope of this lab.
 
 Open the Opera browser, click **Settings**,  **Advanced**, **Features** and then **Enable VPN**.   
 
@@ -66,13 +66,16 @@ Postman Configuration
 
 a. `Download Postman here <http://bit.ly/309wSLl>`_, open it, create a Postman account if you don’t have one and choose to do so, and sign in.
 
-#. Clone or download and extract the repository
+b. Import collection and environment JSON files from the `Git repo for this lab <https://github.com/f5devcentral/f5-cloudservicednslab/tree/master/postman>`_:
 
-   .. figure:: ../_figures/120.png
+    – `collection <https://bit.ly/3h7x4CX>`_
 
-#. Import collection – **/postman/F5 Cloud Services DNS LAB.postman_collection.json** and environment – **/postman/F5 Cloud Services DNS LAB.postman_environment.json**.
+    – `environment <https://bit.ly/30l3R1q>`_
 
    .. figure:: ../_figures/121.png
+   .. figure:: ../_figures/121_1.png
+   .. figure:: ../_figures/121_2.png
+   .. figure:: ../_figures/121_3.png
 
    You will now see the imported collection (left side) with the calls that you will be utilizing grouped into several categories, as well as the environment variables (top right) used to store and pass data between Postman and the API.     
 

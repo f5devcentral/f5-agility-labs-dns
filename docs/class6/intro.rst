@@ -20,11 +20,15 @@ In the process of this lab you will learn how to:
 Pre-Requisites
 --------------
 
-- Any modern browser: for working with the UI (and this document)
-- Postman: for working with the API of the F5 Cloud Services
-- Opera browser: for simulating geo-location specific traffic
+For the F5 Agility Lab session we recommend that you access the F5 Unified Demo Environment (UDF) session/class, which contains a Windows VM instance with all of the required software pre-installed. 
+
+Alternatively, if you'd like to install the software on your computer (and if organization permits to do so), you can install the following software to complete the lab:
+
+- Any modern browser **(REQUIRED)**: for working with the UI (and this document)
+- `Postman <http://bit.ly/309wSLl>`_ **(REQUIRED)**: for working with the API of the F5 Cloud Services
+- `Opera browser <https://www.opera.com/>`_: for simulating geo-location specific traffic  (you can alternatively use your own VPN solution if you have one to do simulate geo-proximity traffic instead)
 - Any text editor: for duplicating Load Balanced Record 
 
-.. important:: If you originally signed up for F5 Cloud Services through a Limited User invitation (such as an email invite from another lab or from a different account owner), then it is possible that you haven't yet completed a full registration. 
+.. important:: **IF YOU ALREADY HAVE AN EXISTING F5 CLOUD SERVICES ACCOUNT ONLY**: If your account has been previously created through a Limited User invitation (such as an email invite from another lab or from a different account owner), then it is possible that you haven't yet completed a full registration. 
 
-You can quickly tell if you have a full account by looking at your account(s) in the `F5 Cloud Services Portal <https://portal.cloudservices.f5.com/>`_. If you do now see any "Accounts you own:" and only see "Accounts you've been granted access to" as a **"Limited User"**, then you will need to create a full account / update user info before you can proceed with this lab. You can do so in the step 4(c) below via the F5 Cloud Services API using the Postman request titled "Set User Info (optional)", the details of which are outlined below after the Login. 
+You can quickly tell if you have a full account by looking at your account(s) in the `F5 Cloud Services Portal <https://portal.cloudservices.f5.com/>`_. If you do now see any "Accounts you own:" and only see "Accounts you've been granted access to" as a **"Limited User"**, then you will need to create a full account / update user info before you can proceed with this lab. You can do so in the `SECTION C of the Zone Name step <https://clouddocs.f5.com/training/community/dns/html/class6/lab/lab1.html#zone-name>`_ of the lab, via the F5 Cloud Services API using the Postman request titled "Set User Info (optional)", the details of which are outlined after the Login. 
