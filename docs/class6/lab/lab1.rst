@@ -52,25 +52,22 @@ In order to access specific F5 Cloud Services, you need to subscribe to the corr
 
    .. figure:: ../_figures/5.png 
 
-Opera with VPN to Test Geo Services 
------------------------------------
-
-In order to test geo-proximity rules, you can use your own VPN service (if you have one), remote desktop to a VM in a different region (if you have one), or alternatively use the Opera browser; the latter approach is within the scope of this lab.
-
-Open the Opera browser, click **Settings**,  **Advanced**, **Features** and then **Enable VPN**.   
-
-.. figure:: ../_figures/7.png 
-
 Postman Configuration
 ---------------------
 
+**UDF**: If you're using the Unified Demo Environment (UDF) course, you already have Postman and the relevant collections & environment settings (outlined in red below) already configured for you in your personalized Windows VM. You may skip the rest of this section & move on to the Opera browser configuration.
+
+.. figure:: ../_figures/postman-udf.png
+
+If you're not using UDF, you can follow these steps for a new Postman installation:
+
 a. `Download Postman here <http://bit.ly/309wSLl>`_, open it, create a Postman account if you don’t have one and choose to do so, and sign in.
 
-b. Import collection and environment JSON files from the `Git repo for this lab <https://github.com/f5devcentral/f5-cloudservicednslab/tree/master/postman>`_:
+b. Import collection and environment JSON files from the `Git repo for this lab <https://github.com/f5devcentral/f5-agility-labs-dns/tree/master/docs/class6/postman>`_:
 
-    – `collection <https://bit.ly/3h7x4CX>`_
+    – collection: **https://bit.ly/3cKitde**
 
-    – `environment <https://bit.ly/30l3R1q>`_
+    – environment: **https://bit.ly/2A6D8ew**
 
    .. figure:: ../_figures/121.png
    .. figure:: ../_figures/121_1.png
@@ -82,6 +79,15 @@ b. Import collection and environment JSON files from the `Git repo for this lab 
    .. figure:: ../_figures/2.jpg 
 
    You are now ready to interface with the F5 Cloud Services using Postman. 
+
+Opera Browser with VPN to Test Geo Services 
+-------------------------------------------
+
+In order to test geo-proximity rules, you can use your own VPN service (if you have one), remote desktop to a VM in a different region (if you have one), or alternatively use the Opera browser (installed in your **UDF Course**), which is approach covered in this lab.
+
+Open the Opera browser, click **Settings**,  **Advanced**, **Features** and then **Enable VPN**.   
+
+.. figure:: ../_figures/7.png 
 
 Zone Name 
 ---------
