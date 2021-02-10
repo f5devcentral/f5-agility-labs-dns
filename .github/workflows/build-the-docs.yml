@@ -6,6 +6,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      S3_DIR: dns
 
     steps:
     - uses: actions/checkout@v2
@@ -21,4 +23,4 @@ jobs:
 
     - name: Copy files to s3 (Staging Clouddocs)
       run: |
-        aws s3 sync --delete $PWD/docs/_build/html/ s3://clouddocs.f5networks.net/training/community/dns/html/
+        aws s3 sync --delete $PWD/docs/_build/html/ s3://clouddocs.f5networks.net/training/community/$S3_DIR/html/
