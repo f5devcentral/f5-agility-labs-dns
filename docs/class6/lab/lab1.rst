@@ -20,12 +20,12 @@ In order to access specific F5 Cloud Services, you need to subscribe to the corr
 
    .. figure:: ../_figures/2_updated.png 
 
-#. For the purposes of the lab you can utilize the Trial or the Free Tier for either one of the services. 
+#. For the purposes of the lab you can utilize the Trial or the Free Tier for any of the services. 
    
    .. note:: you will be asked to add your payment card even for the free tier, however you will not be charged if you follow the Free Tier guidelines outlined here:
 
-   - `F5 DNS Cloud Service Pricing <https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-DNS-Pricing.html>`_
-   - `F5 DNS Load Balancer Service Pricing <https://clouddocs.f5.com/cloud-services/latest/f5-cloud-services-GSLB-Pricing.html>`_
+   - `F5 DNS Cloud Service Pricing <https://f5cloudservices.zendesk.com/hc/en-us/articles/360045888214-F5-DNS-Cloud-Service-Pricing>`_
+   - `F5 DNS Load Balancer Service Pricing <https://f5cloudservices.zendesk.com/hc/en-us/articles/360045888214-F5-DNS-Cloud-Service-Pricing>`_
 
    Should you decide to add additional zones or LBR records beyond the Free Tier, you will only pay for what you use.
 
@@ -46,7 +46,7 @@ In order to access specific F5 Cloud Services, you need to subscribe to the corr
 
    After successfully subscribing, your services will appear in the **Your F5 Cloud** tab. You will also see their current status.  
 
-   .. figure:: ../_figures/4.png 
+   .. figure:: ../_figures/4_updated.png 
 
    If you need to check your payment information, it is available in the **Accounts** tab, **Payment** section.  
 
