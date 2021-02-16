@@ -16,9 +16,9 @@ a. Login
 
 In order to access specific F5 Cloud Services, you need to subscribe to the corresponding service catalogs.
 
-#. Click on the **Your F5 Cloud** tab in the left navigation panel and you will see the available service catalogs, as well as the services you have subscribed to, if any. For this lab you will need to click **Try it free** for both the **DNS** and the **DNS Load Balancer** services.
+#. Click on the **Your F5 Cloud** tab in the left navigation panel and you will see the available service catalogs, as well as the services you have subscribed to, if any. For this lab you will need to click **Try it free** for the **Primary DNS**, **Secondary DNS** and the **DNS Load Balancer** services.
 
-   .. figure:: ../_figures/2.png 
+   .. figure:: ../_figures/2_updated.png 
 
 #. For the purposes of the lab you can utilize the Trial or the Free Tier for either one of the services. 
    
