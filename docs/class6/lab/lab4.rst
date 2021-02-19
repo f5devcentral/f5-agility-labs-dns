@@ -8,17 +8,19 @@ Create F5 DNS Load Balancer Cloud Service
 
 Let’s now create DNS Load Balancer Service to be able to balance loads across multiple clouds (Azure & AWS) and provide global availability and performance with health-check and built-in DDoS protection. 
 
-a. Go to the **DNS Load Balancer** tab and click **Create**. 
+a. Go to the **DNS Load Balancer** tab and click **Configure Service**. 
 
-   .. figure:: ../_figures/16.png 
+   .. figure:: ../_figures/16_updated.png 
 
-#. Enter name of the zone we `created before <#zone-name>`_ and click **Create**.  
+#. Enter name of the zone we `created before <#zone-name>`_ and select the default option for "Assign to division" click **Save**. You will stay on this same page in the UI, but the **Changes Pending** message will be gone now that you've saved it. 
 
    .. figure:: ../_figures/27.jpg 
 
-   .. figure:: ../_figures/17.png 
+   .. figure:: ../_figures/17_updated.png 
    
-   Your DNS Load Balancer instance will appear on the list but in **Inactive** status. You can change the status after creating load balanced record and pool.
+   Click on the DNS Load Balancer tab and you will see your instance on the list but in **Inactive** status. You can change the status after creating load balanced record and pool.
+
+   .. figure:: ../_figures/17_B.png 
 
 Add Single Endpoint, Health Monitor, Pool and Default Geoproximity Rule
 -----------------------------------------------------------------------
@@ -27,13 +29,13 @@ a. Create a Region
 
    Creating regions will allow grouping incoming requests by geographic areas and directing them to specific pools.   
 
-   1. Click on DNS Load Balancer instance which we have just created and go to the **Regions** tab. Click **Create**.  
+   1. Click on DNS Load Balancer instance which we have just created and go to the **Regions** tab. Click **Create** and then select the **Region** option.  
   
-      .. figure:: ../_figures/18.png 
+      .. figure:: ../_figures/18_updated.png 
 
    2. Fill "usa" as "Region name" and select "North America" in "Include these continents". **Save** the created region.  
   
-      .. figure:: ../_figures/19.png 
+      .. figure:: ../_figures/19_updated.png 
    
    Now all requests from North America will be covered by the "usa" region.  
 
@@ -41,67 +43,69 @@ a. Create a Region
 
    To distribute the load, DNS Load Balancer will need to monitor health of each IP Endpoint. So, let’s create a monitor.  
 
-   1. Go to the **Monitors** tab and then click **Create**. 
+   1. Go to the **Monitors** tab and then click **Create** and then select the **Monitors** option. 
 
-      .. figure:: ../_figures/20.png 
+      .. figure:: ../_figures/20_updated.png 
 
-   2. Fill in "health-monitor" name, choose "HTTP Standard" protocol, indicate "80" port and click **Save**.   
+   2. Fill in "health-monitor" for the name, choose "HTTP Standard" protocol, indicate "80" port and click **Save**.   
 
-      .. figure:: ../_figures/21.png 
+      .. figure:: ../_figures/21_updated.png 
    
 #. Add an IP Endpoint (NA) with Health Check
 
    Let’s now create an IP endpoint that will currently service all incoming requests. DNS Load Balancer chooses an IP endpoint based on request origin and configuration of IP endpoints, as well as IP Endpoint health. 
 
-   1. Go to the **IP endpoints** tab and then click **Create**. 
+   1. Go to the **IP endpoints** tab and then click **Create** and then select the **IP Endpoint** option. 
   
-      .. figure:: ../_figures/22.png 
+      .. figure:: ../_figures/22_updated.png 
 
-   2. Fill in name ("na1-auction"), IP address ("34.229.48.248"), port ("80") and select the monitor we created above.  
+   2. Fill in name ("na1-auction"), IP address ("34.229.48.248"), port ("80") and select the monitor we created above and click **Save**.  
   
-      .. figure:: ../_figures/23.png 
+      .. figure:: ../_figures/23_updated.png 
    
 #. Create a Pool
 
    Let's now create a pool and add a member to it. 
 
-   1. Go to the **Pools** tab and then click **Create**. 
+   1. Go to the **Pools** tab and then click **Create** and then select the **Pool** option. 
   
-      .. figure:: ../_figures/24.png 
+      .. figure:: ../_figures/24_updated.png 
 
-   2. Fill in "america" name, choose "round-robin" method and define TTL "30". Then click **Next**.  
+   2. Fill in "america" for the name, and leave the default record type to "A", load balancing method of "round-robin" method and TTL of "30". Then click **Next**.  
   
-      .. figure:: ../_figures/25.png 
+      .. figure:: ../_figures/25_updated.png 
 
    3. Click **Add Member** to add an IP Endpoint to the pool. 
   
-      .. figure:: ../_figures/26.png 
+      .. figure:: ../_figures/26_updated.png 
 
    4. Select the endpoint we’ve just created, as well as the monitor. Click **Add** and **Create**.   
   
-      .. figure:: ../_figures/56.png 
+      .. figure:: ../_figures/56_updated.png 
   
    A newly created pool with the one NA endpoint will appear on the list.    
 
 #. Add a Load Balanced Record
 
-   After creating all the components (IP endpoint, Pool, Region and Monitor), we can create a DNS Load Balancer record and its     proximity rule. 
+   After creating all the components (IP endpoint, Pool, Region and Monitor), we can create a DNS Load Balancer record and its proximity rule. 
 
-   1. Go to the **Load balanced records** tab and then click **Create**.
+   1. Go to the **Load balanced records** tab and then click **Create** and then select the **Load Balanced Record** option.
 
-      .. figure:: ../_figures/118.png
+      .. figure:: ../_figures/118_updated.png
 
-   2. Fill in LBR name "auction", host "auction", select "A" as "Resource Record Type" and set a proximity rule ("Anywhere" -> "america" pool) to direct requests from anywhere to "america" pool with the created NA1 endpoint. Set score of the proximity rule to be "1". This will define the priority of the rule after some more are added.
+   2. Fill in LBR name "auction", host "auction", select "A" as "Resource Record Type" and set a proximity rule ("Anywhere" -> "america" pool) to direct requests from anywhere to "america" pool with the created NA1 endpoint. Leave the default value for the proximity rule to be "1". This will define the priority of the rule after some more are added.
 
       Click **Add Rule**, then check ***Enabled*** tick and **Save** the record.
 
-      .. figure:: ../_figures/78.png
+      .. figure:: ../_figures/78a.png
 
-   3. Go back to the DNS Load Balancer tab, click on your service and activate it.
+   3. Go back to the DNS Load Balancer tab, tick the box next to your service and click **Save** and you will see the "Changes staged" message go away. Then click **Activate**.
 
-      .. figure:: ../_figures/119.png
+      .. figure:: ../_figures/119_updated.png
 
    The DNS Load Balancer service is now setup.  
+
+      .. figure:: ../_figures/119_B.png
 
 #. Test via Browser 
 

@@ -112,7 +112,8 @@ extensions = [
   'sphinx.ext.extlinks',
   'sphinx.ext.graphviz',
   'sphinxcontrib.nwdiag',
-  #'sphinxcontrib.blockdiag'
+  'sphinx_copybutton',
+  'sphinxcontrib.blockdiag'
   #'sphinx.ext.autosectionlabel'
 ]
 
