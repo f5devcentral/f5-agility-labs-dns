@@ -111,13 +111,9 @@ a. Create a Region
 
    Let’s test the created service with the proximity rule via browser.  
 
-   1. Open FQDN ("auction.{{zone name}}" where {{zone name}} is the value copied from postman in one of the step above) in your browser.
+   1. Open FQDN ("auction.{{zone name}}" where {{zone name}} is the value copied from postman in one of the step above) in your browser. You will see that acc to the proximity rule, you joined an endpoint belonging to the "america" pool. 
 
-      .. figure:: ../_figures/29.png 
-
-   2. You will see that acc to the proximity rule, you joined the endpoint belonging to the "america" pool. 
-
-      .. figure:: ../_figures/30.png 
+      .. figure:: ../_figures/29_updated.png 
 
 #. Test via Command Prompt 
 
@@ -127,9 +123,9 @@ a. Create a Region
 
       .. figure:: ../_figures/70.png 
 
-   2. Paste the following command to the **Command Prompt**: **nslookup "your FQDN name"** and press **Enter**.
+   2. Paste the following command to the **Command Prompt**: **nslookup auction."your FQDN name" ns1.f5cloudservices.com** and press **Enter**. Note that we are specifying the nameserver we want to query (ns1.f5cloudservices.com) so that an upstream resolver cache does not affect our expected results.
 
-      .. figure:: ../_figures/68.png 
+      .. figure:: ../_figures/68_updated.png 
 
    And you will see **34.229.48.248** IP in the response which belongs to **na1-auction** endpoint from **america** pool.  
   
@@ -140,17 +136,17 @@ a. Add More Endpoints (NA2,3)
 
    Let's now add a few more endpoints for load balancing of the application. Note that NA2 endpoint is deployed on Amazon AWS, whereas NA3 is running on Microsoft Azure. 
 
-   1. Go back to the F5 Cloud Services portal, the **DNS Load Balancer** service, the **IP endpoints** tab and select **Create**. 
+   1. Go back to the F5 Cloud Services portal, the **DNS Load Balancer** service, the **IP endpoints** tab and select **Create** and select the **IP endpoints** option. 
    
-      .. figure:: ../_figures/92.png 
+      .. figure:: ../_figures/92_updated.png 
    
    2. Fill in name ("na2-auction"), IP address ("18.232.64.254"), port ("80") and select the monitor we created above.
    
-      .. figure:: ../_figures/93.png 
+      .. figure:: ../_figures/93_updated.png 
    
-      Create one more endpoint repeating the step above using the following properties: "na3-auction" for name, "13.82.106.211" for IP address, "80" for port. You will have three endpoints as a result. 
+      Check the box to **Save and create another** create one more endpoint repeating the step above using the following properties: "na3-auction" for name, "13.82.106.211" for IP address, "80" for port. You will have three endpoints as a result. 
    
-      .. figure:: ../_figures/94.png 
+      .. figure:: ../_figures/94_updated.png 
    
 #. Add the Endpoints to the Pool
 
@@ -158,15 +154,17 @@ a. Add More Endpoints (NA2,3)
 
    1. Go to the **Pools** tab and click on the **america** pool.
    
-      .. figure:: ../_figures/95.png
+      .. figure:: ../_figures/95_updated.png
    
-   2. Click **Add Member** and select the endpoint to be added. 
+   2. Click **Add Member** and select the "na2-auction" endpoint to be added. Check the box to **Save and create another** and click **Add**
    
-      .. figure:: ../_figures/96.png
+      .. figure:: ../_figures/96_updated.png
    
-      Add one more endpoint and click **Save**. Now all three endpoints belong to one pool:
+      Add the ""na3-auction" endpoint uncheck the box to **Save and create another** and click **Add**. Now all three endpoints belong to one pool:
    
-      .. figure:: ../_figures/97.png
+      .. figure:: ../_figures/97_updated.png
+   
+   3. Click **Save** to return to the Pools tab. Notice that there is a message that "Changes staged" so click **Save** on more time on this screen. 
 
 #. Test via Default Browser
 
