@@ -327,8 +327,8 @@ Delete DNS Load Balancer Service
 
 #. Go back to the F5 Cloud Services portal, the **DNS Load Balancer** tab, and click on your load-balancing service.  
    
-   .. figure:: ../_figures/107.png
+   .. figure:: ../_figures/107_updated.png
    
 #. Tick the records and click **Delete**, then confirm your choice.
    
-   .. figure:: ../_figures/108.png
+   .. figure:: ../_figures/108_updated.png
