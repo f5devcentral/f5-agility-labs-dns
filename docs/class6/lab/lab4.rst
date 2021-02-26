@@ -144,9 +144,9 @@ a. Add More Endpoints (NA2,3)
    
       .. figure:: ../_figures/93_updated.png 
    
-      Check the box to **Save and create another** create one more endpoint repeating the step above using the following properties: "na3-auction" for name, "13.82.106.211" for IP address, "80" for port and the monitor we created above. You will have three endpoints as a result. 
+      Check the box to **Save and create another** create one more endpoint repeating the step above using the following properties: "na3-auction" for name, "52.249.252.91" for IP address, "80" for port and the monitor we created above. You will have three endpoints as a result. 
    
-      .. figure:: ../_figures/94_updated.png 
+      .. figure:: ../_figures/94_updated2.png 
    
 #. Add the Endpoints to the Pool
 
@@ -176,7 +176,7 @@ a. Add More Endpoints (NA2,3)
 
    2. Paste the following command to the **Command Prompt**: **nslookup auction."your FQDN name" ns1.f5cloudservices.com** and press **Enter**. Note that we are specifying the nameserver we want to query (ns1.f5cloudservices.com) so that an upstream resolver cache does not affect our expected results.
 
-      .. figure:: ../_figures/68_updated2.png TODO: update this screenshot with all 3 IP endpoints after NA3 is back online
+      .. figure:: ../_figures/68_updated3.png
 
    And you should see the IPs of the various end points the response which belongs to the **america** pool.  
   
