@@ -17,7 +17,8 @@ Enabling a transparent cache offloads the back end DNS servers from responding t
 .. image:: /class2/media/transparent_cache.png
 
 
-Log into *BIG-IP DNS* using either the TMUI or webshell interface with credentials u:**admin** p:**agility2020**
+Log into *BIG-IP DNS* using either the TMUI or webshell interface with credentials u:**admin** p:**agility2021
+**
 
 Navigate to **DNS  ››  Caches ›› Cache List**
 
