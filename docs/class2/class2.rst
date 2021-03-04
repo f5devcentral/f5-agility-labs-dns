@@ -42,15 +42,15 @@ components:
       - - **Management:** 10.1.1.4
         - **External Self:** 10.1.10.6
         - **Internal Self:** 10.1.20.6
-      - ``admin``/``agility2020``
+      - ``admin``/``agility2021``
     * - Ubuntu Desktop
       - - **Management:** 10.1.1.6
         - **External:** 10.1.10.4
-      - ``ubuntu``/``agility2020``
+      - ``ubuntu``/``agility2021``
     * - Ubuntu server
       - - **Management:** 10.1.1.5
         - **Internal:** 10.1.20.4
-      - ``ubuntu``/``agility2020``
+      - ``ubuntu``/``agility2021``
 
 Follow these steps to get your lab started:
 
