@@ -50,7 +50,7 @@ To do this we will be using our friend dig.
 #. ``dig @10.1.0.245 app.f5demo.com``
 #. Change the client subnet using ``dig @10.1.0.245 app.f5demo.com +subnet=9.9.9.0/24``
 #. Examine the response and the logs to see what decision was made ... why?
-#. Change your query request to include a matching client subnet for a topology record that matches the configuration. ``dig @10.1.0.245 app.f5demo.com=1.2.2.0/24`` .
+#. Change your query request to include a matching client subnet for a topology record that matches the configuration. ``dig @10.1.0.245 app.f5demo.com +subnet=1.2.2.0/24`` .
 
 ..  image:: /class4/_static/dig_client_subnet.png
 
