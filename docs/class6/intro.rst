@@ -26,7 +26,7 @@ Unified Demo Environment (UDF) Access
 
 For the F5 Agility Lab session we recommend that you access the F5 Unified Demo Environment (UDF) session/course, which contains a Windows VM instance with all of the required software pre-installed.
 
-You will then open a remote RDP session into your personal instance containing the credentials generated for you. The link to the UDF course is: `SaaS based DNS and DNS Load Balancing <https://udf.f5.com/meet/e6c00ed0-5216-430f-aabd-a5c82639a3d3/3ee19b00-ef29-44f0-bb62-9497178083ac>`_. 
+You will then open a remote RDP session into your personal instance containing the credentials generated for you. The link to the UDF course is: `SaaS based DNS and DNS Load Balancing <https://udf.f5.com/b/918107a7-5d3c-4979-b25a-4194283be3a4>`_. 
 
 You can also follow the link in your email invite and login to the lab environment.
 

@@ -29,6 +29,8 @@ a. Click on your zone in the **Secondary DNS** tab and scroll down to see **ZONE
 
 #. Paste the address into your browser and you’ll get to the website: 
 
+   .. note:: Due to DNS propagation times, you may need to wait 1 to 2 minutes
+
    .. figure:: ../_figures/13_updated.png 
 
 Delete Zone 
