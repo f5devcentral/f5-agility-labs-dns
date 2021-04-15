@@ -74,7 +74,7 @@ Finally, minimize *Firefox* to reveal the CLI shortcuts on the desktop:
 
 Let’s open the BIG-IP DNS Proxy link to bring up the BIG-IP’s CLI. Once running, let’s start a capture that will show us both sides of the DoH proxy:
 
-``tcpdump -nni 0.0 (host 10.1.1.4 and host 10.1.10.100 and port 443) or (host 8.8.4.4 or host 8.8.8.8 and port 53)``
+``tcpdump -nni 0.0 '(host 10.1.1.4 and host 10.1.10.100 and port 443) or (host 8.8.4.4 or host 8.8.8.8 and port 53)'``
 
 Once running, maximize *Firefox* and perform another DNS lookup. View the HTTPS and DNS traffic in the packet capture output. The output below shows my queries to f5.com, f5agility.com and disney.com.
 
