@@ -15,19 +15,19 @@ The lab consists of the following items:
 
    -  Windows Jump Host
 
-      -  Credentials: user / f5agility2021
+      -  Credentials: user / f5agility!
 
       -  Management IP: 10.1.1.4
 
    -  Ubuntu Jump Host
 
-      -  Credentials: user / f5agility2021
+      -  Credentials: user / f5agility!
 
       -  Management IP: 10.1.1.6
 
    -  F5 BIG-IP Proxy:
 
-      -  Credentials: admin / f5agility2021 \| root / f5agility2021
+      -  Credentials: admin / f5agility! \| root / f5agility!
 
       -  Management IP: 10.1.1.5
 
