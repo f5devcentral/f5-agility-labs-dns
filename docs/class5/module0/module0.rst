@@ -9,7 +9,7 @@ Click “No” to close the network discovery prompt.
 
 Click on the Firefox icon to launch the browser.
 
-Three tabs will open up. The first tab is the UI of the BIG-IP. Let’s login using **admin** for our username and **f5agility2021** as our password.
+Three tabs will open up. The first tab is the UI of the BIG-IP. Let’s login using **admin** for our username and **f5agility!** as our password.
 
 |image3.png|
 
