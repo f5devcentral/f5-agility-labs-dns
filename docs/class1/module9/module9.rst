@@ -12,10 +12,12 @@ A network outage can automatically cause DR activation.
  ..  https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/pool/members.jsp?name=%2FCommon%2Fwww.example.com_pool&pool_type=1&identity=www.example.com_pool
 
    .. image:: /_static/class1/gslb_pool_persistence_flyout.png
+      :width: 800
 
 #. Modify the "Load Balancing Method" -> "Preferred" to "Global Availability"
 
    .. image:: /_static/class1/gslb_pool_global_availability_details.png
+      :width: 800
 
    .. admonition:: TMSH
 
@@ -28,6 +30,7 @@ A network outage can automatically cause DR activation.
  ..  https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/network/interface/list.jsp
 
    .. image:: /_static/class1/router_disable_isp1_site_interface.png
+      :width: 800
 
    TMSH command to run on ltm.sitea to simulate a failure   
 
@@ -40,6 +43,7 @@ A network outage can automatically cause DR activation.
    Log into the jumpbox (username: Administrator password: VkEZNEFnnLH) , open chrome, and navigate to https:www.f5demo.com:
 
    .. image:: /_static/class1/dns_gslb1_site2_links.png
+      :width: 800
 
  ..  https://gtm1.site2.example.com/tmui/Control/jspmap/xsl/gtm_link/list   
 
@@ -50,6 +54,7 @@ A network outage can automatically cause DR activation.
  ..  https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/network/interface/list.jsp
 
    .. image:: /_static/class1/router_enable_isp1_site_interface.png
+      :width: 800
 
    .. admonition:: TMSH
 
