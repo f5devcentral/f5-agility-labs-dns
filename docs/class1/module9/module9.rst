@@ -9,8 +9,6 @@ A network outage can automatically cause DR activation.
 
 #. On dns.sitea navigate to: **DNS  ››  GSLB : Pools : Pool List  ››  Members : www.f5demo.com_pool**
 
- ..  https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/pool/members.jsp?name=%2FCommon%2Fwww.example.com_pool&pool_type=1&identity=www.example.com_pool
-
    .. image:: /_static/class1/gslb_pool_persistence_flyout.png
       :width: 800
 
@@ -26,8 +24,6 @@ A network outage can automatically cause DR activation.
 #. Introduce a network problem at sitea and disable the virtual server
 
    On ltm.sitea navigate to: **Local Traffic  ››  Virtual Servers: Virtual Server List  ››  Virtual Server: app1_sitea_www.f5demo.com_tcp_https_virtual**
-
- ..  https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/network/interface/list.jsp
 
    .. image:: /_static/class1/router_disable_isp1_site_interface.png
       :width: 800
@@ -45,13 +41,9 @@ A network outage can automatically cause DR activation.
    .. image:: /_static/class1/dns_gslb1_site2_links.png
       :width: 800
 
- ..  https://gtm1.site2.example.com/tmui/Control/jspmap/xsl/gtm_link/list   
-
 #. Set the sitea virtual server back up and enable the virtual server
 
    On ltm.sitea navigate to: **Local Traffic  ››  Virtual Servers: Virtual Server List  ››  Virtual Server: app1_sitea_www.f5demo.com_tcp_https_virtual**
-
- ..  https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/network/interface/list.jsp
 
    .. image:: /_static/class1/router_enable_isp1_site_interface.png
       :width: 800
