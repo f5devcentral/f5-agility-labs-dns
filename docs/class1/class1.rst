@@ -1,4 +1,4 @@
-Class 7 - Intro to GSLB
+Class 1 - Intro to GSLB
 =====================================================
 
 .. image:: /_static/class1/class1_availability.png
