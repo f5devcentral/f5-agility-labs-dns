@@ -1,19 +1,19 @@
-gtm1.site2
+dns.siteb
 ###############################################
 
-All GTM devices need to be defined. Create a server object for gtm1.site2
+All GTM devices need to be defined. Create a server object for dns.siteb
 
 .. image:: /_static/class1/server_create_gtm1.png
 
-Click "Create" to define gtm1.site2 as defined in the table below:
+Click "Create" to define dns.siteb as defined in the table below:
 
 .. csv-table::
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "Name", "gtm1.site2_server"
-   "Data Center", "site2_datacenter"
-   "Devices Add:", "gtm1.site2.example.com : 198.51.100.39"
+   "Name", "dns.siteb_server"
+   "Data Center", "siteb_datacenter"
+   "Devices Add:", "dns.siteb.f5demo.com : 10.1.60.101"
    "Health Monitors", "bigip"
 
 #. Fill in the Name and Datacenter
@@ -28,8 +28,8 @@ Click "Create" to define gtm1.site2 as defined in the table below:
 
    .. image:: /_static/class1/gtm1.site2_create.png
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
+.. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
 
 .. admonition:: TMSH
 
-   tmsh create gtm server gtm1.site2_server datacenter site2_datacenter devices add { gtm1.site2.example.com { addresses add { 198.51.100.39 } } } monitor bigip product bigip
+   tmsh create gtm server dns.siteb_server datacenter siteb_datacenter devices add { dns.siteb.f5demo.com { addresses add { 10.1.60.100 } } } monitor bigip product bigip

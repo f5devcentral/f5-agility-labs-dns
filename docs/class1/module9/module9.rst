@@ -1,15 +1,15 @@
 LB Methods
 ###############################
 
-Modify the GSLB configuration so that site2 is a standby DR site.
+Modify the GSLB configuration so that siteb is a standby DR site.
 
-Introduce a network problem that causes the isp1 link monitor to fail.
+Introduce a network problem that causes the app1 link monitor to fail.
 
-An ISP network outage can automatically cause DR activation.
+A network outage can automatically cause DR activation.
 
-#. On gtm1.site1 navigate to: **DNS  ››  GSLB : Pools : Pool List  ››  Members : www.example.com_pool**
+#. On dns.sitea navigate to: **DNS  ››  GSLB : Pools : Pool List  ››  Members : www.f5demo.com_pool**
 
-   https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/pool/members.jsp?name=%2FCommon%2Fwww.example.com_pool&pool_type=1&identity=www.example.com_pool
+ ..  https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/pool/members.jsp?name=%2FCommon%2Fwww.example.com_pool&pool_type=1&identity=www.example.com_pool
 
    .. image:: /_static/class1/gslb_pool_persistence_flyout.png
 
@@ -19,44 +19,40 @@ An ISP network outage can automatically cause DR activation.
 
    .. admonition:: TMSH
 
-      tmsh modify gtm pool a www.example.com_pool load-balancing-mode global-availability
+      tmsh modify gtm pool a www.f5demo.com_pool load-balancing-mode global-availability
 
-#. Introduce a network problem in the ISP at site1
+#. Introduce a network problem at sitea and disable the virtual server
 
-   Log into the router and disable interface 1.6 connecting ISP1 to site1
+   On ltm.sitea navigate to: **Local Traffic  ››  Virtual Servers: Virtual Server List  ››  Virtual Server: app1_sitea_www.f5demo.com_tcp_https_virtual**
 
-   https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/network/interface/list.jsp
+ ..  https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/network/interface/list.jsp
 
    .. image:: /_static/class1/router_disable_isp1_site_interface.png
 
-   TMSH command to run on the router01 to simulate an ISP failure   
+   TMSH command to run on ltm.sitea to simulate a failure   
 
    .. admonition:: TMSH
 
-      tmsh modify interface 1.6 disabled
+      tmsh modify ltm virtual app1_sitea_www.f5demo.com_tcp_https_virtual disabled
 
 #. View the effect
 
-   Log into gtm1.site2 and observe the status of "Link" objects:
+   Log into the jumpbox (username: Administrator password: VkEZNEFnnLH) , open chrome, and navigate to https:www.f5demo.com:
 
    .. image:: /_static/class1/dns_gslb1_site2_links.png
 
-   https://gtm1.site2.example.com/tmui/Control/jspmap/xsl/gtm_link/list
+ ..  https://gtm1.site2.example.com/tmui/Control/jspmap/xsl/gtm_link/list   
 
-   .. admonition:: TMSH
+#. Set the sitea virtual server back up and enable the virtual server
 
-      tmsh show gtm link
+   On ltm.sitea navigate to: **Local Traffic  ››  Virtual Servers: Virtual Server List  ››  Virtual Server: app1_sitea_www.f5demo.com_tcp_https_virtual**
 
-#. Set the site1 isp link back up
-
-   Log into the router and enable the interface 1.6 connecting ISP1 to site1
-
-   https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/network/interface/list.jsp
+ ..  https://router01.branch01.example.com/tmui/Control/jspmap/tmui/locallb/network/interface/list.jsp
 
    .. image:: /_static/class1/router_enable_isp1_site_interface.png
 
    .. admonition:: TMSH
 
-      tmsh modify interface 1.6 enabled
+      tmsh modify ltm virtual app1_sitea_www.f5demo.com_tcp_https_virtual enabled
 
 Note: Even though you re-enabled the primary site1, a persistence record from the previous lab is still in place.

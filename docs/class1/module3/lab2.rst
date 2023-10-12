@@ -5,7 +5,7 @@ A mesh of F5 DNS servers need to exchange keys to establish a trusted mechanism 
 
 .. image:: /_static/class1/establish_trust.png
 
-Launch Putty and login to gtm1.site1.example.com
+Launch Putty and login to dns.sitea.f5demo.com
 
 Run the following command:
 
@@ -19,6 +19,6 @@ When prompted for a password use "default".
 
 Navigate to: **DNS  ››  GSLB : Servers : Trusted Server Certificates**
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/locallb/ssl_certificate/properties.jsp?certificate_name=server&store=iquery
+.. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/locallb/ssl_certificate/properties.jsp?certificate_name=server&store=iquery
 
-.. image:: /_static/class1/gslb_dataceter_servers_trusted_certificates.png
+.. image:: /_static/class7/gslb_dataceter_servers_trusted_certificates.png

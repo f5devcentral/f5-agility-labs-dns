@@ -7,7 +7,7 @@ Navigate to: **DNS  ››  GSLB : Servers : Server List**
 
 .. figure:: /_static/class1/gslb_servers_flyout.png
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp
+.. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/list.jsp
 
 .. toctree::
    :hidden:
