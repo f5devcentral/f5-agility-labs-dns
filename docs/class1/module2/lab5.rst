@@ -16,7 +16,7 @@ Create a UDP listener according to the following table:
    :header: "Setting", "dns.sitea", "dns.siteb"
    :widths: 6, 10, 10
 
-   "Name", "dns_site1_ns1.f5demo.com_udp_53_virtual", "dns_siteb_ns2.f5demo.com_udp_53_virtual"
+   "Name", "dns_sitea_ns1.f5demo.com_udp_53_virtual", "dns_siteb_ns2.f5demo.com_udp_53_virtual"
    "Destination", "10.1.10.101", "10.1.60.101"
    "Protocol Profile (Client)", "f5demo.com_udp-dns_profile", "f5demo.com_udp-dns_profile"
    "DNS Profile", "f5demo.com_dns_profile", "f5demo.com_dns_profile"

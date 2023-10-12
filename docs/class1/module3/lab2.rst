@@ -6,7 +6,17 @@ A mesh of F5 DNS servers need to exchange keys to establish a trusted mechanism 
 .. image:: /_static/class1/establish_trust.png
    :width: 800
 
-Launch Putty and login to dns.sitea.f5demo.com
+Launch WebRDP "Guacomole" and login (username : user password : user)
+
+.. image:: /_static/class1/system_webrdp.PNG
+   :width: 800
+
+Expand Jumpbox_Windows10_RDP & double-click on Jumpbox_Windows10_RDP
+
+.. image:: /_static/class1/jumpbox_windows10.PNG
+   :width: 800
+
+Launch Putty and login to dns.sitea.f5demo.com (username : root & password : default)
 
 Run the following command:
 

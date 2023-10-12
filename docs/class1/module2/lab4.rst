@@ -26,7 +26,7 @@ Create a new TCP profile as shown in the following table.
 
 .. https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/create.jsp
 
-TMSH Command for both gtm1.site and gtm1.site2:
+TMSH Command for both dns.sitea and dns.siteb:
 
 .. admonition:: TMSH
 

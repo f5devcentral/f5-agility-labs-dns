@@ -5,7 +5,7 @@ After the BIG-IP DNS server in datacenter B is joined to the sync group, adminis
 
 Changes will be automatically replicated across all F5 DNS servers.
 
-Launch Putty and log in to dns.siteb
+Launch WEB SHELL and log in to dns.siteb
 
 Run the following command: Enter the password "default" when prompted.
 

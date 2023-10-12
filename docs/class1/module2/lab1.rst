@@ -30,7 +30,7 @@ Configure DNS query and response logging. Create a "Log Publisher", and a "Loggi
    
    .. admonition:: TMSH
 
-      tmsh create sys log-config publisher local-syslog-publisher { destinations { local-syslog { } } }
+      tmsh create sys log-config publisher local-syslog-publisher { destinations add { local-syslog { } } }
 
 #. Navigate to: **DNS > Delivery > Profiles > Other > DNS Logging: Create**
 
