@@ -1,9 +1,10 @@
 Delegation
 =================================
 
-Log in to the DNS server from the jumpbox (username: user pasword: Agility1) , and open the DNS management UI:
+Log in to the DNS server from the jumpbox (username: Administrator pasword: 2brJF7ss) , and open the DNS management UI:
 
 .. image:: /_static/class1/dc01_dns_tools.png
+   :width: 800
 
 .. toctree::
    :hidden:

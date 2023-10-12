@@ -1,9 +1,10 @@
-site2_ha-pair
+siteB_ltm
 ###############################################
 
-LTM devices need to be defined. Create a server object for the bigip1.site2 and bigip2.site2 HA pair
+LTM devices need to be defined. Create a server object for the ltm.siteB
 
 .. image:: /_static/class1/server_create_gtm1-gtm2-site1-hapair.png
+   :width: 800
 
 Create a Server Object as defined in the table below:
 
@@ -11,10 +12,9 @@ Create a Server Object as defined in the table below:
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "Name", "site2_ha-pair"
-   "Data Center", "site2_datacenter"
-   "Device Add:", "bigip1.site2.example.com : 198.51.100.37"
-   "Device Add:", "bigip2.site2.example.com : 198.51.100.38"
+   "Name", "siteB_ltm"
+   "Data Center", "siteB_datacenter"
+   "Device Add:", "ltm.siteb.f5demo.com : 10.1.60.50"
    "Health Monitors", "bigip"
    "Virtual Server Discovery", "Enabled"
    "Link Discovery", "Enabled"
@@ -22,29 +22,34 @@ Create a Server Object as defined in the table below:
 #. Fill in the Name and Datacenter
 
    .. image:: /_static/class1/site2_click-addserver.png
+      :width: 800
 
 #. Click the "Add" button to define IP addresses
 
    .. image:: /_static/class1/site2_ha_pair_bigip1_add.png
+      :width: 800
 
 #. Click "Add" again to define the other BIG-IP in the HA pair.
 
    .. image:: /_static/class1/site2_click-addserver_again.png
+      :width: 800
 
 #. Click the "Add" button to define IP addresses
 
    .. image:: /_static/class1/site2_ha_pair_bigip2_add.png
+      :width: 800
 
-#. Complete the form and associate the "bigip" "Health Monitor"
+#. Complete the form and associate the "bigip" "Health Monitor" and enable both "Virtual Server" and "Link" discovery
 
    .. image:: /_static/class1/site2-HA_pair_create.png
+      :width: 800
 
-#. Make sure to enable both "Virtual Server" and "Link" discovery
+.. #. Make sure to enable both "Virtual Server" and "Link" discovery
 
-   .. image:: /_static/class1/VS_and_link_auto_discovery.png
+..   .. image:: /_static/class1/VS_and_link_auto_discovery.png
 
-https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
+.. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/server/create.jsp
 
 .. admonition:: TMSH
 
-   tmsh create gtm server site2_ha-pair datacenter site2_datacenter devices add { bigip1.site2.example.com { addresses add { 198.51.100.37 { } } } bigip2.site2.example.com { addresses add { 198.51.100.38 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled
+   tmsh create gtm server siteb_ltm datacenter siteb_datacenter devices add { ltm.siteb.f5demo.com { addresses add { 10.1.60.50 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled
