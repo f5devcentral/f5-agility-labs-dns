@@ -6,6 +6,7 @@ F5 refers to an FQDN as a "wide-ip", or "wip".
 Navigate to: **DNS  ››  GSLB : Wide IPs : Wide IP List**
 
 .. image:: /_static/class1/gtm_wideip_list.png
+   :width: 800
 
 Create an F5 "wide IP"
 
@@ -18,6 +19,7 @@ Create an F5 "wide IP"
    "Pool", "www.f5demo.com_pool"
 
 .. image:: /_static/class1/gtm_wideip_create.png
+   :width: 800
 
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/wideip/list.jsp
 

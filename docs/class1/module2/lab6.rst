@@ -8,6 +8,7 @@ A TCP listener will receive and process DNS queries.
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
 .. image:: /_static/class1/listener_flyout.png
+   :width: 800
 
 Create a TCP listener according to the following table:
 
@@ -21,6 +22,7 @@ Create a TCP listener according to the following table:
    "DNS Profile", "f5demo.com_dns_profile", "f5demo.com_dns_profile"
 
 .. image:: /_static/class1/listener_tcp_settings.png
+   :width: 800
 
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/listener/create.jsp
 

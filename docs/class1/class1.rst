@@ -2,6 +2,7 @@ Class 7 - Intro to GSLB
 =====================================================
 
 .. image:: /_static/class1/class1_availability.png
+   :width: 800
 
 * Students will configure F5 DNS servers to support GSLB services on a single device in sitea.
 * Join an additional F5 DNS server in siteb to the GSLB cluster.

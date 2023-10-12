@@ -6,6 +6,7 @@ LTM virtual server objects are grouped together into GTM pools.
 Navigate to: **DNS  ››  GSLB : Pools : Pool List**
 
 .. image:: /_static/class1/gtm_pool_list.png
+   :width: 800
 
 Create a Pool of LTM Virtuals according to the following table:
 
@@ -21,6 +22,7 @@ Create a Pool of LTM Virtuals according to the following table:
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/pool/create.jsp
 
 .. image:: /_static/class1/create_gtm_pool.png
+   :width: 800
 
 TMSH command to run on only dns.sitea:
 

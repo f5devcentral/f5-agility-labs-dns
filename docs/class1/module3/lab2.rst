@@ -4,6 +4,7 @@ Device Trust
 A mesh of F5 DNS servers need to exchange keys to establish a trusted mechanism for HA communications.
 
 .. image:: /_static/class1/establish_trust.png
+   :width: 800
 
 Launch Putty and login to dns.sitea.f5demo.com
 
@@ -16,6 +17,7 @@ When prompted for a password use "default".
    bigip_add
 
 .. image:: /_static/class1/putty_gtm1_site1.png
+   :width: 800
 
 Navigate to: **DNS  ››  GSLB : Servers : Trusted Server Certificates**
 

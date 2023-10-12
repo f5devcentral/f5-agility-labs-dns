@@ -51,6 +51,7 @@ Results
  ..  https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/stats/pool/stats_detail.jsp?name=%2FCommon%2Fwww.example.com_pool&pool_type=1&identity=www.example.com_pool+%3A+A
 
    .. image:: /_static/class1/results_pool_statistics.png
+      :width: 800
 
    .. admonition:: TMSH
 

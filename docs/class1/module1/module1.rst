@@ -20,7 +20,8 @@ Configure the global settings for GSLB according to the following table:
    "Group Name", "F5DEMO_group"
    "Synchronize DNS Zone Files", "checked"
 
-.. image:: /_static/class1/gtm_global_settings.png
+.. image:: /_static/class1/gtm_global_settings.png 
+   :width: 800
 
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/settings/gslb/properties_general.jsp
 

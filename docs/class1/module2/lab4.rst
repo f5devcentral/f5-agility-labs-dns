@@ -8,6 +8,7 @@ A TCP profile is associated with a listener.
 Navigate to: **DNS  ››  Delivery : Profiles : Protocol : TCP**
 
 .. image:: /_static/class1/dns_profile_tcp_flyout.png
+   :width: 800
 
 Create a new TCP profile as shown in the following table.
 
@@ -19,6 +20,7 @@ Create a new TCP profile as shown in the following table.
    "Parent Profile", "f5-tcp-wan"
 
 .. image:: /_static/class1/dns_profile_tcp.png
+   :width: 800
 
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/tcp/create.jsp
 

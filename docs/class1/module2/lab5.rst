@@ -8,6 +8,7 @@ A UDP listener will receive and process DNS queries.
 Navigate to: **DNS  ››  Delivery : Listeners : Listener List**
 
 .. image:: /_static/class1/listener_flyout.png
+   :width: 800
 
 Create a UDP listener according to the following table:
 
@@ -25,6 +26,7 @@ Create a UDP listener according to the following table:
 .. https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/dns/listener/create.jsp
 
 .. image:: /_static/class1/listener_settings.png
+   :width: 800
 
 dns.sitea TMSH command:
 

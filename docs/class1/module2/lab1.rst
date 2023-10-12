@@ -8,6 +8,7 @@ Configure DNS query and response logging. Create a "Log Publisher", and a "Loggi
 #. Navigate to: **System  ››  Logs : Configuration : Log Publishers**
 
    .. image:: /_static/class1/system_log_publisher_flyout.png
+      :width: 800
 
    Create a local syslog publisher according to the table below:
 
@@ -19,7 +20,8 @@ Configure DNS query and response logging. Create a "Log Publisher", and a "Loggi
       "Destinations", "local-syslog"
 
    .. image:: /_static/class1/sys_syslog_publisher_details.png
-
+      :width: 800
+    
    .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/system/log/create_publisher.jsp
 
    .. https://gtm1.site2.example.com/tmui/Control/jspmap/tmui/system/log/create_publisher.jsp
@@ -33,6 +35,7 @@ Configure DNS query and response logging. Create a "Log Publisher", and a "Loggi
 #. Navigate to: **DNS > Delivery > Profiles > Other > DNS Logging: Create**
 
    .. image:: /_static/class1/dns_logging_profile_flyout.png
+      :width: 800
 
    Create a new DNS logging profile as shown in the table below.
 
@@ -46,6 +49,7 @@ Configure DNS query and response logging. Create a "Log Publisher", and a "Loggi
       "Include Query ID", "enabled"
 
    .. image:: /_static/class1/dns_logging_profile_create.png
+      :width: 800
 
    .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/dns_log/create.jsp
 

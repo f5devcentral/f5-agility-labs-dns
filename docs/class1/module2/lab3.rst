@@ -8,6 +8,7 @@ A UDP profile is associated with a listener.
 Navigate to: **DNS  ››  Delivery : Profiles : Protocol : UDP**
 
 .. image:: /_static/class1/udp-dns_profile_flyout.png
+   :width: 800
    
 
 Create a new UDP profile as shown in the following table:
@@ -19,7 +20,8 @@ Create a new UDP profile as shown in the following table:
    "Name", "f5demo.com_udp-dns_profile"
    "Parent Profile", "udp_gtm_dns"
 
-.. image:: /_static/class1/udp-dns_profile.png 
+.. image:: /_static/class1/udp-dns_profile.png
+   :width: 800
 
 
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/dns/profile/udp/create.jsp
