@@ -47,7 +47,7 @@ Configure DNS query and response logging. Create a "Log Publisher", and a "Loggi
       "Log Publisher", "local-syslog-publisher"
       "Log Responses", "enabled"
       "Include Query ID", "enabled"
-
+      
    .. image:: /_static/class1/dns_logging_profile_create.png
       :width: 800
 
