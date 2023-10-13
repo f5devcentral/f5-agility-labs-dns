@@ -19,7 +19,7 @@ Create a Server Object as defined in the table below:
    "Virtual Server Discovery", "Enabled"
    "Link Discovery", "Enabled"
 
-#. Fill in the Name and Datacenter
+#. Fill in the Name and Datacenter 
 
    .. image:: /_static/class1/site2_click-addserver.png
       :width: 800
