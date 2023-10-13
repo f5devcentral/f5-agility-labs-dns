@@ -9,7 +9,7 @@ Click “No” to close the network discovery prompt.
 
 Click on the Firefox icon to launch the browser.
 
-Three tabs will open up. The first tab is the UI of the BIG-IP. Let’s login using **admin** for our username and **f5agility2021** as our password.
+Three tabs will open up. The first tab is the UI of the BIG-IP. Let’s login using **admin** for our username and **f5agility!** as our password.
 
 |image3.png|
 
@@ -39,7 +39,7 @@ Navigate to **System** -> **Configuration** -> **Device** -> **DNS**
 
 Because we’re using FQDNs in our iRules and DNS pools, we’ll need a DNS resolver(s) that the BIG-IP can use to resolve them.
 
-**If avoid specifying DNS servers in a your environment, you can simply assign static pool members addresses and specify resolvers by IP address in the iRules to alleviate this requirement. If this doesn't make sense now, it will shortly.**
+**If you prefer to avoid specifying DNS resolvers at the BigIP system level, you can simply assign static pool members addresses and specify resolvers by IP address in the iRules to alleviate this requirement. If this doesn't make sense now, it will shortly.**
 
 |image6.png|
 
@@ -65,7 +65,7 @@ Navigate to **Local Traffic** -> **Nodes** and look at the node list. Here, we�
 Pools
 ^^^^^
 
-If you’ll kindly navigate to **Local Traffic** -> **Pools**, you will see three pools. While the backend nodes are identical between them, the ports used for each are not. You’ll see a pool for DNS over HTTPS (doh_dns.google) that uses port 443, a pool for DNS over TLS (dot_dns.google) that utilizes port 853 and finally a pool that uses port 53 for traditional DNS services (traditional_dns.google). If you’re not familiar with LTM pools, click through each pool to see how the service ports are specified.
+Navigate to **Local Traffic** -> **Pools**, and you will see three pools. While the backend nodes are identical between them, the ports used for each are not. You’ll see a pool for DNS over HTTPS (doh_dns.google) that uses port 443, a pool for DNS over TLS (dot_dns.google) that utilizes port 853 and finally a pool that uses port 53 for traditional DNS services (traditional_dns.google). If you’re not familiar with LTM pools, click through each pool to see how the service ports are specified.
 
 |image9.png|
 
@@ -77,7 +77,7 @@ iRulesLX engine based on Node.js is the mechanism that we will leverage to handl
 Workspaces
 ''''''''''
 
-If you’ll navigate to **Local Traffic** -> **iRules** -> **LX Workspaces**, you can see the two rules for handling conversions in their respective direction. Click on the rule titled *DNS_to_DoH_Proxy*.
+Navigate to **Local Traffic** -> **iRules** -> **LX Workspaces**, and you can see the two rules for handling conversions in their respective direction. Click on the rule titled *DNS_to_DoH_Proxy*.
 
 |image10.png|
 
