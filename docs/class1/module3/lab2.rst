@@ -33,4 +33,4 @@ Navigate to: **DNS  ››  GSLB : Servers : Trusted Server Certificates**
 
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/locallb/ssl_certificate/properties.jsp?certificate_name=server&store=iquery
 
-.. image:: /_static/class7/gslb_dataceter_servers_trusted_certificates.png
+.. image:: /_static/class1/gslb_dataceter_servers_trusted_certificates.png
