@@ -36,7 +36,7 @@ A network outage can automatically cause DR activation.
 
 #. View the effect
 
-   Log into the jumpbox (username: Administrator password: VkEZNEFnnLH) , open chrome, and navigate to https:www.f5demo.com:
+   On the jumpbox, open chrome, and navigate to https:www.f5demo.com:
 
    .. image:: /_static/class1/dns_gslb1_site2_links.png
       :width: 800
