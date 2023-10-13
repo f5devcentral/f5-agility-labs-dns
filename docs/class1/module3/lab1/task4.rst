@@ -42,4 +42,4 @@ Create a Server Object as defined in the table below:
 
 .. admonition:: TMSH
 
-   tmsh create gtm server sitea_ltm datacenter siteb_datacenter devices add { ltm.siteb.f5demo.com { addresses add { 10.1.60.50 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled
+   tmsh create gtm server siteb_ltm datacenter siteb_datacenter devices add { ltm.siteb.f5demo.com { addresses add { 10.1.60.50 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled
