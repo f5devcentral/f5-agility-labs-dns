@@ -28,4 +28,4 @@ TMSH command to run on only dns.sitea:
 
 .. admonition:: TMSH
 
-   tmsh create gtm pool a www.f5demo.com_pool { members add { sitea_ltm:/Common/app1_siteb_www.f5demo.com_tcp_https_virtual { member-order 0 } siteb_ltm:/Common/app2_siteb_www.f5demo.com_tcp_https_virtual { member-order 1 } } }
+   tmsh create gtm pool a www.f5demo.com_pool { members add { sitea_ltm:/Common/app1_sitea_www.f5demo.com_tcp_https_virtual { member-order 0 } siteb_ltm:/Common/app2_siteb_www.f5demo.com_tcp_https_virtual { member-order 1 } } }
