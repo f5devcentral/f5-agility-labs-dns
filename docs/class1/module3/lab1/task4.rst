@@ -12,8 +12,8 @@ Create a Server Object as defined in the table below:
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "Name", "siteB_ltm"
-   "Data Center", "siteB_datacenter"
+   "Name", "siteb_ltm"
+   "Data Center", "siteb_datacenter"
    "Device Add:", "ltm.siteb.f5demo.com : 10.1.60.50"
    "Health Monitors", "bigip"
    "Virtual Server Discovery", "Enabled"
@@ -29,16 +29,6 @@ Create a Server Object as defined in the table below:
    .. image:: /_static/class1/site2_ha_pair_bigip1_add.png
       :width: 800
 
-#. Click "Add" again to define the other BIG-IP in the HA pair.
-
-   .. image:: /_static/class1/site2_click-addserver_again.png
-      :width: 800
-
-#. Click the "Add" button to define IP addresses
-
-   .. image:: /_static/class1/site2_ha_pair_bigip2_add.png
-      :width: 800
-
 #. Complete the form and associate the "bigip" "Health Monitor" and enable both "Virtual Server" and "Link" discovery
 
    .. image:: /_static/class1/site2-HA_pair_create.png
@@ -52,4 +42,4 @@ Create a Server Object as defined in the table below:
 
 .. admonition:: TMSH
 
-   tmsh create gtm server siteb_ltm datacenter siteb_datacenter devices add { ltm.siteb.f5demo.com { addresses add { 10.1.60.50 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled
+   tmsh create gtm server sitea_ltm datacenter siteb_datacenter devices add { ltm.siteb.f5demo.com { addresses add { 10.1.60.50 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled

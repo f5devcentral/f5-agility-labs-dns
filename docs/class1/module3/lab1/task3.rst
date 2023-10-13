@@ -12,8 +12,8 @@ Create a Server Object as defined in the table below:
    :header: "Setting", "Value"
    :widths: 15, 15
 
-   "Name", "siteA_ltm"
-   "Data Center", "siteA_datacenter"
+   "Name", "sitea_ltm"
+   "Data Center", "sitea_datacenter"
    "Devices Add:", "ltma.sitea.f5demo.com : 10.1.10.50"
    "Health Monitors", "bigip"
    "Virtual Server Discovery", "Enabled"
@@ -50,4 +50,4 @@ Create a Server Object as defined in the table below:
 
 .. admonition:: TMSH
 
-   tmsh create gtm server siteA_ltm datacenter siteA_datacenter devices add { ltma.sitea.f5demo.com { addresses add { 10.1.10.50 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled
+   tmsh create gtm server sitea_ltm datacenter sitea_datacenter devices add { ltma.sitea.f5demo.com { addresses add { 10.1.10.50 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled

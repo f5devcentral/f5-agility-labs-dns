@@ -51,6 +51,14 @@ Results
 
       show gtm pool a www.f5demo.com_pool
 
+#. Re-enable interfaces on dns.sitea
+
+   TMSH command to run on only dns.sitea:
+
+   .. admonition:: TMSH
+   
+      tmsh modify net interface all enabled
+
 #. Using Putty, ssh into dns.sitea and run the following command to watch logs:
 
    .. admonition:: TMSH
