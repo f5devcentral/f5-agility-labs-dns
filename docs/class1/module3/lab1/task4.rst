@@ -29,7 +29,7 @@ Create a Server Object as defined in the table below:
    .. image:: /_static/class1/site2_ha_pair_bigip1_add.png
       :width: 800
 
-#. Complete the form and associate the "bigip" "Health Monitor" and enable both "Virtual Server" and "Link" discovery
+#. Complete the form and associate the "bigip" "Health Monitor" and enable both "Virtual Server" and "Link" discovery 
 
    .. image:: /_static/class1/site2-HA_pair_create.png
       :width: 800
