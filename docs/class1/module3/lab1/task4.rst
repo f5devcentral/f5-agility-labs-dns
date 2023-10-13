@@ -19,7 +19,7 @@ Create a Server Object as defined in the table below:
    "Virtual Server Discovery", "Enabled"
    "Link Discovery", "Enabled"
 
-#. Fill in the Name and Datacenter
+#. Fill in the Name and Datacenter 
 
    .. image:: /_static/class1/site2_click-addserver.png
       :width: 800
@@ -29,7 +29,7 @@ Create a Server Object as defined in the table below:
    .. image:: /_static/class1/site2_ha_pair_bigip1_add.png
       :width: 800
 
-#. Complete the form and associate the "bigip" "Health Monitor" and enable both "Virtual Server" and "Link" discovery
+#. Complete the form and associate the "bigip" "Health Monitor" and enable both "Virtual Server" and "Link" discovery 
 
    .. image:: /_static/class1/site2-HA_pair_create.png
       :width: 800
@@ -42,4 +42,4 @@ Create a Server Object as defined in the table below:
 
 .. admonition:: TMSH
 
-   tmsh create gtm server sitea_ltm datacenter siteb_datacenter devices add { ltm.siteb.f5demo.com { addresses add { 10.1.60.50 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled
+   tmsh create gtm server siteb_ltm datacenter siteb_datacenter devices add { ltm.siteb.f5demo.com { addresses add { 10.1.60.50 { } } } } link-discovery enabled monitor bigip product bigip virtual-server-discovery enabled
