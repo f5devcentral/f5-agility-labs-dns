@@ -14,7 +14,7 @@ Click "Create" to define dns.siteb as defined in the table below:
 
    "Name", "dns.siteb_server"
    "Data Center", "siteb_datacenter"
-   "Devices Add:", "dns.siteb.f5demo.com : 10.1.60.101"
+   "Devices Add:", "dns.siteb.f5demo.com : 10.1.60.100"
    "Health Monitors", "bigip"
 
 #. Fill in the Name and Datacenter
