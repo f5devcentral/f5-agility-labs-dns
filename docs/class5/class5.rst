@@ -1,8 +1,10 @@
-Class 5 - DNS over HTTPS/DNS over TLS
+Class 5 - DNS over HTTPS/DNS over TLS (Pre TMOS 16.1)
 =====================================
 
 Introduction
 ~~~~~~~~~~~~
+
+**NOTE: This lab is deprected for Class 6 and the native DoH/DoT support in TMOS, and is kepts for informational purposes only.**
 
 In this lab, you will see DNS over HTTPS (DoH) and DNS over TLS (DoT) queries proxied in both directions. That is, traditional DNS queries will be proxied to backend DoT/DoH servers, as well as DoH/DoT queries being proxied to traditional DNS servers.
 
