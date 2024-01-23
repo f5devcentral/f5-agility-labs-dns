@@ -6,6 +6,6 @@ packet types. A single Windows jump host sits in the client segment
 while an Ubuntu jump server sits in the server segment.
 
 
-.. image:: _images/dns-lab-components.png
+.. image:: _images/DNS-Lab-Components.png
    :width: 7.5in
    :height: 5.29969in
