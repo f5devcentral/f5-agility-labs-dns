@@ -1,6 +1,18 @@
 Credits
 =======
 
+
+- Appworld 2024:
+
+   Jesse Darrone
+
+   Denis Grimard
+
+   Chris Meredith
+
+   Brian Van Lieu
+   
+
 - Agility 2020:
 
    Bill Wester

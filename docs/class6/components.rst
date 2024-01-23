@@ -15,32 +15,40 @@ The lab consists of the following items:
 
    -  Windows Jump Host
 
-      -  Credentials: user / f5agility!
+      -  Credentials: user / user
 
       -  Management IP: 10.1.1.4
 
-   -  Ubuntu Jump Host
+   -  Ubuntu Jump Host – for Attacks
+
+      -  Credentials: user / f5agility!
+
+      -  Management IP: 10.1.1.7
+
+      -  External IP: 10.1.10.7
+
+   -  Ubuntu DNS server – “Victim” server
 
       -  Credentials: user / f5agility!
 
       -  Management IP: 10.1.1.6
 
+      -  External IP: 10.1.20.6
+
    -  F5 BIG-IP Proxy:
 
-      -  Credentials: admin / f5agility! \| root / f5agility!
+      -  Credentials: admin / default \| root / default
 
-      -  Management IP: 10.1.1.5
+      -  Management IP: 10.1.1.8
 
-      -  Client Subnet IP: 10.1.10.10
+      -  External Subnet IP: 10.1.10.5/24
 
-      -  Server Subnet IP: 10.1.20.10
+      -  Internal Subnet IP: 10.1.20.5/24
 
       -  DNS VIPs
 
-         -  DoT-to-DNS: 10.1.10.100 (TCP/853)
+         -  DoT-to-DNS: 10.1.10.6 (TCP/853)
 
-         -  DoH-to-DNS: 10.1.10.100 (TCP/443)
+         -  DoH-to-DNS: 10.1.10.6 (TCP/443)
 
-         -  DNS-to-DoT: 10.1.10.101 (TCP/53 and UDP/53)
-
-         -  DNS-to-DoH: 10.1.10.102 (TCP/53)
+         -  DNS-traditional (TCP/53 and UDP/53)
