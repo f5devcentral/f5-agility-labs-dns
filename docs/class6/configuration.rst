@@ -99,7 +99,7 @@ Finally, let’s take a look at the virtual servers handling incoming requests. 
 The first two virtual server objects handle inbound DoH and DoT requests, respectively: **DoH-to-DNS** and **DoT-to-DNS**. An example use case for these proxies would be for offering DoH/DoT to clients/customers/etc. without the need for changing existing DNS infrastructure.
 We also have a **DoH-to-DoH-vs** virtual server.  This is a bit more of a corner use case but would provide a full DOH-proxy from client to the BIG-IP Virtual Server, hit the DoH-proxy profile, and re-encrypt on its way to the DoH-DNS server in the pool or DNS profile.  
 
-.. image:: _images/DoHDoT-virtualservers-configuration.png
+.. image:: _images/DOHDOT-virtualservers-configuration.png
    :width: 7.5in
    :height: 4.6875in
 
@@ -114,7 +114,7 @@ These DoH specific Proxy and Server Listener profiles can be found in two places
 -  Navigating to **DNS -> Delivery -> Listeners**
 -  Navigating to **LTM -> Profiles -> Other**
 
-.. image:: _images/DoTDoH-profile-configuration.png
+.. image:: _images/DOTDOH-profile-configuration.png
    :width: 7.5in
    :height: 4.6875in
 
