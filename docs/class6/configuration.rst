@@ -307,7 +307,7 @@ Minimize Firefox to view the desktop shortcuts and launch the Lab “Attack Host
 
 You should see a response similar to the output below. Run a few more queries against other domains to generate statistics.
 
-.. image:: _images/DoT-to-DNS-KDIG-command.png
+.. image:: _images/DOT-to-DNS-KDIG-command.png
    :width: 7.5in
    :height: 4.6875in
 
@@ -316,14 +316,14 @@ Viewing Statistics for DoT-to-DNS
 
 You can then see statistics on the virtual server by navigating to **Statistics -> Module Statistics -> Local Traffic** and selecting *Virtual Servers* in the drop-down list.
 
-.. image:: _images/DoT-to-DNS-vs-statistics.png
+.. image:: _images/DOT-to-DNS-vs-statistics.png
    :width: 7.5in
    :height: 4.6875in
 
 
 Because this virtual server takes advantage of backend pools, you will see statistics under the *Pools* statistics type as well.
 
-.. image:: _images/DoT-to-DNS-pool-statistics.png
+.. image:: _images/DOT-to-DNS-pool-statistics.png
    :width: 7.5in
    :height: 4.6875in
 
@@ -334,7 +334,7 @@ Minimize Firefox and return to the BIG-IP DNS Proxy session from the first secti
 
 Pull the Lab DNS Server session window up and re-run the **kdig** command. Observe the front and back-end connections using port 853 and 53, respectively, shown in the packet capture output.
 
-.. image:: _images/DoT-to-DNS-tcpdump.png
+.. image:: _images/DOT-to-DNS-tcpdump.png
    :width: 7.5in
    :height: 4.6875in
 
