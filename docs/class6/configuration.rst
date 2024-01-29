@@ -254,7 +254,7 @@ Open a new tab and browse to a website. Return to the third tab and click Refres
 BIG-IP Statistics and Logging
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Back in the first tab on the F5 web UI, navigate to **Statistics -> Module Statistics -> Local Traffic**. Make sure that *V*irtual Servers* is selected in the *Statistics Type* drop-down. Observe the traffic statistics on the DoH-to-DNS virtual server.
+Back in the first tab on the F5 web UI, navigate to **Statistics -> Module Statistics -> Local Traffic**. Make sure that *Virtual Servers* is selected in the *Statistics Type* drop-down. Observe the traffic statistics on the DoH-to-DNS virtual server.
 
 .. image:: _images/big-ip-statistics-reporting-doh.png
    :width: 7.5in
@@ -292,7 +292,7 @@ DoT-to-DNS is a bit more simplistic. We’re simply taking the existing DNS requ
 Virtual Server Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Maximize *Firefox*. Click on the first tab to return to the BIG-IP web UI. Navigate to **Local Traffic -> Virtual Servers**. If you review the virtual server configuration, you’ll notice that we’re simply using a client-SSL profile and a backend pool. The client-SSL profile uses a self-signed certificate in this lab, you’ll need a certificate from a certificate authority that your clients’ browsers trust in a production deployment.
+Maximize *Firefox*. Click on the first tab to return to the BIG-IP web UI. Navigate to **Local Traffic -> Virtual Servers**, and look for the **DOT-to-DNS** virtual server. If you review the virtual server configuration, you’ll notice that we’re simply using a client-SSL profile and a backend pool. The client-SSL profile uses a self-signed certificate in this lab, you’ll need a certificate from a certificate authority that your clients’ browsers trust in a production deployment.
 
 .. image:: _images/dot-to-dns-vip-configuration.png
    :width: 7.5in
@@ -303,6 +303,7 @@ Test Driving DNS over TLS to Traditional DNS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Minimize Firefox to view the desktop shortcuts and launch the Lab “Attack Host” Server session. You’ll be automatically logged in. Let’s run a DNS over TLS query: ::
+
    kdig +tls @10.1.10.6 www.f5.com
 
 You should see a response similar to the output below. Run a few more queries against other domains to generate statistics.
@@ -330,6 +331,7 @@ Because this virtual server takes advantage of backend pools, you will see stati
 Because we don’t have any type of logging configured for that virtual server, you won’t see any information in **System -> Logs** for this traffic. If you’d want to log in your environment, general LTM F5 logging/statistics practices can be used.
 
 Minimize Firefox and return to the BIG-IP DNS Proxy session from the first section of this lab or open a new session by clicking on the BIG-IP DNS Proxy icon on the desktop. Execute the follow tcpdump command: ::
+   
    tcpdump -nni 0.0 port 53 or port 853
 
 Pull the Lab DNS Server session window up and re-run the **kdig** command. Observe the front and back-end connections using port 853 and 53, respectively, shown in the packet capture output.
