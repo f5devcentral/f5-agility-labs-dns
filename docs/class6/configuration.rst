@@ -16,7 +16,7 @@ Be sure to use the correct username and password on the RDP connection to get st
 
 Click “No” to close the network discovery prompt.
 
-Click on the Firefox icon to launch the browser.  The default homepage should be set to the BIG-IP Web-UI:  https://10.1.1.8/ - but if not, navigate to this location to get started.  Let’s login using **admin** for our username and **default** as our password (as seen on the banner):
+Click on the Firefox icon on the Desktop to launch the browser.  The default homepage should be set to the BIG-IP Web-UI:  https://10.1.1.8/ - but if not, navigate to this location to get started.  Let’s login using **admin** for our username and **default** as our password (as seen on the banner):
 
 .. image:: _images/F5-BIG-IP-Login-Prompt-Window.png
    :width: 7.5in
@@ -170,7 +170,7 @@ To create a DoH Server virtual server listener, the following example configurat
 
 To create a DoH Proxy virtual server listener – as mentioned in the note above, the doh-proxy type vs will require the “httprouter” profile and a Server-Side SSL profile applied.  This virtual server uses a DoH server pool, as the output of the VS will be to servers listening on HTTPS/DoH: ::
 
-   tmsh create ltm virtual lab_doh_proxy ip-protocol tcp profiles add { dns doh-proxy http http2 httprouter tcp clientssl-secure serverssl-secure } source-address-translation { type automap } destination 10.1.10.6:443 pool doh_dns.google
+   tmsh create ltm virtual lab_doh_proxy ip-protocol tcp profiles add { dns doh-proxy http http2 httprouter tcp clientssl-secure serverssl-secure } source-address-translation { type automap } destination 10.1.10.7:443 pool doh_dns.google
 
 Creating a DoH Virtual Server (Web UI)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -331,7 +331,7 @@ Because this virtual server takes advantage of backend pools, you will see stati
 Because we don’t have any type of logging configured for that virtual server, you won’t see any information in **System -> Logs** for this traffic. If you’d want to log in your environment, general LTM F5 logging/statistics practices can be used.
 
 Minimize Firefox and return to the BIG-IP DNS Proxy session from the first section of this lab or open a new session by clicking on the BIG-IP DNS Proxy icon on the desktop. Execute the follow tcpdump command: ::
-   
+
    tcpdump -nni 0.0 port 53 or port 853
 
 Pull the Lab DNS Server session window up and re-run the **kdig** command. Observe the front and back-end connections using port 853 and 53, respectively, shown in the packet capture output.
