@@ -10,6 +10,8 @@ Credits
 
    Chris Meredith
 
+   Anthony Ritchie
+
    Kyle Twenty
 
    Brian Van Lieu
