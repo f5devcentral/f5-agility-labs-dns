@@ -27,4 +27,4 @@ TMSH command to run on only dns.sitea:
 
 .. admonition:: TMSH
 
-   tmsh create gtm wideip a www.wip.f5demo.com { pools add { www.f5demo.com_pool { order 0 } } }
+   tmsh create gtm wideip a www.wip.f5demo.com {  pools add { www.f5demo.com_pool { order 0 } } aliases add { www.wip.f5demo.com }  load-balancing-decision-log-verbosity { pool-member-selection pool-member-traversal pool-selection pool-traversal} }

@@ -14,7 +14,7 @@ Click "Create" to define dns.sitea as defined in the table below:
 
    "Name", "dns.sitea_server"
    "Data Center", "sitea_datacenter"
-   "Devices Add:", "dns.sitea.f5demo.com : 10.1.10.101"
+   "Devices Add:", "dns.sitea.f5demo.com : 10.1.10.100"
    "Health Monitors", "bigip"
 
 #. Fill in the Name and Datacenter

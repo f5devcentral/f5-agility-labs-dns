@@ -15,5 +15,11 @@ Select "y" to allow the bigip-ip to join the mesh.
 
    gtm_add 10.1.10.100
 
+If there are issues run 
+
+.. admonition:: TMSH
+
+   bigstart restart named zrd
+
 .. image:: /_static/class1/putty_gtm1_site2.png
    :width: 800
