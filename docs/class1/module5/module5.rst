@@ -23,6 +23,8 @@ Create an F5 "Wide IP"
 
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/wideip/list.jsp
 
-.. admonition:: TMSH(Run on dns.sitea)
+Run the following on dns.sitea only
+
+.. admonition:: TMSH
 
    tmsh create gtm wideip a www.wip.f5demo.com {  pools add { www.f5demo.com_pool { order 0 } } load-balancing-decision-log-verbosity { pool-member-selection pool-member-traversal pool-selection pool-traversal} }
