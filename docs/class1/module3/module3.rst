@@ -3,7 +3,7 @@ Datacenters
 
 Datacenters are logical groupings of devices that share a gateway.
 
-.. note::   The tasks in this section are to be only completed on dns.sitea
+.. note::   The tasks in this section are to be completed only on dns.sitea
 
 Navigate to: **DNS > GSLB > Data Centers > Data Center List: Create**
 
