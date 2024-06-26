@@ -25,7 +25,7 @@ Results
    .. image:: /_static/class1/gtm1_site1_disable_interfaces.png
       :width: 800
 
-   .. admonition:: TMSH - run on only dns.siteb
+   .. admonition:: TMSH(run on only dns.siteb)
    
       tmsh modify net interface all disabled
 
@@ -34,7 +34,7 @@ Results
 #. Re-enable interfaces on dns.siteb, disable interfaces on dns.sitea.
    Observe statistics on dns.siteb and make sure DNS requests are still resolving.
 
-   .. admonition:: TMSH - run on only dns.siteb
+   .. admonition:: TMSH(run on only dns.siteb)
    
       tmsh modify net interface all enabled
 
@@ -49,11 +49,11 @@ Results
 
 #. Re-enable interfaces on dns.sitea
 
-   .. admonition:: TMSH
+   .. admonition:: TMSH(run on only dns.sitea)
    
       tmsh modify net interface all enabled
 
-#. Using Puttyon the Jumpbox, ssh into dns.sitea and run the following command to watch logs (use password 'F5demo!!' if prompted:
+#. Using Putty on the Jumpbox, ssh into dns.sitea and run the following command to watch logs (use password 'F5demo!!' if prompted:
 
    .. admonition:: TMSH
 
