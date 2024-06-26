@@ -36,12 +36,12 @@ Modify the GSLB configuration so that LDNS servers continually receive the same 
 
 #. Recheck Persistence Records - You should see a persistence record for the Windows 2019 Server that is making the query for the Windows 10 client
 
-   .. admonition:: TMSH - Run from either dns.sitea or dns.siteb
+   .. admonition:: TMSH
 
       tmsh show gtm persist
 
-#. Disable persistence
+#. Disable persistence - Change can be made on either dns.site1 or dns.siteb
 
-   .. admonition:: TMSH - Run from either dns.sitea or dns.siteb
+   .. admonition:: TMSH
 
       tmsh modify gtm wideip a www.wip.f5demo.com persistence disabled
