@@ -1,12 +1,12 @@
 Results
 =================================
 
-#. From the Workstation command prompt type "dig www.f5demo.com"
+#. From the Windows 10 Jumpbox command prompt type "dig www.f5demo.com"
 
    .. image:: /_static/class1/dc01_new_delegation_create_cname_results.png
       :width: 800
 
-#. Observe WIDEIP statistics on dns.sitea: **Statistics  ››  Module Statistics : DNS : GSLB  ››  Wide IPs : www.wip.f5demo.com : A**
+#. Observe Wide-IP statistics on dns.sitea: **Statistics  ››  Module Statistics : DNS : GSLB  ››  Wide IPs : www.wip.f5demo.com : A** (Note: The images show the Wide-IP as www.f5demo.com but you will have www.wip.f5demo.com in the lab.  The TMSH commands reference the correct Wide-IP name)
 
    .. image:: /_static/class1/gtm1_site1_wideip_statistics_flyout.png
       :width: 800
@@ -18,16 +18,14 @@ Results
 
       tmsh show gtm wideip a www.wip.f5demo.com
 
-#. Observe WIDEIP statistics on dns.siteb: **Statistics  ››  Module Statistics : DNS : GSLB  ››  Wide IPs : www.wip.f5demo.com : A**
+#. Observe Wide-IP statistics on dns.siteb: **Statistics  ››  Module Statistics : DNS : GSLB  ››  Wide IPs : www.wip.f5demo.com : A**
 
 #. Disable physical interfaces on dns.siteb:
 
    .. image:: /_static/class1/gtm1_site1_disable_interfaces.png
       :width: 800
 
-   TMSH command to run on only dns.siteb:
-
-   .. admonition:: TMSH
+   .. admonition:: TMSH - run on only dns.siteb
    
       tmsh modify net interface all disabled
 
@@ -36,9 +34,7 @@ Results
 #. Re-enable interfaces on dns.siteb, disable interfaces on dns.sitea.
    Observe statistics on dns.siteb and make sure DNS requests are still resolving.
 
-   TMSH command to run on only dns.siteb:
-
-   .. admonition:: TMSH
+   .. admonition:: TMSH - run on only dns.siteb
    
       tmsh modify net interface all enabled
 
@@ -53,13 +49,11 @@ Results
 
 #. Re-enable interfaces on dns.sitea
 
-   TMSH command to run on only dns.sitea:
-
-   .. admonition:: TMSH
+   .. admonition:: TMSH - run on only dns.sitea
    
       tmsh modify net interface all enabled
 
-#. Using Putty, ssh into dns.sitea and run the following command to watch logs:
+#. Using Putty, ssh into dns.sitea and run the following command to watch logs (use password 'F5demo!!' if prompted:
 
    .. admonition:: TMSH
 
