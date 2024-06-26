@@ -9,7 +9,7 @@ A mesh of F5 DNS servers need to exchange keys to establish a trusted mechanism 
 Launch Web Shell to Site A DNS
 
 .. image:: /_static/class1/dns_sitea_web_shell.png
-   :width: 800
+   :width: 600
 
 
 Run the following command:

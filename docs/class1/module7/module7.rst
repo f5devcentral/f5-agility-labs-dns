@@ -1,7 +1,7 @@
 Results
 =================================
 
-#. From the Windows 10 Jumpbox command prompt type "dig www.f5demo.com"
+#. From the Windows 10 Jumpbox command prompt type "dig www.f5demo.com"  Repeat the command several times to see that the name resolution is alternating between 10.1.10.51 and 10.1.60.51.
 
    .. image:: /_static/class1/dc01_new_delegation_create_cname_results.png
       :width: 800
@@ -25,7 +25,7 @@ Results
    .. image:: /_static/class1/gtm1_site1_disable_interfaces.png
       :width: 800
 
-   .. admonition:: TMSH - run on only dns.siteb
+   .. admonition:: TMSH(run on only dns.siteb)
    
       tmsh modify net interface all disabled
 
@@ -34,7 +34,7 @@ Results
 #. Re-enable interfaces on dns.siteb, disable interfaces on dns.sitea.
    Observe statistics on dns.siteb and make sure DNS requests are still resolving.
 
-   .. admonition:: TMSH - run on only dns.siteb
+   .. admonition:: TMSH(run on only dns.siteb)
    
       tmsh modify net interface all enabled
 
@@ -49,11 +49,11 @@ Results
 
 #. Re-enable interfaces on dns.sitea
 
-   .. admonition:: TMSH - run on only dns.sitea
+   .. admonition:: TMSH(run on only dns.sitea)
    
       tmsh modify net interface all enabled
 
-#. Using Putty, ssh into dns.sitea and run the following command to watch logs (use password 'F5demo!!' if prompted:
+#. Using Putty on the Jumpbox, ssh into dns.sitea and run the following command to watch logs (use password 'F5demo!!' if prompted:
 
    .. admonition:: TMSH
 
