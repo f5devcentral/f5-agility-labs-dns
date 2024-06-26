@@ -27,10 +27,8 @@ A network outage can automatically cause DR activation.
 
    .. image:: /_static/class1/router_disable_isp1_site_interface.png
       :width: 800
-
-   TMSH command to run on ltm.sitea to simulate a failure   
-
-   .. admonition:: TMSH
+  
+   .. admonition:: TMSH - Run on ltm.sitea
 
       tmsh modify ltm virtual app1_sitea_www.f5demo.com_tcp_https_virtual disabled
 
@@ -48,8 +46,7 @@ A network outage can automatically cause DR activation.
    .. image:: /_static/class1/router_enable_isp1_site_interface.png
       :width: 800
 
-   .. admonition:: TMSH
+   .. admonition:: TMSH - Run on ltm.sitea
 
       tmsh modify ltm virtual app1_sitea_www.f5demo.com_tcp_https_virtual enabled
 
-Note: Even though you re-enabled the primary site1, a persistence record from the previous lab is still in place.

@@ -1,14 +1,14 @@
 FQDN
 ==============================
 
-F5 refers to an FQDN as a "wide-ip", or "wip".
+F5 refers to an FQDN as a "Wide-IP", or "WIP".
 
 Navigate to: **DNS  ››  GSLB : Wide IPs : Wide IP List**
 
 .. image:: /_static/class1/gtm_wideip_list.png
    :width: 800
 
-Create an F5 "wide IP"
+Create an F5 "Wide IP"
 
 .. csv-table::
    :header: "Setting", "Value"
@@ -23,8 +23,6 @@ Create an F5 "wide IP"
 
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/wideip/list.jsp
 
-TMSH command to run on only dns.sitea:
+.. admonition:: TMSH - Run on dns.sitea
 
-.. admonition:: TMSH
-
-   tmsh create gtm wideip a www.wip.f5demo.com {  pools add { www.f5demo.com_pool { order 0 } } aliases add { www.wip.f5demo.com }  load-balancing-decision-log-verbosity { pool-member-selection pool-member-traversal pool-selection pool-traversal} }
+   tmsh create gtm wideip a www.wip.f5demo.com {  pools add { www.f5demo.com_pool { order 0 } } load-balancing-decision-log-verbosity { pool-member-selection pool-member-traversal pool-selection pool-traversal} }
