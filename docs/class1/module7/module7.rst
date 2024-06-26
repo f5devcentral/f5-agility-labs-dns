@@ -1,7 +1,7 @@
 Results
 =================================
 
-#. From the Windows 10 Jumpbox command prompt type "dig www.f5demo.com"
+#. From the Windows 10 Jumpbox command prompt type "dig www.f5demo.com"  Repeat the command several times to see that the name resolution is alternating between 10.1.10.51 and 10.1.60.51.
 
    .. image:: /_static/class1/dc01_new_delegation_create_cname_results.png
       :width: 800
@@ -49,11 +49,11 @@ Results
 
 #. Re-enable interfaces on dns.sitea
 
-   .. admonition:: TMSH - run on only dns.sitea
+   .. admonition:: TMSH
    
       tmsh modify net interface all enabled
 
-#. Using Putty, ssh into dns.sitea and run the following command to watch logs (use password 'F5demo!!' if prompted:
+#. Using Puttyon the Jumpbox, ssh into dns.sitea and run the following command to watch logs (use password 'F5demo!!' if prompted:
 
    .. admonition:: TMSH
 
