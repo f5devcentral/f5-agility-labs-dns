@@ -19,10 +19,10 @@ Create an F5 "Wide IP"
    "Pool", "www.f5demo.com_pool"
 
 .. image:: /_static/class1/gtm_wideip_create.png
-   :width: 800
+   :width: 700
 
 .. https://gtm1.site1.example.com/tmui/Control/jspmap/tmui/globallb/wideip/list.jsp
 
-.. admonition:: TMSH - Run on dns.sitea
+.. admonition:: TMSH(Run on dns.sitea)
 
    tmsh create gtm wideip a www.wip.f5demo.com {  pools add { www.f5demo.com_pool { order 0 } } load-balancing-decision-log-verbosity { pool-member-selection pool-member-traversal pool-selection pool-traversal} }
