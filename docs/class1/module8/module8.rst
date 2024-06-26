@@ -26,8 +26,22 @@ Modify the GSLB configuration so that LDNS servers continually receive the same 
 
       tmsh modify gtm wideip a www.wip.f5demo.com persistence enabled
 
-#. View Persistence Records
+#. View Persistence Records - There won't be any records at this time
 
    .. admonition:: TMSH
 
       tmsh show gtm persist
+
+#. From the Windows 10 jumpbox, test resolution for www.f5.demo.com multiple times (dig www.f5demo.com).  It will resolve to the same IP each time
+
+#. Recheck Persistence Records - You should see a persistence record for the Windows 2019 Server that is making the query for the Windows 10 client
+
+   .. admonition:: TMSH - Run from either dns.sitea or dns.siteb
+
+      tmsh show gtm persist
+
+#. Disable persistence
+
+   .. admonition:: TMSH - Run from either dns.sitea or dns.siteb
+
+      tmsh modify gtm wideip a www.wip.f5demo.com persistence disabled
