@@ -6,6 +6,8 @@ Settings
    :maxdepth: 2
    :glob:
 
+.. note::  **It is required to complete the following task only on dns.sitea**
+
 A site specific sync group name will be created, and synchronization will be enabled.
 
 Navigate to: **DNS  ››  Settings : GSLB : General**

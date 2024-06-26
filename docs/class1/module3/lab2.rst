@@ -6,28 +6,30 @@ A mesh of F5 DNS servers need to exchange keys to establish a trusted mechanism 
 .. image:: /_static/class1/establish_trust.png
    :width: 800
 
-Launch WebRDP "Guacomole" and login (username : user password : user)
+Launch Web Shell to Site A DNS
 
-.. image:: /_static/class1/system_webrdp.PNG
+.. image:: /_static/class1/dns_sitea_web_shell.png
    :width: 800
 
-Expand Jumpbox_Windows10_RDP & double-click on Jumpbox_Windows10_RDP
-
-.. image:: /_static/class1/jumpbox_windows10.PNG
-   :width: 800
-
-Launch Putty and login to dns.sitea.f5demo.com (username : root & password : default)
 
 Run the following command:
 
-When prompted for a password use "default".
+Enter 'yes' for any connectivity prompts.  When prompted for a password use "F5demo!!".
 
 .. admonition:: TMSH
 
    bigip_add
 
-.. image:: /_static/class1/putty_gtm1_site1.png
+.. image:: /_static/class1/bigip_add.png
    :width: 800
+
+The 'bigip_add' command pulls the management certificate from the destination BIGIP devices for use during the encrypted iQuery channel setup between GSLB servers in the cluster. When running 'bigip_add' without any options, the command will be run against all BIGIP devices in the GSLB Server list using current username to connect to the endpoints.  You can specifiy a connection username or endpoint IP(s) if needed.
+
+::
+
+   bigip_add <user>@<endpoint_IP>
+   bigip_add <endpoint_IP>
+   bigip_add <endpoint_IP1> <endpoint_IP2>
 
 Navigate to: **DNS  ››  GSLB : Servers : Trusted Server Certificates**
 
